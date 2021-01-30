@@ -41,8 +41,8 @@ class Graph:
         for name in self.parent: 
             cluster[self.graph[self.find(name)]] += [self.graph[name]]
         print("cluster number: ", len(cluster))
-        for k, v in cluster.items():
-            print("parent:", k.name, "times:", k.times)
+        for k, v in sorted(cluster.items(), key=lambda x:-x[0].times):
+            print("cluster:", k.name, "times:", k.times)
             for n in v:
                 print(n.name, n.times, end=',') 
             print('\n')

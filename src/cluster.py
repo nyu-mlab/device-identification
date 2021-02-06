@@ -44,11 +44,16 @@ class Graph:
             name = device_df['device_vendor'][i]
             device_id = device_df['device_id'][i]
             device_oui = device_df['device_oui'][i]
-            disco = device_df['netdisco_device_info'][i]
             dhcp = device_df['dhcp_hostname'][i]
             dns = dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()
             #print(device_id, dns, sep=';')
-            info = [device_oui] + dns +  [dhcp] # ,disco]
+            disco_dict = eval(device_df['netdisco_device_info'][i])
+            disco = []
+            for c in ('name', 'device_type', 'manufacturer'):
+                if disco_dict.get(c):
+                    disco += [disco_dict.get(c)]
+            info = [device_oui] + dns + [dhcp] +  disco
+            info = ' '.join(info)
             #print(info)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
@@ -108,11 +113,16 @@ class Graph:
            Every node is a document, the whole cluster is a corpus
         '''
         #print("verifying !")
-        dictObj = gensim.corpora.Dictionary([node.device_info for node in cluster])
-        corpus = [dictObj.doc2bow(node.device_info) for node in cluster]
+        name = [node.name for node in cluster]
+        dictObj = gensim.corpora.Dictionary([gensim.utils.simple_preprocess(node.device_info, min_len=4) for node in cluster])
+        corpus = [dictObj.doc2bow(gensim.utils.simple_preprocess(node.device_info, min_len=4)) for node in cluster]
         tfidf = gensim.models.TfidfModel(corpus) 
-        for doc in tfidf[corpus]:
-            print([[dictObj[id], np.around(freq, decimals=2)] for id, freq in doc])
+        for doc_idx in range(len(name)):
+            doc = tfidf[corpus][doc_idx]
+            print(name[doc_idx], end=":")
+            for id, freq in sorted(doc, key=lambda x:-x[1])[:5]:
+                print(dictObj[id], np.around(freq, decimals=2), end=',')
+            print('\n')
         
 
     def save(self, save_path): 

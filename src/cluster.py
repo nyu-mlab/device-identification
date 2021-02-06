@@ -14,8 +14,9 @@
 # optimization:
 # 1. when new data comes, match it with cluster by their ranking
 
-
+import os
 import pandas as pd
+import pickle
 from collections import defaultdict, Counter
 from editdistance import distance
 from pprint import pprint
@@ -25,13 +26,17 @@ import gensim
 DIST = 1
 
 class Graph:
-    def __init__(self, data_path, dns_path):
+    def __init__(self, data_path, dns_path, save_path, rebuild=False):
         self.graph = dict() #string -> Node
         self.parent = dict() #string -> parent string
-        self.read_data(data_path, dns_path)
-        #self.display()
+        self.cluster = defaultdict(list)
+        self.read_data(data_path, dns_path, save_path, rebuild)
+        self.display()
 
-    def read_data(self, data_path, dns_path):
+    def read_data(self, data_path, dns_path, save_path, rebuild):
+        if not rebuild and os.path.exists(save_path): 
+            self.load(save_path) 
+            return 
         device_df = pd.read_csv(data_path).fillna('')
         dns_data = pd.read_csv(dns_path).fillna('')
 
@@ -41,25 +46,30 @@ class Graph:
             device_oui = device_df['device_oui'][i]
             disco = device_df['netdisco_device_info'][i]
             dhcp = device_df['dhcp_hostname'][i]
-            dns = dns_data[dns_data['device_id'] == device_id]['hostname'].values[0]
-            info = [device_oui, dns, dhcp] # ,disco]
-
+            dns = dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()
+            #print(device_id, dns, sep=';')
+            info = [device_oui] + dns +  [dhcp] # ,disco]
+            #print(info)
+            print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
 
+        for name in self.parent: 
+            self.cluster[self.graph[self.find(name)]] += [self.graph[name]]
+        self.save(save_path)
+        print("cluster built complete!")
 
     def display(self):
-        cluster = defaultdict(list)
-        for name in self.parent: 
-            cluster[self.graph[self.find(name)]] += [self.graph[name]]
+        cluster = self.cluster
         print("cluster number: ", len(cluster))
         ones = 0
         for k, v in sorted(cluster.items(), key=lambda x:-x[0].times):
             print("cluster:", k.name, "times:", k.times)
+            self.verify(v)
             ones += k.times==1
             for n in v:
                 print(n.name, n.times, end=',') 
             print('\n')
-        print(len(cluster), ones)
+        #print(len(cluster), ones)
 
     def find(self, name):
         if name != self.parent[name]:
@@ -97,12 +107,23 @@ class Graph:
         '''Use tf-idf on oui, dns, dhcp, disco to verify one cluster
            Every node is a document, the whole cluster is a corpus
         '''
+        #print("verifying !")
         dictObj = gensim.corpora.Dictionary([node.device_info for node in cluster])
-        corpus = [dictObj.doc2bow([node.device_info for node in cluster])
+        corpus = [dictObj.doc2bow(node.device_info) for node in cluster]
         tfidf = gensim.models.TfidfModel(corpus) 
         for doc in tfidf[corpus]:
             print([[dictObj[id], np.around(freq, decimals=2)] for id, freq in doc])
         
+
+    def save(self, save_path): 
+        with open(save_path, 'wb') as fp:
+            pickle.dump(self.cluster, fp)
+        print("cluster saved!")
+
+    def load(self, load_path):
+        with open(load_path, 'rb') as fp:
+            self.cluster = pickle.load(fp)
+        print("cluster loaded!")
 
 
 class Node:

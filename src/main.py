@@ -5,10 +5,12 @@
 
 
 from cluster import * 
+import sys
 
 DATA_PATH = '../data/device.csv'
-
+DNS_PATH = '../data/dns.csv'
+SAVE_PATH = '../data/cluster.pickle'
 if __name__ == '__main__':
-   cluster = Graph(DATA_PATH) 
+   cluster = Graph(DATA_PATH, DNS_PATH, SAVE_PATH, eval(sys.argv[1])) 
 
     

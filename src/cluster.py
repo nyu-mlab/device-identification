@@ -36,7 +36,7 @@ class Graph:
         self.prob = {}
         self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
-        self.graph_prob()
+        self.graph_prob(FIELDS[2])
 
     def read_data(self, data_path, dns_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 
@@ -57,11 +57,12 @@ class Graph:
             for c in ('name', 'device_type', 'manufacturer'):
                 if disco_dict.get(c):
                     disco += [disco_dict.get(c)]
-            info = {FIELDS[2]: device_oui, FIELDS[3]: dhcp + FIELDS[4]:disco , 'dns': dns} 
+            info = {FIELDS[2]: device_oui, FIELDS[3]: dhcp , FIELDS[4]: ' '.join(disco), 'dns': ' '.join(dns)} 
             #print(info)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
             self.device_num += 1
+            #if i == 10: break
 
         for name in self.parent: 
             self.cluster[self.graph[self.find(name)]] += [self.graph[name]]
@@ -130,29 +131,32 @@ class Graph:
             print('\n')
 
     def graph_prob(self, feat):
-        p_device = {name: node.times / self.device_num for name, node in self.graph.items()}  
+        device_num = sum(self.graph[node].times for node in self.graph)
+        p_device = {name: node.times / device_num  for name, node in self.graph.items()}  
         num_feat = defaultdict(int)
         for _, node in self.graph.items():
-            for k, v in node.device_info[feat]: 
+            for k, v in node.device_info[feat].items(): 
                 num_feat[k] += v
         num_all = sum(v for k, v in num_feat.items() if k!= '')
         p_feat = {k: v/ num_all for k, v in num_feat.items() if k!= ''}
-        prob = defaultdict(defaultdict(float))
+        prob = defaultdict(defaultdict)
         for device in p_device:   
-            for feat in p_feat:   
-                cond = self.graph[device].prob(feat)
-                prob[feat][device] = cond[device][feat] * p_device[device] / p_feat[feat] # Bayes 
-        
-        pprint(prob)
+            cond = self.graph[device].prob(feat)
+            for f_name in p_feat:   
+                prob[f_name][device] = cond[device][f_name] * p_device[device] / p_feat[f_name] # Bayes 
+        for k in prob:
+            prob[k] = sorted(prob[k].items(), key=lambda x: -x[1])
+        #pprint(prob)
 
     def save(self, save_path): 
         with open(save_path, 'wb') as fp:
-            pickle.dump(self.cluster, fp)
+            pickle.dump({'cluster': self.cluster, 'graph': self.graph} , fp)
         print("cluster saved!")
 
     def load(self, load_path):
         with open(load_path, 'rb') as fp:
-            self.cluster = pickle.load(fp)
+            data = pickle.load(fp)
+            self.cluster, self.graph = data['cluster'], data['graph']
         print("cluster loaded!")
 
 
@@ -168,13 +172,19 @@ class Node:
         self.name = self.name.lower() 
 
     def add_info(self, device_info):
-        for k, v in device_info:
-            self.device_info[k].update(v)
+        #print(device_info)
+        for k, v in device_info.items():
+            self.device_info[k].update([v])
 
     def prob(self, feat):
-        num = sum(v for k, v in self.device_info[feat] if k != '')  
-        p_cond = {k: v / num for k, v in self.device_info[feat] if k != ''}  
-        return {self.name: p_cond}
+        num = sum(v for k, v in self.device_info[feat].items() if k != '')  
+        p_cond = defaultdict(int)
+        for k, v in self.device_info[feat].items():
+            if k != '': p_cond[k] =  v / num   
+        ret = {}
+        ret[self.name] = p_cond
+        print(self.name, sorted(p_cond.items(), key=lambda x: -x[1]))
+        return ret
 
 
 

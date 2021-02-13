@@ -37,6 +37,7 @@ class Graph:
         self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
         self.graph_prob(FIELDS[2])
+        self.bayes_verify(FIELDS[2])
 
     def read_data(self, data_path, dns_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 
@@ -114,7 +115,7 @@ class Graph:
                     return 
 
                     
-    def verify(self, cluster):
+    def tf_idf_veriy(self, cluster):  # for one cluster
         '''Use tf-idf on oui, dns, dhcp, disco to verify one cluster
            Every node is a document, the whole cluster is a corpus
         '''
@@ -131,22 +132,41 @@ class Graph:
             print('\n')
 
     def graph_prob(self, feat):
-        device_num = sum(self.graph[node].times for node in self.graph)
-        p_device = {name: node.times / device_num  for name, node in self.graph.items()}  
+        graph = {k:v for k, v in self.graph.items() if v.times >= 10}
+        device_num = sum(graph[node].times for node in graph)
+        p_device = {name: node.times / device_num  for name, node in graph.items()}  
         num_feat = defaultdict(int)
-        for _, node in self.graph.items():
+        for _, node in graph.items():
             for k, v in node.device_info[feat].items(): 
                 num_feat[k] += v
         num_all = sum(v for k, v in num_feat.items() if k!= '')
         p_feat = {k: v/ num_all for k, v in num_feat.items() if k!= ''}
         prob = defaultdict(defaultdict)
         for device in p_device:   
-            cond = self.graph[device].prob(feat)
+            cond = graph[device].prob(feat)
             for f_name in p_feat:   
                 prob[f_name][device] = cond[device][f_name] * p_device[device] / p_feat[f_name] # Bayes 
+                #if prob[f_name][device] > 1: print( prob[f_name][device], cond[device][f_name] ,  p_device[device] ,  p_feat[f_name]) # Bayes  
         for k in prob:
             prob[k] = sorted(prob[k].items(), key=lambda x: -x[1])
+        self.feat2device = prob
         #pprint(prob)
+
+    def bayes_verify(self, feat):  #for one cluster
+        for center in self.cluster:
+            for node in self.cluster[center]:
+                for info in node.device_info[feat]:
+                    #print(self.feat2device[info])
+                    if self.feat2device[info] and center.name != self.feat2device[info][0][0] and (len(self.cluster[center])==1 or center.name != node.name):
+                        print(center.name,  '----->' , node.name, '|||', info , self.feat2device[info][0])
+    
+    def verify(self):
+        '''bayes & tf-idf
+        '''
+        
+
+
+
 
     def save(self, save_path): 
         with open(save_path, 'wb') as fp:
@@ -183,7 +203,7 @@ class Node:
             if k != '': p_cond[k] =  v / num   
         ret = {}
         ret[self.name] = p_cond
-        print(self.name, sorted(p_cond.items(), key=lambda x: -x[1]))
+        #print(self.name, sorted(p_cond.items(), key=lambda x: -x[1]))
         return ret
 
 

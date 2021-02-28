@@ -22,6 +22,7 @@ from editdistance import distance
 from pprint import pprint
 import numpy as np
 import gensim
+from tabulate import tabulate
 
 DIST = 1
 FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info']
@@ -36,8 +37,9 @@ class Graph:
         self.prob = {}
         self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
-        self.graph_prob(FIELDS[2])
-        self.bayes_verify(FIELDS[2])
+        idx = 3
+        self.graph_prob(FIELDS[idx])
+        self.verify(FIELDS[idx])
 
     def read_data(self, data_path, dns_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 
@@ -132,39 +134,46 @@ class Graph:
             print('\n')
 
     def graph_prob(self, feat):
-        graph = {k:v for k, v in self.graph.items() if v.times >= 10}
+        graph = {k:v for k, v in self.graph.items() if v.times >= 10 and k not in ('', '?', '??', '???')}
         device_num = sum(graph[node].times for node in graph)
         p_device = {name: node.times / device_num  for name, node in graph.items()}  
         num_feat = defaultdict(int)
         for _, node in graph.items():
             for k, v in node.device_info[feat].items(): 
                 num_feat[k] += v
-        num_all = sum(v for k, v in num_feat.items() if k!= '')
-        p_feat = {k: v/ num_all for k, v in num_feat.items() if k!= ''}
+        num_all = sum(v for k, v in num_feat.items() )
+        p_feat = {k: v/ num_all for k, v in num_feat.items() }
         prob = defaultdict(defaultdict)
         for device in p_device:   
             cond = graph[device].prob(feat)
             for f_name in p_feat:   
                 prob[f_name][device] = cond[device][f_name] * p_device[device] / p_feat[f_name] # Bayes 
-                #if prob[f_name][device] > 1: print( prob[f_name][device], cond[device][f_name] ,  p_device[device] ,  p_feat[f_name]) # Bayes  
+        
         for k in prob:
             prob[k] = sorted(prob[k].items(), key=lambda x: -x[1])
         self.feat2device = prob
         #pprint(prob)
+        #print('----------')
+        #pprint( sum(v for k,v in p_feat.items()))
+        #pprint( sum(v for k,v in p_device.items()))
 
-    def bayes_verify(self, feat):  #for one cluster
-        for center in self.cluster:
-            for node in self.cluster[center]:
-                for info in node.device_info[feat]:
-                    #print(self.feat2device[info])
-                    if self.feat2device[info] and center.name != self.feat2device[info][0][0] and (len(self.cluster[center])==1 or center.name != node.name):
-                        print(center.name,  '----->' , node.name, '|||', info , self.feat2device[info][0])
+    def bayes_verify(self, feat, center, cluster):  #for one cluster,{center: cluster}
+        for node in cluster:
+            info = node.device_info[feat].most_common(2)
+            info = info[1][0] if not info[0][0] and len(info)==2 else info[0][0]
+            table = []
+            if self.feat2device[info] and center.name != self.feat2device[info][0][0] and (len(self.cluster[center])==1 or center.name != node.name):
+                table += [[ center.name,  node.name, node.times , info , self.feat2device[info][0] ]] 
+            return table
     
-    def verify(self):
+    def verify(self, feat):
         '''bayes & tf-idf
         '''
-        
-
+        print('verifying!')
+        table = []
+        for center in self.cluster:  
+            table += self.bayes_verify(feat, center,  self.cluster[center])
+        print(tabulate(table, headers= ["cluster","node","times", "info", "infer"]))
 
 
 
@@ -197,13 +206,15 @@ class Node:
             self.device_info[k].update([v])
 
     def prob(self, feat):
-        num = sum(v for k, v in self.device_info[feat].items() if k != '')  
+        num = sum(v for k, v in self.device_info[feat].items())  
+        #num = sum(v for k, v in self.device_info[feat].items() if k != '')  
         p_cond = defaultdict(int)
         for k, v in self.device_info[feat].items():
-            if k != '': p_cond[k] =  v / num   
+            #if k != '': p_cond[k] =  v / num   
+            p_cond[k] =  v / num   
         ret = {}
         ret[self.name] = p_cond
-        #print(self.name, sorted(p_cond.items(), key=lambda x: -x[1]))
+        #print(self.name, [(e[0], round(e[1], 2)) for e in sorted(p_cond.items(), key=lambda x: -x[1])])
         return ret
 
 

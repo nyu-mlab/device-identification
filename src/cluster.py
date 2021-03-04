@@ -25,7 +25,7 @@ import gensim
 from tabulate import tabulate
 
 DIST = 1
-FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info']
+FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
 
 
 class Graph:
@@ -37,9 +37,9 @@ class Graph:
         self.prob = {}
         self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
-        idx = 3
+        idx = 5
         self.graph_prob(FIELDS[idx])
-        self.verify(FIELDS[idx])
+        #self.verify(FIELDS[idx])
 
     def read_data(self, data_path, dns_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 
@@ -52,15 +52,15 @@ class Graph:
             name = device_df[FIELDS[0]][i]
             device_id = device_df[FIELDS[1]][i]
             device_oui = device_df[FIELDS[2]][i]
-            dhcp = device_df[FIELDS[3]][i]
-            dns = dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()
+            dhcp = device_df[FIELDS[3]][i].split('-')
+            dns = [e.split('.')[0] for e in dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()]
             #print(device_id, dns, sep=';')
             disco_dict = eval(device_df[FIELDS[4]][i])
             disco = []
             for c in ('name', 'device_type', 'manufacturer'):
                 if disco_dict.get(c):
                     disco += [disco_dict.get(c)]
-            info = {FIELDS[2]: device_oui, FIELDS[3]: dhcp , FIELDS[4]: ' '.join(disco), 'dns': ' '.join(dns)} 
+            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns} # all values are lists
             #print(info)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
@@ -135,8 +135,9 @@ class Graph:
 
     def graph_prob(self, feat):
         graph = {k:v for k, v in self.graph.items() if v.times >= 10 and k not in ('', '?', '??', '???')}
-        device_num = sum(graph[node].times for node in graph)
-        p_device = {name: node.times / device_num  for name, node in graph.items()}  
+        #device_num = sum(graph[node].times for node in graph)
+        device_num = sum(node.feat_cnt[feat] for _, node in graph.items()) 
+        p_device = {name: node.feat_cnt[feat] / device_num  for name, node in graph.items()}  
         num_feat = defaultdict(int)
         for _, node in graph.items():
             for k, v in node.device_info[feat].items(): 
@@ -152,7 +153,7 @@ class Graph:
         for k in prob:
             prob[k] = sorted(prob[k].items(), key=lambda x: -x[1])
         self.feat2device = prob
-        #pprint(prob)
+        pprint(prob)
         #print('----------')
         #pprint( sum(v for k,v in p_feat.items()))
         #pprint( sum(v for k,v in p_device.items()))
@@ -160,6 +161,7 @@ class Graph:
     def bayes_verify(self, feat, center, cluster):  #for one cluster,{center: cluster}
         for node in cluster:
             info = node.device_info[feat].most_common(2)
+            if len(info) == 0: return []
             info = info[1][0] if not info[0][0] and len(info)==2 else info[0][0]
             table = []
             if self.feat2device[info] and center.name != self.feat2device[info][0][0] and (len(self.cluster[center])==1 or center.name != node.name):
@@ -194,6 +196,7 @@ class Node:
         self.name = name
         self.times = times
         self.device_info = {k: Counter() for k in device_info}
+        self.feat_cnt = Counter()
         self.add_info(device_info)
         #self.preprocess()
 
@@ -203,10 +206,12 @@ class Node:
     def add_info(self, device_info):
         #print(device_info)
         for k, v in device_info.items():
-            self.device_info[k].update([v])
+            self.device_info[k].update(v)
+            self.feat_cnt[k] += len(v)
 
     def prob(self, feat):
-        num = sum(v for k, v in self.device_info[feat].items())  
+        num = self.feat_cnt[feat]
+        #num = sum(v for k, v in self.device_info[feat].items())  
         #num = sum(v for k, v in self.device_info[feat].items() if k != '')  
         p_cond = defaultdict(int)
         for k, v in self.device_info[feat].items():

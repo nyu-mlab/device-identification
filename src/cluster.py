@@ -23,6 +23,7 @@ from pprint import pprint
 import numpy as np
 import gensim
 from tabulate import tabulate
+import tldextract
 
 DIST = 1
 FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
@@ -38,8 +39,9 @@ class Graph:
         self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
         idx = 5
-        self.graph_prob(FIELDS[idx])
-        #self.verify(FIELDS[idx])
+        feat = FIELDS[idx]
+        self.graph_prob(feat)
+        self.verify(feat, 'tf_idf_veriy')
 
     def read_data(self, data_path, dns_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 
@@ -53,7 +55,7 @@ class Graph:
             device_id = device_df[FIELDS[1]][i]
             device_oui = device_df[FIELDS[2]][i]
             dhcp = device_df[FIELDS[3]][i].split('-')
-            dns = [e.split('.')[0] for e in dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()]
+            dns = [tldextract.extract(e).domain for e in dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()]
             #print(device_id, dns, sep=';')
             disco_dict = eval(device_df[FIELDS[4]][i])
             disco = []
@@ -116,22 +118,6 @@ class Graph:
                     self.union(name, name_)
                     return 
 
-                    
-    def tf_idf_veriy(self, cluster):  # for one cluster
-        '''Use tf-idf on oui, dns, dhcp, disco to verify one cluster
-           Every node is a document, the whole cluster is a corpus
-        '''
-        #print("verifying !")
-        name = [node.name for node in cluster]
-        dictObj = gensim.corpora.Dictionary([gensim.utils.simple_preprocess(node.device_info, min_len=4) for node in cluster])
-        corpus = [dictObj.doc2bow(gensim.utils.simple_preprocess(node.device_info, min_len=4)) for node in cluster]
-        tfidf = gensim.models.TfidfModel(corpus) 
-        for doc_idx in range(len(name)):
-            doc = tfidf[corpus][doc_idx]
-            print(name[doc_idx], end=":")
-            for id, freq in sorted(doc, key=lambda x:-x[1])[:5]:
-                print(dictObj[id], np.around(freq, decimals=2), end=',')
-            print('\n')
 
     def graph_prob(self, feat):
         graph = {k:v for k, v in self.graph.items() if v.times >= 10 and k not in ('', '?', '??', '???')}
@@ -153,10 +139,39 @@ class Graph:
         for k in prob:
             prob[k] = sorted(prob[k].items(), key=lambda x: -x[1])
         self.feat2device = prob
-        pprint(prob)
+        #pprint(prob)
         #print('----------')
         #pprint( sum(v for k,v in p_feat.items()))
         #pprint( sum(v for k,v in p_device.items()))
+
+    def tf_idf_veriy(self, feat , center, cluster):  # for one cluster
+        '''Use tf-idf on oui, dns, dhcp, disco to verify one cluster
+           Every node is a document, the whole cluster is a corpus
+        '''
+        #name = [node.name for node in cluster if len(node.device_info[feat])!=0]
+        #dictObj = gensim.corpora.Dictionary([gensim.utils.simple_preprocess(node.device_info, min_len=4) for node in cluster])
+
+        docu = []; name = []
+        for node in cluster:
+            cur = []
+            if len(node.device_info[feat]) != 0: name += [node.name]
+            for k, v in node.device_info[feat].items():
+                cur += [k]*v
+            docu.append(cur)
+
+        dictObj = gensim.corpora.Dictionary(docu)
+        corpus = [dictObj.doc2bow(e) for e in docu]
+        #corpus = [dictObj.doc2bow([k]*v) for node in cluster for k, v in node.device_info[feat].items()]
+        #corpus = [dictObj.doc2bow(gensim.utils.simple_preprocess(node.device_info, min_len=4)) for node in cluster]
+        tfidf = gensim.models.TfidfModel(corpus) 
+        #print(name, len(name), len(tfidf[corpus]), len(corpus))
+        for doc_idx in range(len(name)):
+            doc = tfidf[corpus[doc_idx]]
+            print(name[doc_idx], end=":")
+            for id, freq in sorted(doc, key=lambda x:-x[1])[:5]:
+                print(dictObj[id], np.around(freq, decimals=3), end=',')
+            print('\n')
+        return []
 
     def bayes_verify(self, feat, center, cluster):  #for one cluster,{center: cluster}
         for node in cluster:
@@ -168,13 +183,14 @@ class Graph:
                 table += [[ center.name,  node.name, node.times , info , self.feat2device[info][0] ]] 
             return table
     
-    def verify(self, feat):
-        '''bayes & tf-idf
+    def verify(self, feat, method):
+        '''method: bayes & tf-idf
         '''
         print('verifying!')
         table = []
         for center in self.cluster:  
-            table += self.bayes_verify(feat, center,  self.cluster[center])
+            #table += self.bayes_verify(feat, center,  self.cluster[center])
+            table += getattr(self, method)(feat, center,  self.cluster[center])
         print(tabulate(table, headers= ["cluster","node","times", "info", "infer"]))
 
 

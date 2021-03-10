@@ -10,7 +10,7 @@
 
 #### Experiments
 
-#####1. Device_vendor
+##### 1. Device_vendor
 
 | Feature | Method | Accuracy |
 | :-----: | :----: | :------: |

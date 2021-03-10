@@ -38,10 +38,12 @@ class Graph:
         self.prob = {}
         self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
-        idx = 5
+        '''
+        idx = 2
         feat = FIELDS[idx]
         self.graph_prob(feat)
         self.verify(feat, 'tf_idf_veriy')
+        '''
 
     def read_data(self, data_path, dns_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 

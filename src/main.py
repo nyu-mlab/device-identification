@@ -16,6 +16,9 @@ FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco
 if __name__ == '__main__':
    graphObj = Graph(DATA_PATH, DNS_PATH, SAVE_PATH, eval(sys.argv[1])) 
    dataObj = Dataset(graphObj.graph)
-   dataObj.train_test(FIELDS[2], 'bayes', 0.8)
+   tpb = set(dataObj.train_test(FIELDS[2], 'bayes', 0.8))
+   tpt = set(dataObj.train_test(FIELDS[5], 'tf_idf', 0.8))
+   diffb , difft = len(tpb - tpt), len(tpt - tpb)
+   print(diffb / len(tpb), difft / len(tpt))
 
     

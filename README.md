@@ -13,8 +13,8 @@
 
 ##### 1. Device_vendor
 
-| Feature | Method | Accuracy |
-| :-----: | :----: | :------: |
-|   OUI   | Bayes  |   77%    |
-|   DNS   | tf-idf |   18%    |
+| Feature | Method | Avg. Acc | std  |           Config           |
+| :-----: | :----: | :------: | :--: | :------------------------: |
+|   OUI   | Bayes  |   75%    | 0.5% | Random 10% train, 10 times |
+|   DNS   | tf-idf |   18%    |      |                            |
 

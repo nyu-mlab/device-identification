@@ -36,7 +36,10 @@ class Graph:
         self.device_num = 0
         self.cluster = defaultdict(list)
         self.prob = {}
-        self.read_data(data_path, dns_path, save_path, rebuild)
+        self.data_path = data_path
+        self.dns_path = dns_path
+        self.save_path = save_path
+        #self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
         '''
         idx = 2
@@ -51,7 +54,7 @@ class Graph:
             return 
         device_df = pd.read_csv(data_path).fillna('')
         dns_data = pd.read_csv(dns_path).fillna('')
-        
+        raw_data = [] 
         for i in range(len(device_df)):
             name = device_df[FIELDS[0]][i]
             device_id = device_df[FIELDS[1]][i]
@@ -69,12 +72,16 @@ class Graph:
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
             self.device_num += 1
+            info[FIELDS[0]] = name; info[FIELDS[1]] = device_id
+            raw_data += [info]
             #if i == 10: break
 
         for name in self.parent: 
             self.cluster[self.graph[self.find(name)]] += [self.graph[name]]
-        self.save(save_path)
+        #self.save(save_path)
         print("cluster built complete!")
+        # return raw data
+        return raw_data 
 
     def display(self):
         cluster = self.cluster

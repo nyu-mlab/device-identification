@@ -1,43 +1,64 @@
-import pandas as pd
-from collections import Counter
-from editdistance import distance
-
-device_df = pd.read_csv('../data/device.csv').fillna('')
-fields = device_df.columns[1:5]
-#print(fields)
-#print("data:", len(device_df))
-#for i in range(4):
-#    print(fields[i], len(Counter(device_df[fields[i]])))
-i = 2
-#print(fields[i], len(Counter(device_df[fields[i]])))
-for j in range(len(device_df[fields[i]])):
-    device_df[fields[i]][j] = device_df[fields[i]][j].lower()
-#print(fields[i], len(Counter(device_df[fields[i]])))
-#print(fields[i], Counter(device_df[fields[i]]))
-
-cnt = Counter(device_df[fields[i]])
-print(fields[i], len(cnt))
-change = {}
-thre = 2
-standard = 10
-temp = []
-for k, v in cnt.items():
-    if v >= standard: 
-        temp += [k]    
-
-for k, v in list(cnt.items()):
-    if v >= standard: continue
-    for s in temp:
-        if distance(s, k) <= thre: 
-            change[k] = (s, v)
-            cnt[s] += cnt[k]
-            del cnt[k]
-            break
-
-#print(fields[i], len(cnt))
-print(fields[i], cnt)
-#print(change)
+# Taiyu Long@mLab
+# 03/17/2021 
+# main script to run model on test set
 
 
 
+import pickle
+from dataset import *
+from pprint import pprint
+from tabulate import tabulate
+from collections import defaultdict
 
+DATA_PATH = '../data/test/device.csv'
+DNS_PATH = '../data/test/dns.csv'
+SAVE_PATH = '../data/test/raw_data.pickle'
+TFIDF_PATH = '../data/model/tf_idf'
+BAYES_PATH = '../data/model/bayes'
+
+BAYES_OUT = '../results/oui+bayes.out'
+
+FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
+
+if __name__ == '__main__':
+
+   with open(SAVE_PATH, 'rb') as fp:
+        data = pickle.load(fp)
+   with open(TFIDF_PATH, 'rb') as fp:
+        tfidf = pickle.load(fp)
+   with open(BAYES_PATH, 'rb') as fp:
+        bayes = pickle.load(fp)
+    
+   ret_bayes = [] ; ret_tfidf= []  
+   #cnt_bayes = cnt_tfidf = 0
+   data_len = len(data)
+   for i in range(data_len): 
+        cur = data[i]
+        device_id = cur[FIELDS[1]]
+        expected = cur[FIELDS[0]].lower()
+        oui = cur[FIELDS[2]][0]
+        dns = cur[FIELDS[5]]
+
+        #for dns
+        inferred = defaultdict(int)
+        inferred[''] = 0
+        for e in dns:
+            for oui, f in tfidf[e]:
+                #print(oui,f)
+                inferred[oui] += f
+        inferred = sorted(inferred.items(), key=lambda x: -x[1])[0][0]        
+        info = [device_id, expected, inferred, len(dns), int(expected==inferred)] 
+        ret_tfidf += [info] 
+        '''
+        if oui in bayes:
+            inferred = bayes[oui][0][0]
+        else:
+            inferred = ''
+        info = [device_id, expected, inferred, oui ,int(expected==inferred)] 
+        ret_bayes += [info]
+        '''
+   print(tabulate(ret_tfidf, headers= ["device_id","expected_vendor","inferred_vendor", "dns_number", "is_correct"]))
+
+
+   #dataObj = Dataset(graphObj.graph)
+   #dataObj.train_test(FIELDS[5], 'tf_idf', 0.8)

@@ -5,7 +5,9 @@
 
 
 import pickle
+import csv 
 from dataset import *
+from utils import *
 from pprint import pprint
 from tabulate import tabulate
 from collections import defaultdict
@@ -16,7 +18,10 @@ SAVE_PATH = '../data/test/raw_data.pickle'
 TFIDF_PATH = '../data/model/tf_idf'
 BAYES_PATH = '../data/model/bayes'
 
-BAYES_OUT = '../results/oui+bayes.out'
+TEST_BAYES = '../results/oui+bayes.csv'
+TEST_TFIDF = '../results/oui+tfidf.csv'
+
+#BAYES_OUT = '../results/oui+bayes.out'
 
 FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
 
@@ -38,7 +43,7 @@ if __name__ == '__main__':
         expected = cur[FIELDS[0]].lower()
         oui = cur[FIELDS[2]][0]
         dns = cur[FIELDS[5]]
-
+        
         #for dns
         inferred = defaultdict(int)
         inferred[''] = 0
@@ -49,16 +54,26 @@ if __name__ == '__main__':
         inferred = sorted(inferred.items(), key=lambda x: -x[1])[0][0]        
         info = [device_id, expected, inferred, len(dns), int(expected==inferred)] 
         ret_tfidf += [info] 
-        '''
+        # for oui
         if oui in bayes:
             inferred = bayes[oui][0][0]
         else:
             inferred = ''
         info = [device_id, expected, inferred, oui ,int(expected==inferred)] 
         ret_bayes += [info]
-        '''
-   print(tabulate(ret_tfidf, headers= ["device_id","expected_vendor","inferred_vendor", "dns_number", "is_correct"]))
 
+   #print(tabulate(ret_tfidf, headers= ["device_id","expected_vendor","inferred_vendor", "dns_number", "is_correct"]))
+   with open(TEST_BAYES, mode='w') as fp:
+        #csv_writer = csv.writer(fp, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(fp) 
+        csv_writer.writerow(["device_id","expected_vendor","inferred_vendor", "data_len", "is_same"])
+        csv_writer.writerow(ret_bayes)
+
+   with open(TEST_TFIDF, mode='w') as fp:
+        #csv_writer = csv.writer(fp, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(fp) 
+        csv_writer.writerow(["device_id","expected_vendor","inferred_vendor", "dns_number", "is_same"])
+        csv_writer.writerow(ret_tfidf)
 
    #dataObj = Dataset(graphObj.graph)
    #dataObj.train_test(FIELDS[5], 'tf_idf', 0.8)

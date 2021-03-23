@@ -4,6 +4,9 @@ Tom Long@mLab
 
 Dataset to train and test different methods
 Provide data with gt, which appear for many times
+
+03/22: Try BoW with softmax
+
 '''
 
 import random
@@ -111,7 +114,7 @@ class Dataset:
         model = self.train(train, method)
         ret, tp = self.test(test, method, model)
         print("Using {} on {}, acc: {}.".format(method, feat, ret))
-        return model
+        return model, ret
 
     def split_data(self, feat, percent):
         '''percent: percentage of training data

@@ -15,6 +15,6 @@
 
 | Feature | Method | Avg. Acc | std  |           Config           |
 | :-----: | :----: | :------: | :--: | :------------------------: |
-|   OUI   | Bayes  |   75%    | 0.5% | Random 10% train, 10 times |
+|   OUI   | Bayes  |   77%    | 0.3% | Random 10% train, 10 times |
 |   DNS   | tf-idf |   18%    |      |                            |
 

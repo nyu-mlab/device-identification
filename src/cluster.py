@@ -13,6 +13,7 @@
 
 # optimization:
 # 1. when new data comes, match it with cluster by their ranking
+# 2. add manual rule
 
 import os
 import pandas as pd
@@ -24,6 +25,7 @@ import numpy as np
 import gensim
 from tabulate import tabulate
 import tldextract
+from utils import *
 
 DIST = 1
 FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
@@ -56,7 +58,7 @@ class Graph:
         dns_data = pd.read_csv(dns_path).fillna('')
         raw_data = [] 
         for i in range(len(device_df)):
-            name = device_df[FIELDS[0]][i]
+            name = manual_rule(device_df[FIELDS[0]][i].lower())
             device_id = device_df[FIELDS[1]][i]
             device_oui = device_df[FIELDS[2]][i]
             dhcp = device_df[FIELDS[3]][i].split('-')
@@ -78,7 +80,7 @@ class Graph:
 
         for name in self.parent: 
             self.cluster[self.graph[self.find(name)]] += [self.graph[name]]
-        #self.save(save_path)
+        self.save(save_path)
         print("cluster built complete!")
         # return raw data
         return raw_data 
@@ -111,7 +113,6 @@ class Graph:
 
 
     def connect(self, name, info):
-        name = name.lower()
         if name in self.graph:
             self.graph[name].times += 1
             self.graph[name].add_info(info)

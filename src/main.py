@@ -26,8 +26,17 @@ if __name__ == '__main__':
    dataObj = Dataset(graphObj.graph)
    ret = []
    if sys.argv[2] == 'tfidf': 
-        model, acc = dataObj.train_test(FIELDS[5], 'tf_idf', 0.8)
-        dataObj.save_model(model, MODEL_PATH+'tf_idf')
+        #model, acc = dataObj.bow_softmax(FIELDS[5], 0.2)
+        #model, acc = dataObj.train_test(FIELDS[5], 'tf_idf', 0.2)
+        #for _ in range(10):
+        #    ret += [dataObj.bow_softmax(FIELDS[5], 0.2)]
+        #dataObj.save_model(model, MODEL_PATH+'tf_idf')
+        #print(np.mean(ret), np.std(ret))
+        #dataObj.save_model(model, MODEL_PATH+'bow_lr')
+        dns_data = dataObj.load(MODEL_PATH + 'bow_lr') 
+        oui_model = dataObj.load(MODEL_PATH + 'bayes')
+        print(dataObj.mix_model(dns_data, oui_model)) 
+
    if sys.argv[2] == 'bayes': 
         for _ in range(10):
             model, acc = dataObj.train_test(FIELDS[2], 'bayes', 0.1)

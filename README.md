@@ -13,8 +13,13 @@
 
 ##### 1. Device_vendor
 
-| Feature | Method | Avg. Acc | std  |           Config           |
-| :-----: | :----: | :------: | :--: | :------------------------: |
-|   OUI   | Bayes  |   77%    | 0.3% | Random 10% train, 10 times |
-|   DNS   | tf-idf |   18%    |      |                            |
+| Feature | Method  | Avg. Acc | std  |               Config                |
+| :-----: | :-----: | :------: | :--: | :---------------------------------: |
+|   OUI   |  Bayes  |   77%    | 0.3% |     Random 10% train, 10 times      |
+|   DNS   | tf-idf  |   18%    |      |                                     |
+|   DNS   | bow+NB  |   60%    |      |              80% train              |
+|   DNS   | bow+LR  |   74%    |  1%  |              80% train              |
+|   DNS   | bow+MLP |   69%    |      |              80% train              |
+|   DNS   | bow+LR  |   68%    |      |              20% train              |
+| DNS+OUI | Voting  | **80%**  |      | all training data with both oui&dns |
 

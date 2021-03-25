@@ -223,14 +223,12 @@ class Node:
         self.times = times
         self.device_info = {k: Counter() for k in device_info}
         self.feat_cnt = Counter()
+        self.raw_data = [] # for dns mainly 
         self.add_info(device_info)
-        #self.preprocess()
-
-    def preprocess(self):
-        self.name = self.name.lower() 
 
     def add_info(self, device_info):
         #print(device_info)
+        self.raw_data.append(device_info)
         for k, v in device_info.items():
             self.device_info[k].update(v)
             self.feat_cnt[k] += len(v)

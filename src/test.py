@@ -11,15 +11,18 @@ from utils import *
 from pprint import pprint
 from tabulate import tabulate
 from collections import defaultdict
+import tldextract
 
 DATA_PATH = '../data/test/device.csv'
 DNS_PATH = '../data/test/dns.csv'
 SAVE_PATH = '../data/test/raw_data.pickle'
 TFIDF_PATH = '../data/model/tf_idf'
+LR_PATH = '../data/model/bow_lr'
 BAYES_PATH = '../data/model/bayes'
 
 TEST_BAYES = '../results/oui+bayes.csv'
 TEST_TFIDF = '../results/oui+tfidf.csv'
+TEST_MIX = '../results/oui+mix.csv'
 
 #BAYES_OUT = '../results/oui+bayes.out'
 
@@ -29,21 +32,48 @@ if __name__ == '__main__':
 
    with open(SAVE_PATH, 'rb') as fp:
         data = pickle.load(fp)
-   with open(TFIDF_PATH, 'rb') as fp:
-        tfidf = pickle.load(fp)
+   with open(LR_PATH, 'rb') as fp:
+        dns_data = pickle.load(fp)
    with open(BAYES_PATH, 'rb') as fp:
-        bayes = pickle.load(fp)
-    
-   ret_bayes = [] ; ret_tfidf= []  
+        oui_model = pickle.load(fp)
+
+   dns_model,  dict_x, dict_y, = dns_data['model'],  dns_data['dx'], dns_data['dy']
+   num2name = {v:k for k,v in dict_y.items()} 
+   num2name[-1] = ''
+   ret_bayes = [] ; ret_tfidf= []; ret_mix = []
    #cnt_bayes = cnt_tfidf = 0
    data_len = len(data)
    for i in range(data_len): 
         cur = data[i]
         device_id = cur[FIELDS[1]]
-        expected = cur[FIELDS[0]].lower()
+        expected = manual_rule(cur[FIELDS[0]].lower())
         oui = cur[FIELDS[2]][0]
         dns = cur[FIELDS[5]]
-        
+
+        # mix model
+        featLen = len(dict_x)
+        dns_one_hot = [0] * featLen
+        oui_ret = [0, -1]; lr_ret = [0, -1] 
+        for e in dns: 
+            domain = tldextract.extract(e).domain
+            if domain in dict_x: 
+                dns_one_hot[dict_x[domain]] = 1
+        #if len(oui) == 0 and len(dns) == 0: missing += 1; continue
+        if oui in oui_model:
+            name, prob = oui_model[oui][0]
+            oui_ret = [prob, dict_y[name]] 
+        prob = dns_model.predict_proba([dns_one_hot])[0]
+        pred_class = dns_model.predict([dns_one_hot])[0]
+        #print(prob, pred_class)
+        if pred_class >= len(prob) or oui_ret[0] >= prob[pred_class]:
+            inferred = oui_ret[1]
+        else: inferred = pred_class
+        inferred = num2name[inferred]
+        info = [device_id, expected, inferred,  is_equivalent(inferred, expected)] 
+        ret_mix += [info]
+        #print("processing {}-th data".format(i), end="\r") 
+        #if i ==100: break 
+        ''' 
         #for dns
         inferred = defaultdict(int)
         inferred[''] = 0
@@ -61,19 +91,26 @@ if __name__ == '__main__':
             inferred = ''
         info = [device_id, expected, inferred, oui ,int(expected==inferred)] 
         ret_bayes += [info]
+        '''
 
-   #print(tabulate(ret_tfidf, headers= ["device_id","expected_vendor","inferred_vendor", "dns_number", "is_correct"]))
+   print(tabulate(ret_mix, headers= ["device_id","expected_vendor","inferred_vendor",  "is_same"]))
+   '''
    with open(TEST_BAYES, mode='w') as fp:
-        #csv_writer = csv.writer(fp, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(fp, delimiter='/n', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer = csv.writer(fp) 
         csv_writer.writerow(["device_id","expected_vendor","inferred_vendor", "data_len", "is_same"])
         csv_writer.writerow(ret_bayes)
 
    with open(TEST_TFIDF, mode='w') as fp:
-        #csv_writer = csv.writer(fp, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(fp, delimiter='/n', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer = csv.writer(fp) 
         csv_writer.writerow(["device_id","expected_vendor","inferred_vendor", "dns_number", "is_same"])
         csv_writer.writerow(ret_tfidf)
+    '''
+   with open(TEST_MIX, mode='w') as fp:
+        csv_writer = csv.writer(fp, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer.writerow(["device_id","expected_vendor","inferred_vendor",  "is_same"])
+        csv_writer.writerow(ret_mix)
 
    #dataObj = Dataset(graphObj.graph)
    #dataObj.train_test(FIELDS[5], 'tf_idf', 0.8)

@@ -8,6 +8,7 @@
 | 01/25/2021 |   1.try unsupervised method 2.set up meeting every Monday    |
 | 02/01/2021 |      1.try tfidf on extra infomation 2.try web crawler       |
 | 03/05/2021 |      1.Build training and test set 2.new tf-idf method       |
+| 03/19/2021 |           1.NLP model for dns 2. mix oui+dns model           |
 
 #### Experiments
 

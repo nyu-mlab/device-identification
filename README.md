@@ -9,6 +9,7 @@
 | 02/01/2021 |      1.try tfidf on extra infomation 2.try web crawler       |
 | 03/05/2021 |      1.Build training and test set 2.new tf-idf method       |
 | 03/19/2021 |           1.NLP model for dns 2. mix oui+dns model           |
+| 03/29/2021 |                   1.coner cases 2.new data                   |
 
 #### Experiments
 
@@ -23,4 +24,12 @@
 |   DNS   | bow+MLP |   69%    |      |              80% train              |
 |   DNS   | bow+LR  |   68%    |      |              20% train              |
 | DNS+OUI | Voting  | **80%**  |      | all training data with both oui&dns |
+
+###### 1.1 On "espressif"
+
+| Feature | Method | Avg. Acc |      Config       |
+| :-----: | :----: | :------: | :---------------: |
+| OUI+DNS | Voting |   13%    | all training data |
+|   DNS   |  Bow   |   37%    | all training data |
+|   OUI   | Bayes  |    8%    | all training data |
 

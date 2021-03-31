@@ -147,11 +147,14 @@ class Dataset:
                 if len(info['device_oui']) != 0 and len(info[feat]) != 0:
                     #data_X.update(info[feat])
                     c.update(info[feat])
-                    data_t.append([info[feat], name])
+                    # test on dns+oui
+                    c.update(info['device_oui']) 
+                    #data_t.append([info[feat], name])
+                    data_t.append([info[feat] + info['device_oui'], name])
                     data_oui.append(info['device_oui'][0])
         d = defaultdict(int)
         for k, v in c.items(): 
-            if v>=2: 
+            if v>=1: 
                 one_hot_X.append(k)  
                 #d[v] += 1
         #t = sorted(d.items())
@@ -172,7 +175,7 @@ class Dataset:
         print('Data loaded!')
 
         #classifier = MultinomialNB()
-        classifier = LogisticRegression(C=1.0,solver='lbfgs',multi_class='multinomial')
+        classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial')
         #classifier = Perceptron(tol=1e-3, random_state=0)
         #classifier = xgb.XGBClassifier(max_depth=7, n_estimators=200, colsample_bytree=0.8, 
         #                subsample=0.8, nthread=10, learning_rate=0.1)
@@ -204,6 +207,10 @@ class Dataset:
         pred_class = dns_model.predict(data_X)
         #print(prob[0], pred_class[0])
         oui_get = dns_get = 0
+
+        # probe for espressif
+        probe = 'espressif'
+        probe_num = probe_tp = 0
         for i in range(len(data_X)):
             oui_ret = [0, -1]
             oui = data_oui[i]
@@ -215,13 +222,24 @@ class Dataset:
             #pred_class = dns_model.predict(dns)
             #print(prob, pred_class)
             #print(len(dns_prob[i]), pred_class[i])
+            if name == probe: 
+                probe_num += 1 
+                if pred_class[i] < len(dns_prob[i]):
+                    ret += pred_class[i] == data_y[i]
+                    if pred_class[i] == data_y[i]: probe_tp += 1
+                #ret += oui_ret[1] == data_y[i]
+                #if oui_ret[1] == data_y[i]: probe_tp+=1
+                continue
+
             if pred_class[i] >= len(dns_prob[i]) or oui_ret[0] >= dns_prob[i][pred_class[i]]:
                 ret += oui_ret[1] == data_y[i]
                 oui_get += 1
+                #if name == probe and oui_ret[1] == data_y[i]: probe_tp+=1
             else: 
                 ret += pred_class[i] == data_y[i]
                 dns_get += 1
-        #print(tp)
+                #if name == probe and pred_class[i] == data_y[i]: probe_tp+=1
+        print(probe_tp / probe_num)
         return ret / len(data_X) , oui_get, dns_get
 
 

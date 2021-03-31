@@ -23,13 +23,15 @@
 |   DNS   | bow+LR  |   74%    |  1%  |              80% train              |
 |   DNS   | bow+MLP |   69%    |      |              80% train              |
 |   DNS   | bow+LR  |   68%    |      |              20% train              |
-| DNS+OUI | Voting  | **80%**  |      | all training data with both oui&dns |
+| DNS+OUI | Voting  |   80%    |      | all training data with both oui&dns |
+| DNS+OUI | bow+LR  | **82%**  |      |         concat oui and dns          |
 
 ###### 1.1 On "espressif"
 
-| Feature | Method | Avg. Acc |      Config       |
-| :-----: | :----: | :------: | :---------------: |
-| OUI+DNS | Voting |   13%    | all training data |
-|   DNS   |  Bow   |   37%    | all training data |
-|   OUI   | Bayes  |    8%    | all training data |
+| Feature | Method | Avg. Acc |       Config       |
+| :-----: | :----: | :------: | :----------------: |
+| OUI+DNS | Voting |   13%    | all training data  |
+|   DNS   |  Bow   |   37%    | all training data  |
+|   OUI   | Bayes  |    8%    | all training data  |
+| OUI+DNS |  Bow   | **45%**  | concat oui and dns |
 

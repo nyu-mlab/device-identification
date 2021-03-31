@@ -25,15 +25,16 @@ if __name__ == '__main__':
    #print(raw_data)
    dataObj = Dataset(graphObj.graph)
    ret = []
-   if sys.argv[2] == 'tfidf': 
+   if sys.argv[2] == 'bow': 
         #model, acc = dataObj.bow_softmax(FIELDS[5], 0.2)
         #model, acc = dataObj.train_test(FIELDS[5], 'tf_idf', 0.2)
         #for _ in range(10):
         #    ret += [dataObj.bow_softmax(FIELDS[5], 0.2)]
         #dataObj.save_model(model, MODEL_PATH+'tf_idf')
         #print(np.mean(ret), np.std(ret))
-        #dataObj.save_model(model, MODEL_PATH+'bow_lr')
-        dns_data = dataObj.load(MODEL_PATH + 'bow_lr') 
+        #dataObj.save_model(model, MODEL_PATH+'bow_lr_dns+oui_test')
+
+        dns_data = dataObj.load(MODEL_PATH + 'bow_lr_dns+oui_test_c=2') 
         oui_model = dataObj.load(MODEL_PATH + 'bayes')
         print(dataObj.mix_model(dns_data, oui_model)) 
 

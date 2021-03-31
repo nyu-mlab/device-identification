@@ -69,10 +69,11 @@ if __name__ == '__main__':
             inferred = oui_ret[1]
         else: inferred = pred_class
         inferred = num2name[inferred]
-        info = [device_id, expected, inferred,  is_equivalent(inferred, expected)] 
+        #info = [device_id, expected, inferred,  is_equivalent(inferred, expected)] 
+        info = [expected, inferred, oui , dns[:3] , is_equivalent(inferred, expected)] 
         ret_mix += [info]
         #print("processing {}-th data".format(i), end="\r") 
-        #if i ==100: break 
+        #if i ==1000: break 
         ''' 
         #for dns
         inferred = defaultdict(int)
@@ -93,7 +94,8 @@ if __name__ == '__main__':
         ret_bayes += [info]
         '''
 
-   print(tabulate(ret_mix, headers= ["device_id","expected_vendor","inferred_vendor",  "is_same"]))
+   #print(tabulate(ret_mix, headers= ["device_id","expected_vendor","inferred_vendor",  "is_same"]))
+   print(tabulate(ret_mix, headers= ["expected_vendor","inferred_vendor","oui", "dns" ,"is_same"]))
    '''
    with open(TEST_BAYES, mode='w') as fp:
         csv_writer = csv.writer(fp, delimiter='/n', quotechar='"', quoting=csv.QUOTE_MINIMAL)
@@ -109,7 +111,8 @@ if __name__ == '__main__':
     '''
    with open(TEST_MIX, mode='w') as fp:
         csv_writer = csv.writer(fp, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        csv_writer.writerow(["device_id","expected_vendor","inferred_vendor",  "is_same"])
+        #csv_writer.writerow(["device_id","expected_vendor","inferred_vendor",  "is_same"])
+        csv_writer.writerow(["expected_vendor","inferred_vendor", "oui", "dns" "is_same"])
         csv_writer.writerow(ret_mix)
 
    #dataObj = Dataset(graphObj.graph)

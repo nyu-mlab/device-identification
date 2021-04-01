@@ -35,3 +35,15 @@
 |   OUI   | Bayes  |    8%    | all training data  |
 | OUI+DNS |  Bow   | **45%**  | concat oui and dns |
 
+##### 2. Port Data
+
+##### 
+
+| Feature  | Method | Avg. Acc | std  |    Config     |
+| :------: | :----: | :------: | :--: | :-----------: |
+|   OUI    | Bayes  |   97%    | Nan  | 1200 training |
+|   Port   | bow+LR |   72%    |      |   40 train    |
+| OUI+Port | Voting |   74%    |      |   55 train    |
+
+​	
+

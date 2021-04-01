@@ -28,11 +28,12 @@ import tldextract
 from utils import *
 
 DIST = 1
-FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
+#FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
+FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info_list', 'dns', 'port']
 
 
 class Graph:
-    def __init__(self, data_path, dns_path, save_path, rebuild=False):
+    def __init__(self, data_path=None, dns_path=None, port_path=None ,save_path=None, rebuild=False):
         self.graph = dict() #string -> Node
         self.parent = dict() #string -> parent string
         self.device_num = 0
@@ -41,6 +42,8 @@ class Graph:
         self.data_path = data_path
         self.dns_path = dns_path
         self.save_path = save_path
+        self.port_path = port_path
+        self.rebuild = rebuild
         #self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
         '''
@@ -50,27 +53,36 @@ class Graph:
         self.verify(feat, 'tf_idf_veriy')
         '''
 
-    def read_data(self, data_path, dns_path, save_path, rebuild):
+    def read_data(self, data_path, dns_path, port_path, save_path, rebuild):
         if not rebuild and os.path.exists(save_path): 
             self.load(save_path) 
             return 
+        dns_df = port_df = None #optional
         device_df = pd.read_csv(data_path).fillna('')
-        dns_data = pd.read_csv(dns_path).fillna('')
+        if dns_path: dns_df = pd.read_csv(dns_path).fillna('')
+        if port_path: port_df = pd.read_csv(port_path).fillna('')
         raw_data = [] 
+        print(len(device_df))
         for i in range(len(device_df)):
             name = manual_rule(device_df[FIELDS[0]][i].lower())
             device_id = device_df[FIELDS[1]][i]
-            device_oui = device_df[FIELDS[2]][i]
+            #device_oui = device_df[FIELDS[2]][i]
+            device_oui = get_vendor(device_df[FIELDS[2]][i])
             dhcp = device_df[FIELDS[3]][i].split('-')
-            dns = [tldextract.extract(e).domain for e in dns_data[dns_data['device_id'] == device_id]['hostname'].values.tolist()]
+            dns= [] ;port= []
+            if dns_path: dns = [tldextract.extract(e).domain for e in dns_df[dns_df['device_id'] == device_id]['hostname'].values.tolist()]
+            if port_path: port = [i  for e in port_df[port_df['device_id'] == device_id]['port_list'].values.tolist() for i in e.split('+')]
             #print(device_id, dns, sep=';')
+            '''
             disco_dict = eval(device_df[FIELDS[4]][i])
             disco = []
             for c in ('name', 'device_type', 'manufacturer'):
                 if disco_dict.get(c):
                     disco += [disco_dict.get(c)]
-            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns} # all values are lists
-            #print(info)
+            '''
+            disco = []
+            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns, FIELDS[6]: port} # all values are lists
+            #print(name, info)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
             self.device_num += 1
@@ -207,13 +219,13 @@ class Graph:
 
     def save(self, save_path): 
         with open(save_path, 'wb') as fp:
-            pickle.dump({'cluster': self.cluster, 'graph': self.graph} , fp)
+            pickle.dump({'cluster': self.cluster, 'graph': self.graph, 'parent':self.parent} , fp)
         print("cluster saved!")
 
     def load(self, load_path):
         with open(load_path, 'rb') as fp:
             data = pickle.load(fp)
-            self.cluster, self.graph = data['cluster'], data['graph']
+            self.cluster, self.graph, self.parent = data['cluster'], data['graph'], data['parent']
         print("cluster loaded!")
 
 

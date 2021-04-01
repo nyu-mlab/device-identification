@@ -23,7 +23,8 @@ from sklearn.linear_model import Perceptron
 
 class Dataset:
     def __init__(self, graph):
-        self.graph = {k:v for k, v in graph.items() if v.times >= 5 and k not in ('', '?', '??', '???')}
+        self.graph = {k:v for k, v in graph.items() if v.times >= 2 and k not in ('', '?', '??', '???')}
+        #self.graph = graph
 
 
     def train(self, data, method):
@@ -117,6 +118,7 @@ class Dataset:
     def train_test(self, feat, method, percent):
         self.split_data(feat, percent)
         train, test = self.trainData, self.testData
+        print(len(train))
         model = self.train(train, method)
         ret, tp = self.test(test, method, model)
         print("Using {} on {}, acc: {}.".format(method, feat, ret))
@@ -141,9 +143,11 @@ class Dataset:
         data_t = []; one_hot_X = []; one_hot_y = []
         c = Counter()
         data_oui = []
+        raw_data_len = 0
         for name, node in self.graph.items():
             one_hot_y.append(name)
             for info in node.raw_data: 
+                raw_data_len += len(info)
                 if len(info['device_oui']) != 0 and len(info[feat]) != 0:
                     #data_X.update(info[feat])
                     c.update(info[feat])
@@ -153,6 +157,7 @@ class Dataset:
                     data_t.append([info[feat] + info['device_oui'], name])
                     data_oui.append(info['device_oui'][0])
         d = defaultdict(int)
+        print(raw_data_len)
         for k, v in c.items(): 
             if v>=1: 
                 one_hot_X.append(k)  
@@ -171,7 +176,7 @@ class Dataset:
             X.append(X_t); y.append(dict_y[yy])
         X = np.array(X); y = np.array(y)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = percent)
-        #print(len(X_train), len(y_test))
+        print(len(X_train), len(y_test))
         print('Data loaded!')
 
         #classifier = MultinomialNB()
@@ -203,13 +208,14 @@ class Dataset:
         #missing = 0
         dns_model, data_X, data_y, dict_x, dict_y, data_oui = dns_data['model'], dns_data['X'], dns_data['y'], dns_data['dx'], dns_data['dy'], dns_data['oui']
         #for X, y in zip(data_X, data_y):
+        #print(len(data_X))
         dns_prob = dns_model.predict_proba(data_X)
         pred_class = dns_model.predict(data_X)
         #print(prob[0], pred_class[0])
         oui_get = dns_get = 0
 
         # probe for espressif
-        probe = 'espressif'
+        probe = 'Espressif Inc.'
         probe_num = probe_tp = 0
         for i in range(len(data_X)):
             oui_ret = [0, -1]
@@ -222,7 +228,7 @@ class Dataset:
             #pred_class = dns_model.predict(dns)
             #print(prob, pred_class)
             #print(len(dns_prob[i]), pred_class[i])
-            if name == probe: 
+            if oui == probe: 
                 probe_num += 1 
                 if pred_class[i] < len(dns_prob[i]):
                     ret += pred_class[i] == data_y[i]
@@ -239,8 +245,12 @@ class Dataset:
                 ret += pred_class[i] == data_y[i]
                 dns_get += 1
                 #if name == probe and pred_class[i] == data_y[i]: probe_tp+=1
-        print(probe_tp / probe_num)
+        print(probe_tp / (probe_num+0.001))
         return ret / len(data_X) , oui_get, dns_get
+
+    #def port(self, port_data, port_device_data):
+    #    pass
+
 
 
     def save_model(self, model,  save_path):

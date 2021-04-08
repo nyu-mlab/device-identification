@@ -13,26 +13,30 @@ from tabulate import tabulate
 from collections import defaultdict
 import tldextract
 
-DATA_PATH = '../data/test/device.csv'
-DNS_PATH = '../data/test/dns.csv'
-SAVE_PATH = '../data/test/raw_data.pickle'
+#SAVE_PATH = '../data/test/raw_data.pickle'
+SAVE_PATH = '../data/train/raw_data4port.pickle'
+
 TFIDF_PATH = '../data/model/tf_idf'
 LR_PATH = '../data/model/bow_lr'
-BAYES_PATH = '../data/model/bayes'
+#BAYES_PATH = '../data/model/bayes'
+BAYES_PATH = '../data/model/bayes_oui_port'
+PORT_LR_PATH = '../data/model/bow_lr_oui+port'
 
 TEST_BAYES = '../results/oui+bayes.csv'
 TEST_TFIDF = '../results/oui+tfidf.csv'
 TEST_MIX = '../results/oui+mix.csv'
 
+
+
 #BAYES_OUT = '../results/oui+bayes.out'
 
-FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
+FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns', 'port']
 
 if __name__ == '__main__':
 
    with open(SAVE_PATH, 'rb') as fp:
         data = pickle.load(fp)
-   with open(LR_PATH, 'rb') as fp:
+   with open(PORT_LR_PATH, 'rb') as fp:
         dns_data = pickle.load(fp)
    with open(BAYES_PATH, 'rb') as fp:
         oui_model = pickle.load(fp)

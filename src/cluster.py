@@ -63,11 +63,17 @@ class Graph:
         if port_path: port_df = pd.read_csv(port_path).fillna('')
         raw_data = [] 
         print(len(device_df))
+        port_num = 0
         for i in range(len(device_df)):
-            name = manual_rule(device_df[FIELDS[0]][i].lower())
+            # test for generate device vendor by oui
+            with open('../data/model/bayes', 'rb') as fp: oui_model = pickle.load(fp)
+            name = device_df[FIELDS[0]][i].lower()
+            device_oui = get_vendor(device_df[FIELDS[2]][i])
+            G = 'F' 
+            if name == '' and device_oui in oui_model: name = oui_model[device_oui][0][0]; G = 'T'
+            name = manual_rule(name)
             device_id = device_df[FIELDS[1]][i]
             #device_oui = device_df[FIELDS[2]][i]
-            device_oui = get_vendor(device_df[FIELDS[2]][i])
             dhcp = device_df[FIELDS[3]][i].split('-')
             dns= [] ;port= []
             if dns_path: dns = [tldextract.extract(e).domain for e in dns_df[dns_df['device_id'] == device_id]['hostname'].values.tolist()]
@@ -81,15 +87,15 @@ class Graph:
                     disco += [disco_dict.get(c)]
             '''
             disco = []
-            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns, FIELDS[6]: port} # all values are lists
+            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns, FIELDS[6]: port, FIELDS[0] : [name], FIELDS[1] : [device_id], 'G':G} # all values are lists
             #print(name, info)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
             self.device_num += 1
-            info[FIELDS[0]] = name; info[FIELDS[1]] = device_id
             raw_data += [info]
             #if i == 10: break
 
+        print('\n')
         for name in self.parent: 
             self.cluster[self.graph[self.find(name)]] += [self.graph[name]]
         self.save(save_path)

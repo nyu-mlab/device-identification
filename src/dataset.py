@@ -118,7 +118,7 @@ class Dataset:
     def train_test(self, feat, method, percent):
         self.split_data(feat, percent)
         train, test = self.trainData, self.testData
-        print(len(train))
+        print('data: ', len(train)+len(test))
         model = self.train(train, method)
         ret, tp = self.test(test, method, model)
         print("Using {} on {}, acc: {}.".format(method, feat, ret))
@@ -143,12 +143,11 @@ class Dataset:
         data_t = []; one_hot_X = []; one_hot_y = []
         c = Counter()
         data_oui = []
-        raw_data_len = 0
         for name, node in self.graph.items():
             one_hot_y.append(name)
             for info in node.raw_data: 
-                raw_data_len += len(info)
-                if len(info['device_oui']) != 0 and len(info[feat]) != 0:
+                if len(info['device_oui'][0]) != 0 and len(info[feat]) != 0:
+                    #print(info)
                     #data_X.update(info[feat])
                     c.update(info[feat])
                     # test on dns+oui
@@ -157,7 +156,6 @@ class Dataset:
                     data_t.append([info[feat] + info['device_oui'], name])
                     data_oui.append(info['device_oui'][0])
         d = defaultdict(int)
-        print(raw_data_len)
         for k, v in c.items(): 
             if v>=1: 
                 one_hot_X.append(k)  
@@ -176,7 +174,7 @@ class Dataset:
             X.append(X_t); y.append(dict_y[yy])
         X = np.array(X); y = np.array(y)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = percent)
-        print(len(X_train), len(y_test))
+        print(len(X))
         print('Data loaded!')
 
         #classifier = MultinomialNB()
@@ -240,12 +238,10 @@ class Dataset:
             if pred_class[i] >= len(dns_prob[i]) or oui_ret[0] >= dns_prob[i][pred_class[i]]:
                 ret += oui_ret[1] == data_y[i]
                 oui_get += 1
-                #if name == probe and oui_ret[1] == data_y[i]: probe_tp+=1
             else: 
                 ret += pred_class[i] == data_y[i]
                 dns_get += 1
-                #if name == probe and pred_class[i] == data_y[i]: probe_tp+=1
-        print(probe_tp / (probe_num+0.001))
+        print(probe_tp / (probe_num+0.001), probe_num)
         return ret / len(data_X) , oui_get, dns_get
 
     #def port(self, port_data, port_device_data):

@@ -28,22 +28,21 @@
 
 ###### 1.1 On "espressif"
 
-| Feature | Method | Avg. Acc |       Config       |
-| :-----: | :----: | :------: | :----------------: |
-| OUI+DNS | Voting |   13%    | all training data  |
-|   DNS   |  Bow   |   37%    | all training data  |
-|   OUI   | Bayes  |    8%    | all training data  |
-| OUI+DNS |  Bow   | **45%**  | concat oui and dns |
+| Feature  | Method | Avg. Acc |      Config       |
+| :------: | :----: | :------: | :---------------: |
+| OUI+DNS  | Voting |   13%    | all training data |
+|   DNS    |  Bow   |   37%    | all training data |
+|   OUI    | Bayes  |    8%    | all training data |
+| OUI+DNS  |  Bow   |   45%    |     123 data      |
+| OUI+Port |  Bow   | **95%**  |     182 data      |
 
-##### 2. Port Data
+##### 2. Port Data(8359 in 16451), use oui to generate device vendor
 
-##### 
-
-| Feature  | Method | Avg. Acc | std  |    Config     |
-| :------: | :----: | :------: | :--: | :-----------: |
-|   OUI    | Bayes  |   97%    | Nan  | 1200 training |
-|   Port   | bow+LR |   72%    |      |   40 train    |
-| OUI+Port | Voting |   74%    |      |   55 train    |
+| Feature  | Method | Avg. Acc | std  |   Config   |
+| :------: | :----: | :------: | :--: | :--------: |
+|   OUI    | Bayes  |   97%    | 0.2% | 10382 data |
+| OUI+Port | bow+LR |   95%    |      | 5802 data  |
+| OUI+Port | Voting | **97%**  |      | 5802 data  |
 
 ​	
 

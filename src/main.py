@@ -12,11 +12,11 @@ import pandas as pd
 
 DATA_PATH = '../data/train/device.csv'
 DNS_PATH = '../data/train/dns.csv'
-RAW_DATA = '../data/train/raw_data.b5038cbe.pickle'
+RAW_DATA = '../data/train/raw_data4port.pickle'
 #SAVE_PATH = '../data/train/cluster.pickle'
-SAVE_PATH = '../data/train/cluster.b5038cbe.pickle'
+SAVE_PATH = '../data/train/cluster4port.pickle'
 MODEL_PATH = '../data/model/'
-PORT_DEVICE_DATA = ['../data/train/devices.4d55b7ad.csv', '../data/train/devices.80aa6646.csv', '../data/train/devices.a542bb50.csv','../data/train/devices.b5038cbe.csv', '../data/train/devices.port.csv']
+PORT_DEVICE_DATA = '../data/train/devices4port.csv'
 
 PORT_DATA = '../data/train/syn_scan_ports.3df6bc62.csv'
 
@@ -26,11 +26,11 @@ if __name__ == '__main__':
    #graphObj = Graph(DATA_PATH, DNS_PATH,  ,SAVE_PATH, eval(sys.argv[1])) 
    #graphObj.read_data(DATA_PATH, DNS_PATH, SAVE_PATH, eval(sys.argv[1]))
 
-   graphObj = Graph(PORT_DEVICE_DATA[0], None, PORT_DATA ,SAVE_PATH, eval(sys.argv[1])) 
-   raw_data = graphObj.read_data(PORT_DEVICE_DATA[0], None, PORT_DATA ,SAVE_PATH, eval(sys.argv[1]))
+   graphObj = Graph(PORT_DEVICE_DATA, None, PORT_DATA ,SAVE_PATH, eval(sys.argv[1])) 
+   raw_data = graphObj.read_data(PORT_DEVICE_DATA, None, PORT_DATA ,SAVE_PATH, eval(sys.argv[1]))
 
-   #with open(RAW_DATA, 'wb') as fp:
-   #     pickle.dump(raw_data, fp)
+   with open(RAW_DATA, 'wb') as fp:
+        pickle.dump(raw_data, fp)
    #print(raw_data)
    dataObj = Dataset(graphObj.graph)
    ret = []
@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
    if sys.argv[2] == 'bayes': 
         for _ in range(10):
-            model, acc = dataObj.train_test(FIELDS[6], 'bayes', 0.1)
+            model, acc = dataObj.train_test(FIELDS[2], 'bayes', 0.8)
             ret += [acc]
         print(np.mean(ret), np.std(ret))
         dataObj.save_model(model, MODEL_PATH+'bayes_oui_port')

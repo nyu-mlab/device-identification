@@ -10,6 +10,7 @@
 | 03/05/2021 |      1.Build training and test set 2.new tf-idf method       |
 | 03/19/2021 |           1.NLP model for dns 2. mix oui+dns model           |
 | 03/29/2021 |                   1.coner cases 2.new data                   |
+| 04/09/2021 |         1.tp-link 2.try original oui 3.code refactor         |
 
 #### Experiments
 

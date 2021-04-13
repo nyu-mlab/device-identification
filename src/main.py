@@ -29,8 +29,8 @@ if __name__ == '__main__':
    graphObj = Graph(PORT_DEVICE_DATA, None, PORT_DATA ,SAVE_PATH, eval(sys.argv[1])) 
    raw_data = graphObj.read_data(PORT_DEVICE_DATA, None, PORT_DATA ,SAVE_PATH, eval(sys.argv[1]))
 
-   with open(RAW_DATA, 'wb') as fp:
-        pickle.dump(raw_data, fp)
+   #with open(RAW_DATA, 'wb') as fp:
+   #     pickle.dump(raw_data, fp)
    #print(raw_data)
    dataObj = Dataset(graphObj.graph)
    ret = []

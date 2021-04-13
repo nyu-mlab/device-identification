@@ -41,9 +41,9 @@
 
 | Feature  | Method | Avg. Acc | std  |   Config   |
 | :------: | :----: | :------: | :--: | :--------: |
-|   OUI    | Bayes  |   97%    | 0.2% | 10382 data |
-| OUI+Port | bow+LR |   95%    |      | 5802 data  |
-| OUI+Port | Voting | **97%**  |      | 5802 data  |
+|   OUI    | Bayes  |   96%    | 0.5% | 10831 data |
+| OUI+Port | bow+LR |   94%    |      | 6038 data  |
+| OUI+Port | Voting | **96%**  |      | 5856 data  |
 
 ​	
 

@@ -1,5 +1,18 @@
 # device-identification
 
+### Enviroment
+
+### Installation
+
+```markdown
+git clone git@github.com:nyu-mlab/device-identification.git
+cd device-identification
+import api
+api.get_vendor(...)
+```
+
+
+
 #### Meeting Logs
 
 |    Date    |                            Event                             |

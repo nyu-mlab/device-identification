@@ -2,13 +2,19 @@
 
 ### Enviroment
 
+Python3 
+
+```python
+pip install -r requirements.txt
+```
+
 ### Installation
 
-```markdown
+```python
 git clone git@github.com:nyu-mlab/device-identification.git
 cd device-identification
 import api
-api.get_vendor(...)
+api.get_vendor(oui: str, type_: "dns" or "port", data: list) -> str:
 ```
 
 

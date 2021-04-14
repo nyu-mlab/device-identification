@@ -8,8 +8,8 @@
 
 ```sh
 git clone git@github.com:nyu-mlab/device-identification.git
-pip install -r requirements.txt
 cd device-identification
+pip install -r requirements.txt
 ```
 
 ### Usage

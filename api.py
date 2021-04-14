@@ -46,7 +46,6 @@ def get_vendor(oui: str, type_: str, data: list) -> str:
 def load(load_path):
     with open(load_path, 'rb') as fp:
         return pickle.load(fp)
-
 '''
 print(get_vendor('Intel Corporate' , 'port', ['8081']))
 print(get_vendor('Intel Corporate' , 'port', []))
@@ -55,3 +54,4 @@ print(get_vendor('' , 'port', ['8081']))
 print(get_vendor('NETGEAR' , 'dns',   ['netgear']))
 print(get_vendor('NETGEAR' , 'dns',   []))
 print(get_vendor('' , 'dns',   ['netgear']))
+'''

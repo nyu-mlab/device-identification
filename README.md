@@ -12,6 +12,12 @@ cd device-identification
 pip install -r requirements.txt
 ```
 
+Download pretrained model from 
+
+https://drive.google.com/file/d/1KIADDtIBZP18l3cIzIsktctfiAp_12WY/view?usp=sharing
+
+And put it into ./data directory.
+
 ### Usage
 
 ```python

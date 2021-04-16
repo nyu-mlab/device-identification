@@ -4,7 +4,7 @@
 # model path
 BAYES_DNS = './data/model/bayes'
 BAYES_PORT = './data/model/bayes_oui_port'
-LR_DNS = './data/model/bow_lr_dns+oui_test'
+LR_DNS = './data/model/bow_lr_oui+dns'
 LR_PORT = './data/model/bow_lr_oui+port'
 
 import pickle

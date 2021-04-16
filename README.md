@@ -16,15 +16,21 @@ Download pretrained model from
 
 https://drive.google.com/file/d/1KIADDtIBZP18l3cIzIsktctfiAp_12WY/view?usp=sharing
 
-And put it into ./data/model directory.
+And put it at ./data/model directory.
 
-### Usage
+### Test
 
 ```python
 #Open Python3 in device-identification
 import api
 api.get_vendor(oui: str, type_: "dns" or "port", data: list) -> str:
 ```
+
+### Train
+
+
+
+
 
 
 
@@ -39,6 +45,7 @@ api.get_vendor(oui: str, type_: "dns" or "port", data: list) -> str:
 | 03/19/2021 |           1.NLP model for dns 2. mix oui+dns model           |
 | 03/29/2021 |                   1.coner cases 2.new data                   |
 | 04/09/2021 |         1.tp-link 2.try original oui 3.code refactor         |
+| 04/16/2021 |            1.code refactor%comments 2. Net_disco             |
 
 #### Experiments
 

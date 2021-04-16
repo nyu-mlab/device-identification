@@ -12,8 +12,6 @@ netifaces==0.10.9
 numpy==1.19.5
 pandas==1.2.0
 protobuf==3.14.0
-PyQt5==5.15.2
-PyQt5-sip==4.19.24
 python-dateutil==2.8.1
 pytz==2020.5
 requests==2.25.0
@@ -25,7 +23,6 @@ scipy==1.6.0
 six==1.15.0
 smart-open==4.1.2
 tabulate==0.8.9
-TBB==0.1
 threadpoolctl==2.1.0
 tldextract==3.1.0
 urllib3==1.26.2

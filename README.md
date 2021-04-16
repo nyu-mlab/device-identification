@@ -6,6 +6,12 @@
 
 ### Installation
 
+If you're on Debian, make sure the following packages are installed:
+
+```sh
+sudo apt install build-essential python3-dev
+```
+
 ```sh
 git clone git@github.com:nyu-mlab/device-identification.git
 cd device-identification

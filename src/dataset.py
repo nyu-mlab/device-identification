@@ -18,13 +18,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.linear_model import LogisticRegression
-import xgboost as xgb
 from sklearn.linear_model import Perceptron
 
 class Dataset:
     def __init__(self, graph):
-        self.graph = {k:v for k, v in graph.items() if v.times >= 2 and k not in ('', '?', '??', '???')}
-        #self.graph = graph
+        self.graph = {k:v for k, v in graph.items() if v.times >= 10 and k not in ('', '?', '??', '???')}
 
 
     def train(self, data, method):
@@ -157,7 +155,7 @@ class Dataset:
                     data_oui.append(info['device_oui'][0])
         d = defaultdict(int)
         for k, v in c.items(): 
-            if v>=1: 
+            if v>=2: 
                 one_hot_X.append(k)  
                 #d[v] += 1
         #t = sorted(d.items())

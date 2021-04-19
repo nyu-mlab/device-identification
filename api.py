@@ -55,9 +55,9 @@ def test():
     print(get_vendor('' , 'port', ['8081']))
 
     # The following tests don't work yet @TODO(Taiyu)
-    # print(get_vendor('NETGEAR' , 'dns',   ['netgear']))
-    # print(get_vendor('NETGEAR' , 'dns',   []))
-    # print(get_vendor('' , 'dns',   ['netgear']))
+    print(get_vendor('NETGEAR' , 'dns',   ['netgear']))
+    print(get_vendor('NETGEAR' , 'dns',   []))
+    print(get_vendor('' , 'dns',   ['netgear']))
 
 
 if __name__ == '__main__':

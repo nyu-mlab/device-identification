@@ -62,6 +62,9 @@ location /device_identification {
 }
 ```
 
+Here's a test in production: https://iotinspector.org/device_identification/get_vendor/780cb8/3.4.5.6.7
+
+
 ### Train
 
 **Step I: Generate cluster based on editdistance.**

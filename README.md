@@ -62,7 +62,16 @@ location /device_identification {
 }
 ```
 
-Here's a test in production: https://iotinspector.org/device_identification/get_vendor/780cb8/3.4.5.6.7
+Here's a test in production: https://iotinspector.org/device_identification/get_vendor/780cb8/80.443
+
+Usage for production:
+- Format: https://iotinspector.org/device_identification/get_vendor/`oui`/`port_list`
+- Arguments:
+    - `oui`: First 6 characters of MAC address, all lower case, all alphanumeric characters (i.e., `[0-9a-f]{6}` if expressed in regular expression)
+    - `port_list`: A `.` separated list of open ports. For example, for a device with open ports 80 and 443, `port_list` should be `80.443`. On the other hand, if a device has no open ports, then `port_list` should be `0`.
+- Examples:
+    - https://iotinspector.org/device_identification/get_vendor/780cb8/80.443
+    - https://iotinspector.org/device_identification/get_vendor/780cb8/0
 
 
 ### Train

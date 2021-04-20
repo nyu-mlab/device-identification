@@ -9,7 +9,7 @@
 If you're on Debian, make sure the following packages are installed:
 
 ```sh
-sudo apt install build-essential python3-dev
+sudo apt install build-essential python3-dev gunicorn
 ```
 
 ```sh

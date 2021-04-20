@@ -26,24 +26,29 @@ import gensim
 from tabulate import tabulate
 import tldextract
 from utils import *
+import sys
 
 DIST = 1
 #FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
-FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info_list', 'dns', 'port']
 
 
 class Graph:
-    def __init__(self, data_path=None, dns_path=None, port_path=None ,save_path=None, rebuild=False):
+    #def __init__(self, data_path=None, dns_path=None, port_path=None ,save_path=None, rebuild=False):
+    def __init__(self,  rebuild=False, save_path = ''):
         self.graph = dict() #string -> Node
         self.parent = dict() #string -> parent string
         self.device_num = 0
         self.cluster = defaultdict(list)
         self.prob = {}
+        '''
         self.data_path = data_path
         self.dns_path = dns_path
         self.save_path = save_path
         self.port_path = port_path
         self.rebuild = rebuild
+        '''
+        if not rebuild and os.path.exists(save_path): 
+            self.load(save_path) 
         #self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
         '''
@@ -53,10 +58,7 @@ class Graph:
         self.verify(feat, 'tf_idf_veriy')
         '''
 
-    def read_data(self, data_path, dns_path, port_path, save_path, rebuild):
-        if not rebuild and os.path.exists(save_path): 
-            self.load(save_path) 
-            return 
+    def read_data(self, data_path, dns_path, port_path, save_path):
         dns_df = port_df = None #optional
         device_df = pd.read_csv(data_path).fillna('')
         if dns_path: dns_df = pd.read_csv(dns_path).fillna('')
@@ -66,11 +68,11 @@ class Graph:
         port_num = 0
         for i in range(len(device_df)):
             # test for generate device vendor by oui
-            with open('../data/model/bayes', 'rb') as fp: oui_model = pickle.load(fp)
+            #with open('../data/model/bayes', 'rb') as fp: oui_model = pickle.load(fp)
             name = device_df[FIELDS[0]][i].lower()
             device_oui = get_vendor(device_df[FIELDS[2]][i])
             G = 'F' 
-            if name == '' and device_oui in oui_model: name = oui_model[device_oui][0][0]; G = 'T'
+            #if name == '' and device_oui in oui_model: name = oui_model[device_oui][0][0]; G = 'T'
             name = manual_rule(name)
             device_id = device_df[FIELDS[1]][i]
             #device_oui = device_df[FIELDS[2]][i]
@@ -265,5 +267,8 @@ class Node:
         return ret
 
 
+if __name__ == '__main__':
+    graphObj = Graph(rebuild = eval(sys.argv[5]))
+    graphObj.read_data(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]) 
 
 

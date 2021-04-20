@@ -8,8 +8,28 @@ LR_DNS = './data/model/bow_lr_dns+oui_test'
 LR_PORT = './data/model/bow_lr_oui+port'
 
 import pickle
+import oui_parser
+import re
+
+
+oui_regex = re.compile(r'[0-9a-fA-F]{6}')
+
 
 def get_vendor(oui: str, type_: str, data: list) -> str:
+    """
+    Note that `oui` could be a vendor's name (as defined by IEEE) or the
+    6-character OUI code (basically the first 6 characters of the MAC address.)
+
+    """
+
+    # OUI could be a string of [0-9a-f]{6} or in English. 
+    if is_oui_code(oui):
+        oui = oui.lower()
+        # Look up the vendor
+        vendor = oui_parser.get_vendor(oui)
+        if vendor != '':
+            oui = vendor 
+
     if type_ == 'dns': 
         oui_model = load(BAYES_DNS) 
         data_dict = load(LR_DNS)
@@ -48,9 +68,20 @@ def load(load_path):
         return pickle.load(fp)
 
 
+def is_oui_code(oui_string):
+
+    match = oui_regex.match(oui_string)
+    return match is not None
+    
+
 def test():        
 
+    print(is_oui_code('aabbcc'))
+    print(is_oui_code('AAbbcc'))
+    print(is_oui_code('Intel Corporate'))
+
     print(get_vendor('Intel Corporate' , 'port', ['8081']))
+    print(get_vendor('780cb8' , 'port', ['8081']))
     print(get_vendor('Intel Corporate' , 'port', []))
     print(get_vendor('' , 'port', ['8081']))
 

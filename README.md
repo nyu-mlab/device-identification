@@ -9,12 +9,14 @@
 If you're on Debian, make sure the following packages are installed:
 
 ```sh
-sudo apt install build-essential python3-dev gunicorn
+sudo apt install build-essential python3-dev
 ```
 
 ```sh
 git clone git@github.com:nyu-mlab/device-identification.git
 cd device-identification
+python3 -m venv env
+source env/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -26,10 +28,38 @@ And put it at ./data/model directory.
 
 ### Test
 
+Testing the API:
+
 ```python
 #Open Python3 in device-identification
 import api
 api.get_vendor(oui: str, type_: "dns" or "port", data: list) -> str:
+```
+
+Testing the webserver locally:
+
+```sh
+./start_test_server.bash
+```
+
+... and open the API in the web browser (e.g., http://localhost:5008/device_identification/get_vendor/780cb8/3.4.5).
+
+For deployment on the production web server, run the following:
+
+```sh
+./start_production_server.bash
+```
+
+Make sure to configure nginx to connect to the Flask app's local port. Here's a sample nginx configuration:
+
+```
+location /device_identification {
+        proxy_set_header   Host                 $host;
+        proxy_set_header   X-Real-IP            $remote_addr;
+        proxy_set_header   X-Forwarded-For      $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto    $scheme;
+        proxy_pass http://127.0.0.1:5008;
+}
 ```
 
 ### Train

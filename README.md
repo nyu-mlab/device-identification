@@ -105,15 +105,26 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 
 [1]cluster_path: path to the saved cluster.
 
-[2]feat_type: dns/port.
+[2]feat_type: device_oui/dns/port.
 
 [3]method: bayes/LR/mix.
 
 [4,5]bayes_path LR_path: path to save the trained model, or load the models for mix model.
 
+###Experiments after refactor
+
+|    Feature    | Method | Acc  |
+| :-----------: | :----: | :--: |
+| OUI(batch I)  | Bayes  | 81%  |
+|      DNS      |   LR   | 82%  |
+|    OUI+DNS    | Voting | 83%  |
+| OUI(batch II) | Bayes  | 96%  |
+|     PORT      |   LR   | 95%  |
+|   OUI+PORT    | Voting | 96%  |
 
 
 
+# 
 
 #### Meeting Logs
 

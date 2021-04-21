@@ -62,18 +62,23 @@ class Graph:
         dns_df = port_df = None #optional
         device_df = pd.read_csv(data_path).fillna('')
         if dns_path: dns_df = pd.read_csv(dns_path).fillna('')
-        if port_path: port_df = pd.read_csv(port_path).fillna('')
+        if port_path: 
+            port_df = pd.read_csv(port_path).fillna('')
+            with open('../data/model/bayes', 'rb') as fp: 
+                oui_model = pickle.load(fp)
         raw_data = [] 
         print(len(device_df))
         port_num = 0
         for i in range(len(device_df)):
             # test for generate device vendor by oui
-            #with open('../data/model/bayes', 'rb') as fp: oui_model = pickle.load(fp)
             name = device_df[FIELDS[0]][i].lower()
+            name = manual_rule(name)
             device_oui = get_vendor(device_df[FIELDS[2]][i])
             G = 'F' 
-            #if name == '' and device_oui in oui_model: name = oui_model[device_oui][0][0]; G = 'T'
-            name = manual_rule(name)
+            if port_path:
+                if name == '' and device_oui in oui_model: 
+                    name = oui_model[device_oui][0][0]; G = 'T'
+
             device_id = device_df[FIELDS[1]][i]
             #device_oui = device_df[FIELDS[2]][i]
             dhcp = device_df[FIELDS[3]][i].split('-')

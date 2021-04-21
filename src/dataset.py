@@ -22,7 +22,7 @@ from sklearn.linear_model import Perceptron
 
 class Dataset:
     def __init__(self, graph):
-        self.graph = {k:v for k, v in graph.items() if v.times >= 10 and k not in ('', '?', '??', '???')}
+        self.graph = {k:v for k, v in graph.items() if v.times >= 5 and k not in ('', '?', '??', '???')}
 
 
     def train(self, data, method):
@@ -196,7 +196,7 @@ class Dataset:
         return ret_data, acc 
 
 
-    def mix_model(self, dns_data, oui_model):
+    def mix_model(self, oui_model, dns_data):
         ''' mix oui and dns for vendor test
         '''
         #print(model)
@@ -239,7 +239,7 @@ class Dataset:
             else: 
                 ret += pred_class[i] == data_y[i]
                 dns_get += 1
-        print(probe_tp / (probe_num+0.001), probe_num)
+        print("on Espressif Inc.: ", probe_tp / (probe_num+0.001), " Num:",probe_num)
         return ret / len(data_X) , oui_get, dns_get
 
     #def port(self, port_data, port_device_data):

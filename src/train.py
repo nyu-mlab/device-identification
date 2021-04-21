@@ -36,7 +36,7 @@ if __name__ == '__main__':
    #print(raw_data)
    ret = []
    if sys.argv[3] == 'LR': 
-        model, acc = dataObj.bow_softmax(sys.argv[2] , 0.8)
+        model, acc = dataObj.bow_softmax(sys.argv[2] , 0.1)
         #for _ in range(10):
         #    ret += [dataObj.bow_softmax(FIELDS[5], 0.2)[0]]
         #dataObj.save_model(model, MODEL_PATH+'tf_idf')
@@ -54,7 +54,8 @@ if __name__ == '__main__':
    if sys.argv[3] == 'mix': 
         data_model = dataObj.load(sys.argv[4])
         feat_model = dataObj.load(sys.argv[5])
-        print(dataObj.mix_model(data_model, feat_model)) 
+        acc, oui, feat = dataObj.mix_model(data_model, feat_model)
+        print("Acc: {}, using {}: {}, using {}: {}".format(acc, sys.argv[4], oui,sys.argv[5], feat))
 
         
 

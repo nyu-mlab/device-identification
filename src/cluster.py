@@ -29,73 +29,55 @@ from utils import *
 import sys
 
 DIST = 1
-#FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns']
 
 
 class Graph:
-    #def __init__(self, data_path=None, dns_path=None, port_path=None ,save_path=None, rebuild=False):
     def __init__(self,  rebuild=False, save_path = ''):
         self.graph = dict() #string -> Node
         self.parent = dict() #string -> parent string
         self.device_num = 0
         self.cluster = defaultdict(list)
         self.prob = {}
-        '''
-        self.data_path = data_path
-        self.dns_path = dns_path
-        self.save_path = save_path
-        self.port_path = port_path
-        self.rebuild = rebuild
-        '''
         if not rebuild and os.path.exists(save_path): 
             self.load(save_path) 
-        #self.read_data(data_path, dns_path, save_path, rebuild)
         #self.display()
-        '''
-        idx = 2
-        feat = FIELDS[idx]
-        self.graph_prob(feat)
-        self.verify(feat, 'tf_idf_veriy')
-        '''
 
     def read_data(self, data_path, dns_path, port_path, save_path):
         dns_df = port_df = None #optional
         device_df = pd.read_csv(data_path).fillna('')
         if dns_path: dns_df = pd.read_csv(dns_path).fillna('')
+        # generate device vendor by oui
         if port_path: 
             port_df = pd.read_csv(port_path).fillna('')
-            with open('../data/model/bayes', 'rb') as fp: 
+            with open('../data/model/oui+bayes', 'rb') as fp:  # provide the pretrained bayes model here for port 
                 oui_model = pickle.load(fp)
         raw_data = [] 
-        print(len(device_df))
         port_num = 0
+        print("Data num: ", len(device_df))
         for i in range(len(device_df)):
-            # test for generate device vendor by oui
             name = device_df[FIELDS[0]][i].lower()
             name = manual_rule(name)
             device_oui = get_vendor(device_df[FIELDS[2]][i])
             G = 'F' 
-            if port_path:
-                if name == '' and device_oui in oui_model: 
-                    name = oui_model[device_oui][0][0]; G = 'T'
-
+            if port_path and name in ['', 'unknown'] and device_oui in oui_model: 
+                    name = oui_model[device_oui][1][0]; G = 'T'
             device_id = device_df[FIELDS[1]][i]
-            #device_oui = device_df[FIELDS[2]][i]
             dhcp = device_df[FIELDS[3]][i].split('-')
             dns= [] ;port= []
             if dns_path: dns = [tldextract.extract(e).domain for e in dns_df[dns_df['device_id'] == device_id]['hostname'].values.tolist()]
-            if port_path: port = [i  for e in port_df[port_df['device_id'] == device_id]['port_list'].values.tolist() for i in e.split('+')]
-            #print(device_id, dns, sep=';')
-            '''
-            disco_dict = eval(device_df[FIELDS[4]][i])
-            disco = []
-            for c in ('name', 'device_type', 'manufacturer'):
-                if disco_dict.get(c):
-                    disco += [disco_dict.get(c)]
-            '''
-            disco = []
-            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns, FIELDS[6]: port, FIELDS[0] : [name], FIELDS[1] : [device_id], 'G':G} # all values are lists
-            #print(name, info)
+            if port_path: port = [i for e in port_df[port_df['device_id'] == device_id]['port_list'].values.tolist() for i in e.split('+')]
+            disco = set()
+            try:
+                disco_dict = eval(device_df[FIELDS[4]][i])
+                for c in ('model name', 'device_type', 'manufacturer'):
+                    if disco_dict.get(c):
+                        cur = str(disco_dict.get(c)).split()[0]
+                        cur = cur.split('_')[0]
+                        if cur[-1]==',': cur = cur[:-1]
+                        disco.add(cur.lower())
+            except SyntaxError: pass
+            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: list(disco), FIELDS[5]: dns, FIELDS[6]: port, FIELDS[0] : [name], FIELDS[1] : [device_id], 'G':G} # all values are lists
+            #print(info)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
             self.device_num += 1
@@ -174,18 +156,11 @@ class Graph:
         for k in prob:
             prob[k] = sorted(prob[k].items(), key=lambda x: -x[1])
         self.feat2device = prob
-        #pprint(prob)
-        #print('----------')
-        #pprint( sum(v for k,v in p_feat.items()))
-        #pprint( sum(v for k,v in p_device.items()))
 
     def tf_idf_veriy(self, feat , center, cluster):  # for one cluster
         '''Use tf-idf on oui, dns, dhcp, disco to verify one cluster
            Every node is a document, the whole cluster is a corpus
         '''
-        #name = [node.name for node in cluster if len(node.device_info[feat])!=0]
-        #dictObj = gensim.corpora.Dictionary([gensim.utils.simple_preprocess(node.device_info, min_len=4) for node in cluster])
-
         docu = []; name = []
         for node in cluster:
             cur = []
@@ -196,10 +171,7 @@ class Graph:
 
         dictObj = gensim.corpora.Dictionary(docu)
         corpus = [dictObj.doc2bow(e) for e in docu]
-        #corpus = [dictObj.doc2bow([k]*v) for node in cluster for k, v in node.device_info[feat].items()]
-        #corpus = [dictObj.doc2bow(gensim.utils.simple_preprocess(node.device_info, min_len=4)) for node in cluster]
         tfidf = gensim.models.TfidfModel(corpus) 
-        #print(name, len(name), len(tfidf[corpus]), len(corpus))
         for doc_idx in range(len(name)):
             doc = tfidf[corpus[doc_idx]]
             print(name[doc_idx], end=":")
@@ -224,7 +196,6 @@ class Graph:
         print('verifying!')
         table = []
         for center in self.cluster:  
-            #table += self.bayes_verify(feat, center,  self.cluster[center])
             table += getattr(self, method)(feat, center,  self.cluster[center])
         print(tabulate(table, headers= ["cluster","node","times", "info", "infer"]))
 
@@ -252,7 +223,6 @@ class Node:
         self.add_info(device_info)
 
     def add_info(self, device_info):
-        #print(device_info)
         self.raw_data.append(device_info)
         for k, v in device_info.items():
             self.device_info[k].update(v)
@@ -260,11 +230,8 @@ class Node:
 
     def prob(self, feat):
         num = self.feat_cnt[feat]
-        #num = sum(v for k, v in self.device_info[feat].items())  
-        #num = sum(v for k, v in self.device_info[feat].items() if k != '')  
         p_cond = defaultdict(int)
         for k, v in self.device_info[feat].items():
-            #if k != '': p_cond[k] =  v / num   
             p_cond[k] =  v / num   
         ret = {}
         ret[self.name] = p_cond

@@ -74,7 +74,7 @@ Usage for production:
     - https://iotinspector.org/device_identification/get_vendor/780cb8/0
 
 
-### Train
+### Training
 
 **Step I: Generate cluster based on editdistance.**
 
@@ -118,8 +118,8 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 | OUI(batch I)  | Bayes  | 81%  |
 |      DNS      |   LR   | 82%  |
 |    OUI+DNS    | Voting | 83%  |
-| OUI(batch II) | Bayes  | 96%  |
-|     PORT      |   LR   | 95%  |
+| OUI(batch II) | Bayes  | 90%  |
+|     PORT      |   LR   | 87%  |
 |   OUI+PORT    | Voting | 96%  |
 
 
@@ -172,5 +172,12 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 | OUI+Port | bow+LR |   94%    |      | 6038 data  |
 | OUI+Port | Voting | **96%**  |      | 5856 data  |
 
-​	
+#####3. Net_disco(4615 in 15932)
+
+|    Feature    | Method | Avg. Acc |  Config   |
+| :-----------: | :----: | :------: | :-------: |
+|     Disco     |   LR   |   42%    | 4362 data |
+|   OUI+Disco   |   LR   |   88%    | 4097 data |
+|    OUI+DNS    |   LR   |   82%    | 8162 data |
+| OUI+Disco+DNS |   LR   |   84%    | 8162 data |
 

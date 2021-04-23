@@ -111,7 +111,7 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 
 [4,5]bayes_path LR_path: path to save the trained model, or load the models for mix model.
 
-###Experiments after refactor
+### Experiments after refactor
 
 |    Feature    | Method | Acc  |
 | :-----------: | :----: | :--: |
@@ -172,7 +172,7 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 | OUI+Port | bow+LR |   94%    |      | 6038 data  |
 | OUI+Port | Voting | **96%**  |      | 5856 data  |
 
-#####3. Net_disco(4615 in 15932)
+##### 3. Net_disco(4615 in 15932)
 
 |    Feature    | Method | Avg. Acc |  Config   |
 | :-----------: | :----: | :------: | :-------: |

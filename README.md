@@ -176,8 +176,8 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 
 |    Feature    | Method | Avg. Acc |  Config   |
 | :-----------: | :----: | :------: | :-------: |
-|     Disco     |   LR   |   42%    | 4362 data |
-|   OUI+Disco   |   LR   |   88%    | 4097 data |
+|     Disco     |   LR   | **81%**  | 4264 data |
+|   OUI+Disco   |   LR   |   86%    | 4010 data |
 |    OUI+DNS    |   LR   |   82%    | 8162 data |
-| OUI+Disco+DNS |   LR   |   84%    | 8162 data |
+| OUI+Disco+DNS |   LR   |   83%    | 8141 data |
 

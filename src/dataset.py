@@ -21,7 +21,7 @@ from utils import *
 
 class Dataset:
     def __init__(self, graph):
-        self.graph = {k:v for k, v in graph.items() if v.times >= 5 and k not in ('', '?', '??', '???', 'unknown')}
+        self.graph = {k:v for k, v in graph.items() if v.times >= 5 and k not in ('', '?', '??', '???', 'unknown')} # param here, select threshold for cluster
 
 
     def train(self, data, method):
@@ -142,11 +142,14 @@ class Dataset:
             one_hot_y.append(name)
             for info in node.raw_data: 
                 if len(info[FIELDS[2]][0]) != 0 and len(info[feat]) != 0:
+                #if  len(info[feat]) != 0:
                     # test on dns+oui+disco
                     c.update(info[feat])
                     c.update(info[FIELDS[2]]) 
                     c.update(info[FIELDS[4]]) 
                     data_t.append([info[feat] + info[FIELDS[2]] + info[FIELDS[4]] , name])
+                    #data_t.append([info[feat] + info[FIELDS[2]] , name])
+                    #data_t.append([info[feat] , name])
                     data_oui.append(info[FIELDS[2]][0])
         d = defaultdict(int)
         for k, v in c.items(): 

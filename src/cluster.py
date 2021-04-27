@@ -27,6 +27,7 @@ from tabulate import tabulate
 import tldextract
 from utils import *
 import sys
+import re
 
 DIST = 1
 
@@ -66,18 +67,20 @@ class Graph:
             dns= [] ;port= []
             if dns_path: dns = [tldextract.extract(e).domain for e in dns_df[dns_df['device_id'] == device_id]['hostname'].values.tolist()]
             if port_path: port = [i for e in port_df[port_df['device_id'] == device_id]['port_list'].values.tolist() for i in e.split('+')]
-            disco = set()
-            try:
-                disco_dict = eval(device_df[FIELDS[4]][i])
-                for c in ('model name', 'device_type', 'manufacturer'):
-                    if disco_dict.get(c):
-                        cur = str(disco_dict.get(c)).split()[0]
-                        cur = cur.split('_')[0]
-                        if cur[-1]==',': cur = cur[:-1]
-                        disco.add(cur.lower())
-            except SyntaxError: pass
-            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: list(disco), FIELDS[5]: dns, FIELDS[6]: port, FIELDS[0] : [name], FIELDS[1] : [device_id], 'G':G} # all values are lists
-            #print(info)
+            disco_dict = device_df[FIELDS[4]][i]
+            disco = []
+            if len(disco_dict) > 0:
+                disco = self.disco(eval(disco_dict))
+            '''
+            for c in ('model name', 'device_type', 'manufacturer'):
+                if disco_dict.get(c):
+                    cur = str(disco_dict.get(c)).split()[0]
+                    cur = cur.split('_')[0]
+                    if cur[-1]==',': cur = cur[:-1]
+                    disco.add(cur.lower())
+            '''
+            info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns, FIELDS[6]: port, FIELDS[0] : [name], FIELDS[1] : [device_id], 'G':G} # all values are lists
+            #print(disco)
             print("processing {}-th data".format(i), end="\r") 
             self.connect(name, info)
             self.device_num += 1
@@ -91,6 +94,19 @@ class Graph:
         print("cluster built complete!")
         # return raw data
         return raw_data 
+    
+    def disco(self, disco_dict):
+        disco = []
+        filt = ['device','local', 'homekit', 'basement', 'bedroom']
+        for info in disco_dict.values():
+            if type(info) == dict: disco += self.disco(info)
+            elif type(info) == str: 
+                cur = re.split('[^a-zA-Z]', info)
+                for e in cur:
+                    e = e.lower()
+                    if len(e) > 4 and e not in filt: disco += [e]
+
+        return list(set(disco))
 
     def display(self):
         cluster = self.cluster

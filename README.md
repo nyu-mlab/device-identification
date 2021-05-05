@@ -138,6 +138,7 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 | 03/29/2021 |                   1.coner cases 2.new data                   |
 | 04/09/2021 |         1.tp-link 2.try original oui 3.code refactor         |
 | 04/16/2021 |           1.code refactor 2.comments 2. Net_disco            |
+| 04/30/2021 |                 1.data imbalance 2.comments                  |
 
 #### Experiments
 
@@ -181,3 +182,6 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 |    OUI+DNS    |   LR   |   82%    | 8162 data |
 | OUI+Disco+DNS |   LR   |   83%    | 8141 data |
 
+##### 4. class imbalance
+
+![image-20210505172109266](/Users/tom/Library/Application Support/typora-user-images/image-20210505172109266.png) 

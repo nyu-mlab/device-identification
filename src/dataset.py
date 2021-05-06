@@ -178,7 +178,7 @@ class Dataset:
         print("Data for training: ", len(X))
         print('Data loaded!')
 
-        #classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial', class_weight='balanced',max_iter=100) #change iter per your time/machine
+        #classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial', class_weight='balanced',max_iter=100) #change weight method here
         classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial', max_iter=100) #change iter per your time/machine
         classifier.fit(X_train, y_train)
         y_pred = classifier.predict(X_test)

@@ -20,17 +20,17 @@ if __name__ == '__main__':
 
    if sys.argv[3] == 'LR': 
         model, acc = dataObj.bow_softmax(sys.argv[2] , 0.2)
-        #dataObj.save_model(model, sys.argv[4])
+        dataObj.save_model(model, sys.argv[4])
 
    if sys.argv[3] == 'bayes': 
-        for _ in range(1):
+        for _ in range(10):
             model, acc, stat = dataObj.train_test(sys.argv[2], sys.argv[3]  , 0.2)
             ret += [acc]
         mean , std = np.mean(ret), np.std(ret)
         print("Avg Acc: {}, Std: {}".format(mean, std))
-        dataObj.draw_graph(stat)
+        #dataObj.draw_graph(stat) # you can draw class stats here
         #print(tp)
-        #dataObj.save_model(model,  sys.argv[4] )
+        dataObj.save_model(model,  sys.argv[4] )
 
    if sys.argv[3] == 'mix': 
         data_model = dataObj.load(sys.argv[4])

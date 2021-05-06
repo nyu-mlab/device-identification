@@ -18,6 +18,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.linear_model import LogisticRegression
 from utils import *
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.rcParams.update({'font.size': 6})
 
 class Dataset:
     def __init__(self, graph):
@@ -60,15 +63,21 @@ class Dataset:
         if state == 'test':
             ret = 0
             missing = 0
-            tp = Counter()
+            tp = Counter(); data_all = Counter() #for class acc  
+            stat = defaultdict(list)
             for d, f in data:
                 if f not in model:
                     missing += 1
+                    continue
                 elif model[f][0][0] == d: 
                     ret += 1 
                     tp.update([d])
+                data_all.update([d])
+            for d in tp:
+                stat[d] = [round(tp[d] / data_all[d], 2), data_all[d]]
+            res = sorted(stat.items(), key=lambda x:-x[1][0])  
             #print(tp)
-            return ret / (len(data) - missing), tp
+            return ret / (len(data) - missing), res
 
     def tf_idf(self, data, state, model=None):
         if state == 'train':
@@ -117,7 +126,7 @@ class Dataset:
         model = self.train(train, method)
         ret, tp = self.test(test, method, model)
         print("Using {} on {}, acc: {}.".format(method, feat, ret))
-        return model, ret
+        return model, ret, tp
 
     def split_data(self, feat, percent):
         '''percent: percentage of training data
@@ -169,10 +178,12 @@ class Dataset:
         print("Data for training: ", len(X))
         print('Data loaded!')
 
-        classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial')
+        #classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial', class_weight='balanced',max_iter=100) #change iter per your time/machine
+        classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial', max_iter=100) #change iter per your time/machine
         classifier.fit(X_train, y_train)
-
         y_pred = classifier.predict(X_test)
+        cls_num = len(one_hot_y)
+        print(classification_report(y_test, y_pred, labels=list(range(cls_num)), target_names=one_hot_y))
         acc = accuracy_score(y_test, y_pred)
         print('\n Accuracy: ', acc)
 
@@ -214,8 +225,23 @@ class Dataset:
         print("on Espressif Inc.: ", probe_tp / (probe_num+0.001), " Num:",probe_num)
         return ret / len(data_X) , oui_get, dns_get
 
+    def draw_graph(self, stat):
+        '''draw bar graph on class acc
+        '''
+        labels = [e[0] for e in stat]
+        acc = [e[1][0] for e in stat]
+        y_pos = np.arange(len(labels))  # the label locations
+        fig, ax = plt.subplots()
 
-
+        # Add some text for labels, title and custom x-axis tick labels, etc.
+        rects = ax.barh(y_pos, acc,  align='center')
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(labels)
+        ax.set_xlabel('Accuracy')
+        ax.set_title('Acc per class')
+        fig.tight_layout()
+        ax.bar_label(rects)
+        plt.show()
 
     def save_model(self, model,  save_path):
         with open(save_path, 'wb') as fp:

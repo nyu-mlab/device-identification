@@ -184,4 +184,7 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 
 ##### 4. class imbalance
 
-![image-20210505172109266](/Users/tom/Library/Application Support/typora-user-images/image-20210505172109266.png) 
+**Check graphs in the result folder**
+
+######
+

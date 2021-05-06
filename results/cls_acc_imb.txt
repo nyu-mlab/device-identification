@@ -1,0 +1,287 @@
+cluster loaded!
+Data for training:  8141
+Data loaded!
+                                      precision    recall  f1-score   support
+
+                              google       0.84      0.97      0.90       243
+                               sonos       0.99      1.00      0.99        74
+                              rachio       0.33      0.67      0.44         3
+                                  hp       0.40      0.32      0.35        19
+                             koogeek       0.88      0.70      0.78        10
+                              amazon       0.89      0.97      0.93       182
+                                ikea       1.00      1.00      1.00         5
+                               canon       1.00      0.50      0.67         2
+                           honeywell       1.00      1.00      1.00        18
+                             linksys       0.33      1.00      0.50         1
+                               apple       0.92      0.99      0.96        97
+                             samsung       0.90      0.99      0.95        96
+                             generic       0.00      0.00      0.00         1
+                            nintendo       0.93      1.00      0.97        14
+                             tp-link       0.68      0.94      0.79        16
+                             brother       1.00      1.00      1.00         1
+                           microsoft       0.75      0.79      0.77        19
+                            ubiquiti       0.75      1.00      0.86         3
+                            synology       0.95      1.00      0.97        18
+                         silicondust       1.00      1.00      1.00         5
+                             netgear       0.93      0.88      0.90        16
+                     western digital       0.33      1.00      0.50         1
+                              foscam       0.50      1.00      0.67         5
+                             reolink       1.00      1.00      1.00         2
+                         chamberlain       0.57      1.00      0.73         4
+                                dish       0.00      0.00      0.00         0
+                         raspberrypi       0.00      0.00      0.00         5
+                             netatmo       1.00      1.00      1.00        11
+                                dell       0.40      0.50      0.44         8
+                            nanoleaf       0.50      1.00      0.67         2
+                               epson       1.00      1.00      1.00         5
+                              medion       0.00      0.00      0.00         2
+                                 avm       0.00      0.00      0.00         1
+                                tado       0.00      0.00      0.00         0
+                                sony       0.87      0.93      0.90        29
+                           espressif       0.08      1.00      0.14         1
+                                 apc       0.00      0.00      0.00         1
+                              lenovo       0.17      0.33      0.22         3
+                            yeelight       0.00      0.00      0.00         0
+                              xiaomi       0.95      1.00      0.97        19
+                             philips       0.84      1.00      0.91        46
+                                ooma       0.83      1.00      0.91         5
+                                tivo       0.95      0.95      0.95        19
+             raspberry pi foundation       0.50      0.25      0.33         8
+                        raspberry pi       0.43      0.67      0.53        15
+                                asus       0.67      0.71      0.69        14
+                             wyzecam       0.00      0.00      0.00         4
+                              d-link       1.00      0.78      0.88         9
+                             siemens       0.00      0.00      0.00         0
+                             insteon       0.00      0.00      0.00         0
+                      hewlet-packard       0.00      0.00      0.00         0
+                            idevices       0.83      1.00      0.91         5
+                                plex       0.00      0.00      0.00         6
+                               arris       0.88      0.88      0.88         8
+                               drobo       0.50      1.00      0.67         1
+                                 tcl       0.67      0.50      0.57         4
+                           hikvision       0.86      0.67      0.75         9
+                              vmware       0.00      0.00      0.00         1
+                               cisco       1.00      0.25      0.40         4
+                              tplink       0.00      0.00      0.00         2
+                  bowers and wilkins       0.00      0.00      0.00         0
+                             pioneer       1.00      0.33      0.50         3
+                               denon       1.00      1.00      1.00         6
+                                 sky       0.00      0.00      0.00         0
+                     hewlett packard       0.00      0.00      0.00         1
+                               vizio       0.85      0.94      0.89        18
+                              ecobee       0.50      1.00      0.67         7
+                                wyze       0.83      0.89      0.86        28
+                                roku       0.93      0.95      0.94        39
+                                lifx       1.00      1.00      1.00         2
+                             seagate       0.00      0.00      0.00         0
+                               onkyo       0.75      1.00      0.86         3
+                     lg electoronics       0.00      0.00      0.00         4
+                            logitech       0.91      1.00      0.95        20
+                          smart life       0.00      0.00      0.00         1
+                             lexmark       0.00      0.00      0.00         1
+                              sonoff       0.00      0.00      0.00         1
+                               fritz       0.00      0.00      0.00         0
+                           panasonic       1.00      0.67      0.80         3
+                             vivotek       1.00      1.00      1.00         1
+                           broadlink       1.00      1.00      1.00         2
+                             tp link       0.00      0.00      0.00         5
+                            trendnet       0.00      0.00      0.00         0
+                             amcrest       1.00      1.00      1.00         3
+                              ankuoo       0.00      0.00      0.00         0
+                             buffalo       1.00      1.00      1.00         1
+                          magic home       0.00      0.00      0.00         0
+                                free       1.00      0.50      0.67         2
+                               dyson       1.00      1.00      1.00         2
+                         philips hue       1.00      0.12      0.22         8
+                          simplisafe       0.00      0.00      0.00         0
+                              yamaha       1.00      1.00      1.00         9
+                              lennox       1.00      1.00      1.00         3
+                                at&t       0.50      1.00      0.67         1
+                            withings       1.00      1.00      1.00         1
+                                wemo       0.00      0.00      0.00         7
+                         amazon echo       0.00      0.00      0.00         2
+                              nvidia       1.00      1.00      1.00         9
+                             marantz       1.00      1.00      1.00         1
+                             leviton       0.00      0.00      0.00         0
+                         belkin wemo       0.80      0.57      0.67         7
+                              devolo       1.00      1.00      1.00         2
+                                wink       1.00      0.40      0.57         5
+                                  lg       0.62      0.81      0.70        16
+                               unifi       0.00      0.00      0.00         1
+                   ubiquiti networks       0.00      0.00      0.00         0
+                     hewlett-packard       0.00      0.00      0.00         2
+                            motorola       1.00      1.00      1.00         4
+                      amazon fire tv       0.00      0.00      0.00         4
+                            vocolinc       0.00      0.00      0.00         0
+                             logitec       0.00      0.00      0.00         1
+                            ubiquity       0.00      0.00      0.00         0
+                         google nest       0.00      0.00      0.00         9
+                             oneplus       0.50      0.50      0.50         2
+                               blink       0.00      0.00      0.00         0
+                               ihome       0.91      0.91      0.91        11
+                               orbit       0.00      0.00      0.00         1
+                          chamberlin       0.00      0.00      0.00         2
+                           magicjack       0.00      0.00      0.00         0
+                               humax       1.00      0.60      0.75         5
+                             emerson       0.00      0.00      0.00         0
+                               dlink       0.00      0.00      0.00         1
+                                  wd       0.00      0.00      0.00         2
+                       cisco-linksys       1.00      0.50      0.67         2
+                        sonos play:5       0.00      0.00      0.00         0
+                              belkin       0.58      0.88      0.70        17
+                          ecobee inc       0.00      0.00      0.00         4
+                             polycom       0.00      0.00      0.00         0
+                           nest labs       0.00      0.00      0.00         8
+                             sengled       0.00      0.00      0.00         1
+                             toshiba       1.00      0.50      0.67         2
+                               swann       0.00      0.00      0.00         2
+                         grandstream       0.33      1.00      0.50         1
+                             samsumg       0.00      0.00      0.00         1
+                                eero       0.92      1.00      0.96        11
+                              august       1.00      1.00      1.00         7
+                      hewlet packard       0.00      0.00      0.00         0
+                                qnap       1.00      0.92      0.96        12
+                               nokia       0.00      0.00      0.00         3
+                           raspberry       0.00      0.00      0.00         4
+                           libratone       0.00      0.00      0.00         0
+                              apples       0.00      0.00      0.00         0
+                                eufy       1.00      1.00      1.00         2
+                               telus       0.00      0.00      0.00         1
+                               lorex       1.00      1.00      1.00         1
+                              irobot       0.57      0.67      0.62         6
+                          homebridge       0.00      0.00      0.00         1
+                             telekom       1.00      1.00      1.00         1
+                                hive       0.00      0.00      0.00         1
+                             idevice       0.00      0.00      0.00         0
+                               dahua       0.00      0.00      0.00         0
+                         smartthings       0.00      0.00      0.00         1
+                  schneider electric       0.00      0.00      0.00         0
+                                axis       0.00      0.00      0.00         3
+                              teufel       0.00      0.00      0.00         0
+                      sonoff tasmota       0.00      0.00      0.00         2
+               asustek computer inc.       0.00      0.00      0.00         3
+                         ecobee inc.       0.00      0.00      0.00         3
+                                  me       0.00      0.00      0.00         0
+                        google. nest       0.00      0.00      0.00         0
+                           blitzwolf       0.00      0.00      0.00         0
+                              ubuntu       0.00      0.00      0.00         1
+                          amazon dot       0.00      0.00      0.00         3
+                             directv       0.67      1.00      0.80         2
+                               intel       0.00      0.00      0.00         4
+                                  bt       0.00      0.00      0.00         0
+                        silicon dust       0.00      0.00      0.00         0
+              raspberrypi foundation       0.00      0.00      0.00         1
+                              netamo       0.00      0.00      0.00         0
+                   universal devices       1.00      1.00      1.00         1
+                             skybell       1.00      1.00      1.00         1
+                              shelly       0.00      0.00      0.00         0
+                             tasmota       0.00      0.00      0.00         0
+                            insignia       0.75      0.75      0.75         4
+         huawei technologies co. ltd       0.00      0.00      0.00         2
+                            molekule       0.00      0.00      0.00         0
+                           hdhomerun       0.00      0.00      0.00         0
+                              teckin       0.00      0.00      0.00         1
+                  asrock motherboard       0.00      0.00      0.00         0
+                       nvidia shield       0.00      0.00      0.00         0
+                              roomba       0.00      0.00      0.00         0
+                              orange       0.00      0.00      0.00         1
+                             sensibo       1.00      1.00      1.00         2
+                      hunter douglas       0.00      0.00      0.00         1
+                              lutron       1.00      1.00      1.00         9
+                              vonage       1.00      1.00      1.00         2
+                      lg electronics       0.00      0.00      0.00         2
+                             ubiqity       0.00      0.00      0.00         0
+                        dish network       0.00      0.00      0.00         0
+                            mikrotik       0.00      0.00      0.00         0
+                   arris group  inc.       0.00      0.00      0.00         0
+                               sense       1.00      1.00      1.00         3
+            tp-link technologies co.       0.00      0.00      0.00         0
+                           solaredge       1.00      1.00      1.00         1
+                                arlo       0.00      0.00      0.00         1
+                               geeni       0.00      0.00      0.00         3
+                            adafruit       0.00      0.00      0.00         0
+                               visio       0.00      0.00      0.00         2
+                           wyze labs       0.20      0.50      0.29         2
+                        sleep number       1.00      1.00      1.00         3
+                              huawei       0.62      0.83      0.71         6
+                     ambient weather       1.00      0.75      0.86         4
+                                 adt       0.00      0.00      0.00         0
+                                  yi       1.00      0.60      0.75         5
+                           heatmiser       1.00      1.00      1.00         1
+                            gigabyte       1.00      0.33      0.50         3
+                              asrock       1.00      0.50      0.67         2
+                                tuya       0.00      0.00      0.00         3
+                              obihai       1.00      1.00      1.00         6
+                               tablo       1.00      1.00      1.00         2
+                              meross       1.00      1.00      1.00         3
+                                kuna       1.00      1.00      1.00         1
+                             dropcam       0.00      0.00      0.00         1
+                             iclever       0.00      0.00      0.00         1
+                             harmony       0.00      0.00      0.00         1
+                               tesla       1.00      0.43      0.60         7
+                                fing       1.00      1.00      1.00         2
+                               athom       0.00      0.00      0.00         0
+                            shenzhen       0.00      0.00      0.00         1
+                                bose       0.80      1.00      0.89         4
+                               awair       0.00      0.00      0.00         0
+                               neato       1.00      1.00      1.00         1
+                          envisalink       0.00      0.00      0.00         0
+                               bosch       0.00      0.00      0.00         1
+                               plume       1.00      1.00      1.00         4
+                                 msi       0.00      0.00      0.00         0
+                        sonos play:1       0.00      0.00      0.00         1
+                               aqara       0.00      0.00      0.00         1
+                              xiamoi       0.00      0.00      0.00         0
+                          roku stick       0.00      0.00      0.00         1
+                          liftmaster       0.00      0.00      0.00         1
+                      home assistant       0.00      0.00      0.00         1
+                                mysa       0.00      0.00      0.00         0
+                                 jbl       0.00      0.00      0.00         2
+                                vera       0.00      0.00      0.00         0
+                              canary       1.00      1.00      1.00         6
+                         amazon ring       0.00      0.00      0.00         2
+                        chaimberlain       0.00      0.00      0.00         0
+                               zmodo       0.67      1.00      0.80         2
+                           google/lg       0.00      0.00      0.00         1
+                             yealink       0.00      0.00      0.00         0
+                            vodafone       0.00      0.00      0.00         0
+                                acer       0.00      0.00      0.00         1
+                                feit       0.00      0.00      0.00         1
+                               shark       0.00      0.00      0.00         0
+                               caavo       0.00      0.00      0.00         1
+                               sharp       0.00      0.00      0.00         1
+                    logitech harmony       0.00      0.00      0.00         0
+                           smartlife       0.00      0.00      0.00         1
+                               piper       0.67      1.00      0.80         2
+                             ucam247       1.00      0.50      0.67         2
+                               somfy       1.00      1.00      1.00         1
+                           magic hue       0.50      1.00      0.67         1
+                         tplink kasa       0.00      0.00      0.00         0
+                             hubitat       0.00      0.00      0.00         1
+                            etekcity       0.00      0.00      0.00         0
+                             yi home       0.00      0.00      0.00         0
+                             comelit       0.00      0.00      0.00         0
+                            vstarcam       0.00      0.00      0.00         0
+internet of things (iot)/google home       0.00      0.00      0.00         2
+                           nano leaf       0.00      0.00      0.00         2
+                   texas instruments       1.00      0.50      0.67         2
+                   google chromecast       0.00      0.00      0.00         1
+                           giga-byte       0.00      0.00      0.00         1
+                            swisscom       0.00      0.00      0.00         1
+                 charging essentials       0.00      0.00      0.00         2
+                         rasberry pi       0.00      0.00      0.00         0
+              rasberry pi foundation       0.00      0.00      0.00         2
+                               other       0.00      0.00      0.00         1
+                              tantan       0.00      0.00      0.00         0
+                            philip's       0.00      0.00      0.00         2
+                            wyzelabs       0.00      0.00      0.00         1
+                       generic brand       0.00      0.00      0.00         0
+                              dkview       0.00      0.00      0.00         0
+                            roku inc       0.00      0.00      0.00         0
+
+                           micro avg       0.82      0.82      0.82      1629
+                           macro avg       0.37      0.37      0.36      1629
+                        weighted avg       0.77      0.82      0.79      1629
+
+
+ Accuracy:  0.8201350521792511

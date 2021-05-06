@@ -71,14 +71,6 @@ class Graph:
             disco = []
             if len(disco_dict) > 0:
                 disco = self.disco(eval(disco_dict))
-            '''
-            for c in ('model name', 'device_type', 'manufacturer'):
-                if disco_dict.get(c):
-                    cur = str(disco_dict.get(c)).split()[0]
-                    cur = cur.split('_')[0]
-                    if cur[-1]==',': cur = cur[:-1]
-                    disco.add(cur.lower())
-            '''
             info = {FIELDS[2]: [device_oui], FIELDS[3]: dhcp , FIELDS[4]: disco, FIELDS[5]: dns, FIELDS[6]: port, FIELDS[0] : [name], FIELDS[1] : [device_id], 'G':G} # all values are lists
             #print(disco)
             print("processing {}-th data".format(i), end="\r") 

@@ -182,8 +182,8 @@ class Dataset:
         classifier = LogisticRegression(C=2,solver='lbfgs',multi_class='multinomial', max_iter=100) #change iter per your time/machine
         classifier.fit(X_train, y_train)
         y_pred = classifier.predict(X_test)
-        cls_num = len(one_hot_y)
-        print(classification_report(y_test, y_pred, labels=list(range(cls_num)), target_names=one_hot_y))
+        #cls_num = len(one_hot_y)
+        #print(classification_report(y_test, y_pred, labels=list(range(cls_num)), target_names=one_hot_y))
         acc = accuracy_score(y_test, y_pred)
         print('\n Accuracy: ', acc)
 

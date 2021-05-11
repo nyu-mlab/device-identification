@@ -33,7 +33,7 @@ Testing the API:
 ```python
 #Open Python3 in device-identification
 import api
-api.get_vendor(oui: str, type_: "dns" or "port", data: list) -> str:
+api.get_vendor(oui: str, dns: list, port: list, disco: dict) -> str:
 ```
 
 Testing the webserver locally:
@@ -139,6 +139,7 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 | 04/09/2021 |         1.tp-link 2.try original oui 3.code refactor         |
 | 04/16/2021 |           1.code refactor 2.comments 2. Net_disco            |
 | 04/30/2021 |                 1.data imbalance 2.comments                  |
+| 05/7/2021  |                1.disco to api 2.universal api                |
 
 #### Experiments
 
@@ -186,5 +187,5 @@ python3 train.py cluster_path feat_type method bayes_path LR_path
 
 **Check graphs in the result folder**
 
-######
+#####
 

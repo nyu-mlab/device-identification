@@ -4,10 +4,10 @@
 
 import editdistance
 
-FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns', 'port']
+#FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info', 'dns', 'port']
 
 # select based on your data frame names
-#FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info_list', 'dns', 'port']
+FIELDS = ['device_vendor', 'device_id', 'device_oui', 'dhcp_hostname' ,'netdisco_device_info_list', 'dns', 'port']
 
 def manual_rule(name):
     if name == 'ring' : return 'amazon'

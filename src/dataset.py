@@ -80,6 +80,8 @@ class Dataset:
             return ret / (len(data) - missing), res
 
     def tf_idf(self, data, state, model=None):
+        ''' obsoleted method, refer to LR model as below
+        '''
         if state == 'train':
             device = set()
             docu = []
@@ -150,7 +152,7 @@ class Dataset:
         for name, node in self.graph.items():
             one_hot_y.append(name)
             for info in node.raw_data: 
-                if len(info[FIELDS[2]][0]) != 0 and len(info[feat]) != 0:
+                if len(info[FIELDS[2]][0]) != 0 and len(info[feat]) != 0: # here, we append oui, disco, and seleted features(dns, port) to the model
                 #if  len(info[feat]) != 0:
                     # test on dns+oui+disco
                     c.update(info[feat])
@@ -193,6 +195,7 @@ class Dataset:
 
     def mix_model(self, oui_model, dns_data):
         ''' mix oui and dns for vendor test
+            simply based on voting, choose result from the side with higher belief 
         '''
         ret = 0
         dns_model, data_X, data_y, dict_x, dict_y, data_oui = dns_data['model'], dns_data['X'], dns_data['y'], dns_data['dx'], dns_data['dy'], dns_data['oui']

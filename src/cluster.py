@@ -44,6 +44,9 @@ class Graph:
         #self.display()
 
     def read_data(self, data_path, dns_path, port_path, save_path):
+        '''read data from raw csv file
+           and generate cluster using graph
+        '''
         dns_df = port_df = None #optional
         device_df = pd.read_csv(data_path).fillna('')
         if dns_path: dns_df = pd.read_csv(dns_path).fillna('')
@@ -88,6 +91,9 @@ class Graph:
         return raw_data 
     
     def disco(self, disco_dict):
+        '''distill info from netdisco using regular expression
+           treat it as a string rather than dict
+        '''
         disco = []
         filt = ['device','local', 'homekit', 'basement', 'bedroom']
         for info in disco_dict.values():
@@ -120,6 +126,8 @@ class Graph:
 
 
     def union(self, name1, name2):
+        '''union in DSU
+        '''
         p1, p2 = self.find(name1), self.find(name2) 
         if p1 == p2: return 
         if self.graph[p1].times >= self.graph[p2].times:
@@ -128,6 +136,8 @@ class Graph:
 
 
     def connect(self, name, info):
+        ''' connect new node into DSU
+        '''
         if name in self.graph:
             self.graph[name].times += 1
             self.graph[name].add_info(info)

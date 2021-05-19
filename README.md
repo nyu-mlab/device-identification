@@ -36,6 +36,8 @@ import api
 api.get_vendor(oui: str, dns: list, port: list, disco: dict) -> str:
 ```
 
+Note that we currently don't have a model for `dns` and `port`, so specify either `dns` or `port` above, but not both.
+
 Testing the webserver locally:
 
 ```sh

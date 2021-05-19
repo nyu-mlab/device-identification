@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 Download pretrained model from 
 
-https://drive.google.com/file/d/1KIADDtIBZP18l3cIzIsktctfiAp_12WY/view?usp=sharing
+https://drive.google.com/file/d/1dQ87uDf0IWaigYXanUZ9NmOhk6T8gL2R/view?usp=sharing
 
 And put it at ./data/model directory.
 

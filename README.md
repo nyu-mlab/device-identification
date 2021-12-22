@@ -87,9 +87,9 @@ python3 cluster.py data_path dns_path port_path cluster_path rebuild
 
 **Arguments:**
 
-[1]data_path: path to the main csv file(device_id, oui, vendor ...)
+[1]data_path: path to the main csv file(device_id, oui, vendor ...). This is [a sample dataset](https://drive.google.com/file/d/1ApsubG5UEwZFmNoQPdVoZpjVbIOiIksq/view?usp=sharing) -- use it to understand the code only, but not for production, because the data is outdated and has not been cleaned up.
 
-[2,3]dns_path & port_path: path to the corresponding dns/port csv file, pass a '' if none.
+[2,3]dns_path & port_path: path to the corresponding dns/port csv file, pass a '' if none. This is [a sample DNS dataset](https://drive.google.com/file/d/1kRHph66JYw8iNG5OIwTp2u2HJBXf5Rgf/view?usp=sharing) -- again, good for understanding but not for production.
 
 [4]cluster_path: path to save the cluster for the raw input.
 

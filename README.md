@@ -1,6 +1,6 @@
 # Device Identification in IOT Inspector
 
-**This project is part of the IOT inspector, and it is to retrieve device information from the user's device activity. We use several NLP and ML techniques to solve this problem. We provide the training methods and results below. If you want to reproduce these models, please request the data from the authors**
+**This project is part of the IOT inspector, and it is to retrieve device information from the user's device activity. We use several NLP and ML techniques to solve this problem. We provide the training methods and results below. If you want to reproduce these models, please request the data from the authors. Thanks for your visiting!**
 
 ### Author
 
@@ -16,7 +16,7 @@
 If you're on Debian, make sure the following packages are installed:
 
 ```sh
-sudo apt install build-essential python3-dev
+gsudo apt install build-essential python3-dev
 ```
 
 ```sh

@@ -1,4 +1,6 @@
-# device-identification
+# Device Identification in IOT Inspector
+
+**This project is part of the IOT inspector, and it is to retrieve device information from the user's device activity. We use several NLP and ML techniques to solve this problem. We provide the training methods and results below. If you want to reproduce these models, please request the data from the authors**
 
 ### Author
 

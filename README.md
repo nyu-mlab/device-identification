@@ -1,5 +1,10 @@
 # device-identification
 
+###Author
+
+- Taiyu(Tom) Long tl2868@nyu.edu mytomlong@gmail.com
+- Danny Y. Huang yh800@nyu.edu
+
 ### Enviroment
 
 **Python 3**

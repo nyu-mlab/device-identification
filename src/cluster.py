@@ -23,6 +23,7 @@ from editdistance import distance
 from pprint import pprint
 import numpy as np
 import gensim
+from sklearn import cluster
 from tabulate import tabulate
 import tldextract
 from utils import *
@@ -256,9 +257,24 @@ class Node:
         #print(self.name, [(e[0], round(e[1], 2)) for e in sorted(p_cond.items(), key=lambda x: -x[1])])
         return ret
 
+    def __str__(self) -> str:
+        return self.name + str(self.device_info)
+    def __repr__(self):
+        return self.name + str(self.device_info)
+
+def test():
+    data_path = os.path.join(os.getcwd(), 'testing', 'device_test.csv')
+    dns_path = os.path.join(os.getcwd(), 'testing', 'dns.csv')
+    port_path = ''#os.path.join(os.getcwd(), 'testing', 'syn_scan_ports.csv')
+    cluster_path = os.path.join(os.getcwd(), 'testing', 'testSmallCluster')
+    graphObj = Graph(rebuild=True)
+    graphObj.read_data(data_path, dns_path, port_path, cluster_path)
+    # print(graphObj.graph['apple'])
+    graphObj.display()
 
 if __name__ == '__main__':
-    graphObj = Graph(rebuild = eval(sys.argv[5]))
-    graphObj.read_data(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]) 
+    # graphObj = Graph(rebuild = eval(sys.argv[5]))
+    # graphObj.read_data(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]) 
+    test()
 
 

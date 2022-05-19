@@ -1,0 +1,1001 @@
+,device_id,device_name,device_type,device_vendor,device_oui,dhcp_hostname,netdisco_device_info,user_key
+0,s2f7a763479,Pixel 2,Phone,Google,HTC Corporation,,{},269aa83b6b844cf11be44d6dbea28868
+1,s069dfcecf1,ZP80,Music server,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.168.1.106:1400/xml/device_description.xml', 'name': '192.168.1.106 - Sonos ZP80', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'ZP80', 'model_name': 'Sonos ZP80', 'host': '192.168.1.106', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:RINCON_000E58218FAC01400', 'port': 1400, 'manufacturer': 'Sonos, Inc.'}",121d5ed5e06b42f68bc2e621e76aa1f3
+2,s5391507682,camera,Camera,WLAN,B-Link Electronic Limited,,{},121d5ed5e06b42f68bc2e621e76aa1f3
+3,scbc253fdbc,DB2BCD,Irrigation controller,Rachio,AzureWave Technology Inc.,,{},121d5ed5e06b42f68bc2e621e76aa1f3
+4,s0e81252086,Laserjet P1102W,Printer,HP,"Hon Hai Precision Ind. Co.,Ltd.",,{},121d5ed5e06b42f68bc2e621e76aa1f3
+5,s53728fe968,Koogeek Switch,Smart Plug,Koogeek,China Dragon Technology Limited,,"{'name': 'Koogeek-P1-77519D', 'hostname': 'hap-77519D.local.', 'properties': {'md': 'P1', 'ci': '7', 'pv': '1.1', 'c#': '3', 'id': '49:84:E4:46:C8:CA', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.23', 'device_type': 'homekit', 'port': 80}",d0e65960db07486ef774ec9de2739470
+6,s1de01f07f6,Amazon Fire Stick,TV Stick,Amazon,Amazon Technologies Inc.,,{},d0e65960db07486ef774ec9de2739470
+7,sf7c4b01cd5,TRADFRI gateway,IOT gateway,Ikea,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-a0cc2b6f709b.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.0', 'c#': '254', 'id': '90:A4:32:A5:2C:06', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.46', 'device_type': 'homekit', 'port': 80}",d0e65960db07486ef774ec9de2739470
+8,s4432710bee,Canon Printer,Printer,Canon,CANON INC.,,{},d0e65960db07486ef774ec9de2739470
+9,sa25da41547,Lyric,Thermostat,Honeywell,ADEMCO,,"{'name': 'LyricStatA1F7CD', 'hostname': 'LyricStatA1F7CD.local.', 'properties': {'md': 'LyricStatA1F7CD', 'ci': '9', 'pv': '1.0', 'c#': '602', 'id': '00:D0:2D:A1:F7:CD', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.129', 'device_type': 'homekit', 'port': 80}",121d5ed5e06b42f68bc2e621e76aa1f3
+10,sfa4aa6444d,Lyric,Thermostat,Honeywell,ADEMCO,,{},121d5ed5e06b42f68bc2e621e76aa1f3
+11,sf08fefdfab,Amazon Fire Stick,TV Stick,Amazon,Amazon Technologies Inc.,,{},9b14618573954dbd07b5ed0798e02682
+12,s4533e46bc4,camera,Camera,Linksys,"Cisco-Linksys, LLC",,{},d091b6b3b63a40bdd951c5fa2e4c3760
+13,s9497f5c781,DirectStream DAC,DAC,PSAudio,"ConversDigital Co., Ltd.",,{},d091b6b3b63a40bdd951c5fa2e4c3760
+14,s8222358195,Macbook Pro,Computer,Apple,"Apple, Inc.",,{},729ac99625ff421e5da003a5c913dadb
+15,s43c8fa9e5d,S8+,Cellphone,Samsung,"Murata Manufacturing Co., Ltd.",,{},729ac99625ff421e5da003a5c913dadb
+16,s5ef40025a6,Johnny Lamp,Smart Plug,Generic,Espressif Inc.,,{},729ac99625ff421e5da003a5c913dadb
+17,s68bf542cad,Nintendo Switch,Game Console,Nintendo,"Nintendo Co.,Ltd",,{},8111b5c590d24d29b2ae659fbe2145b3
+18,s77ce6cf8d4,Mac Mini,Computer,Apple,"Apple, Inc.",,{},fe510c48934c4861b6d1c8442d75cc57
+19,sc4a556b8eb,Apple TV,TV Stick,Apple,"Apple, Inc.",,"{'name': 'Apple TV Radcliffe', 'hostname': 'Apple-TV-Radcliffe.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Apple TV Radcliffe', 'hG': '00000000-3dba-1407-dfae-615fa4f44ca4', 'EiTS': '1'}, 'host': '192.168.1.126', 'device_type': 'apple_tv', 'port': 3689}",fe510c48934c4861b6d1c8442d75cc57
+20,s1f0128448c,Canon Printer,Printer,Canon,CANON INC.,,"{'ssdp_description': 'http://10.0.1.18:80/Canon_basic.xml', 'name': 'MX920 series (UPnP)_2C0EA9A8B408', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'MX920 series', 'model_name': 'MX920 series', 'host': '10.0.1.18', 'device_type': 'canon_printer', 'serial': '2C9EFCA8B408', 'udn': 'uuid:00000000-0000-1000-8000-2C9EFCA8B408', 'port': 80, 'manufacturer': 'CANON INC.'}",35380f0168814483eb177fb95abec2a8
+21,s2530528c10,iPad (Natie),iPad,Apple,"Apple, Inc.",,{},0d05b27917384ede483d5d915322d79e
+22,sf038515d07,iPhone (Pete),Phone,Apple,"Apple, Inc.",Petes-iPhone,{},0d05b27917384ede483d5d915322d79e
+23,s7d34dd469b,TP-Link WAP - Cottage,Wireless Router,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},0d05b27917384ede483d5d915322d79e
+24,sd778c6d5d2,TP-Link WAP - Family Room,Wireless Router,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},0d05b27917384ede483d5d915322d79e
+25,s1c55ffe33b,HP Photosmart,Printer,HP,Hewlett Packard,,{},0d05b27917384ede483d5d915322d79e
+26,s8196a8b98b,TP-Link Repeater (living room),Wireless repeater,TP-Link,,,{},0d05b27917384ede483d5d915322d79e
+27,se6d2014889,iPad (Krisa),iPad,Apple,"Apple, Inc.",Krisas-iPad,{},0d05b27917384ede483d5d915322d79e
+28,s8522858e43,MGC-L2740DW,Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},adb7113b33a34e42303e9f0df15c5cb5
+29,sb9f1cb04ce,BCD536HP,Scanner,Uniden,"Universal Global Scientific Industrial Co., Ltd.",WICED DHCP Client,{},fe510c48934c4861b6d1c8442d75cc57
+30,s15432fae1f,Apple TV,TV Stick,Apple,"Apple, Inc.",,"{'name': 'Apple TV', 'hostname': 'Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Apple TV', 'hG': '00000000-3dba-1407-dfae-615fa4f44ca4', 'DFID': '2'}, 'host': '192.168.1.223', 'device_type': 'apple_tv', 'port': 3689}",fe510c48934c4861b6d1c8442d75cc57
+31,s8b2dcfcd98,iPhone 8 Plus,Phone,Apple,"Apple, Inc.",KB1YF,{},fe510c48934c4861b6d1c8442d75cc57
+32,s183e7b59cf,Xbox,Game Console,Microsoft,Microsoft Corporation,,{},8fb79e6df82d4502e5c89ee8ca68219c
+33,s1eb211026c,brother printer,Printer,Brother,"Brother industries, LTD.",,{},04c955f3544348f00d20acb12a85b363
+34,scb55ad0d5f,ubiquiti wifi,Wireless repeater,ubiquiti,Ubiquiti Networks Inc.,,{},04c955f3544348f00d20acb12a85b363
+35,s1506732471,Apple TV,Smart TV controller,Apple,"Apple, Inc.",,{},04c955f3544348f00d20acb12a85b363
+36,s56f1f04661,Synology Diskstation,Storage Device,Synology,Synology Incorporated,,{},04c955f3544348f00d20acb12a85b363
+37,se5473a7286,sonos,Speaker,Sonos,"Sonos, Inc.",,{},04c955f3544348f00d20acb12a85b363
+38,s6ebee86087,iPhone (Natie),iPhone,Apple,"Apple, Inc.",NatividdsiPhone,{},0d05b27917384ede483d5d915322d79e
+39,s51c8c89123,Mac Pro 3 1,Computer,APPLE,"Apple, Inc.",Waynes-Mac-Pro,{},3c9df09365e34e643a11bb2be618acc9
+40,s28ae5135c7,Canon Printer,Printer,Canon,CANON INC.,,{},3c9df09365e34e643a11bb2be618acc9
+41,s79aacf4900,iPad1,Tablet,Apple,"Apple, Inc.",,{},3c9df09365e34e643a11bb2be618acc9
+42,sa838f16a5c,Apple TV 4K,Streamer,Apple,"Apple, Inc.",Living-Room,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-07b3-8d42-e8e0-269c8daf44c6', 'Name': 'Living Room'}, 'host': '192.168.1.175', 'device_type': 'apple_tv', 'port': 3689}",3c9df09365e34e643a11bb2be618acc9
+43,s6175a9c757,iPhone6+,Phone,Apple,"Apple, Inc.",SherVansiPhone6,{},3c9df09365e34e643a11bb2be618acc9
+44,sccbf85ae26,HDHR Quatro,TV Tuner,Silicondust,Silicondust Engineering Ltd,,{},3c9df09365e34e643a11bb2be618acc9
+45,s1fa9480519,HDHRPrime1,TV Tuner,Silicondust,Silicondust Engineering Ltd,,"{'ssdp_description': 'http://192.168.1.122:80/dms/device.xml', 'name': 'HDHomeRun DMS 13142937', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDHR3-CC', 'model_name': 'HDHomeRun PRIME', 'host': '192.168.1.122', 'device_type': 'dlna_dms', 'serial': '13142937', 'udn': 'uuid:527F67D9-33EF-3B9F-A8A2-D934DE3DFAC4', 'port': 80, 'manufacturer': 'Silicondust'}",3c9df09365e34e643a11bb2be618acc9
+46,s4b5a8f290b,HDHR Prime 2,TV Tuner,Silicondust,Silicondust Engineering Ltd,,"{'ssdp_description': 'http://192.168.1.33:80/dms/device.xml', 'name': 'HDHomeRun DMS 1314AF15', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDHR3-CC', 'port': 80, 'host': '192.168.1.33', 'device_type': 'dlna_dms', 'serial': '1314AF15', 'udn': 'uuid:D3148B82-6BA9-3898-A0B9-F243483BD69B', 'model_name': 'HDHomeRun PRIME', 'manufacturer': 'Silicondust'}",3c9df09365e34e643a11bb2be618acc9
+47,saef47510dc,Brother Printer,Printer,Brother,"Taiyo Yuden Co., Ltd.",,{},3c9df09365e34e643a11bb2be618acc9
+48,s2152eedafa,iPadMini,Tablet,Apple,"Apple, Inc.",,{},3c9df09365e34e643a11bb2be618acc9
+49,sa9b981b156,Apple TV,Streamer,APPLE,"Apple, Inc.",,"{'name': 'Office', 'hostname': 'Office.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Office', 'hG': '00000000-07b3-8d42-e8e0-269c8daf44c6', 'EiTS': '1'}, 'host': '192.168.1.53', 'device_type': 'apple_tv', 'port': 3689}",3c9df09365e34e643a11bb2be618acc9
+50,s4720aeb7c2,iPhoneX,Phone,Apple,"Apple, Inc.",,{},3c9df09365e34e643a11bb2be618acc9
+51,s87d6a352e0,iPadPro,Tablet,Apple,"Apple, Inc.",,{},3c9df09365e34e643a11bb2be618acc9
+52,s213318362a,LB120 (FS),Bulb,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},ffe39577d2ef4932cc675cc28f5f7771
+53,s14e7529baf,Nighthawk R7500v2,Wireless Router,Netgear,NETGEAR,,{},b294d5fab7a04e1a37402e29f00339df
+54,s4137a564f2,IPHONE 7+,IPHONE,APPLE,"Apple, Inc.",Sarahs-iPhone,{},f392f02193a44dd6c76ac4a256d98d04
+55,sa0c21fb6fe,IPAD (C),Tablet,APPLE,"Apple, Inc.",,{},f392f02193a44dd6c76ac4a256d98d04
+56,s1891cd0a7d,Apple TV (BS),Streamer,APPLE,"Apple, Inc.",,"{'name': 'Basement', 'hostname': 'Basement.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-032d-19a0-dc57-0ab418084481', 'Name': 'Basement'}, 'host': '192.168.7.26', 'device_type': 'apple_tv', 'port': 3689}",f392f02193a44dd6c76ac4a256d98d04
+57,s3dcbf7b392,Apple TV,Streamer,APPLE,"Apple, Inc.",,"{'name': 'Our Bedroom', 'hostname': 'Our-Bedroom.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Our Bedroom', 'hG': '00000000-032d-19a0-dc57-0ab418084481', 'EiTS': '1'}, 'host': '192.168.7.34', 'device_type': 'apple_tv', 'port': 3689}",f392f02193a44dd6c76ac4a256d98d04
+58,s00b2af4f3a,AppleTV,Apple TV,Apple,"Apple, Inc.",Apple-TVLAH,"{'name': 'Apple TVLAH', 'hostname': 'Apple-TVLAH.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Apple TVLAH', 'hG': '00000000-0003-27ba-6957-343f584d413e', 'EiTS': '1'}, 'host': '192.168.1.16', 'device_type': 'apple_tv', 'port': 3689}",b203820aa10e43ec72a88af1645f1f93
+59,s50a90c6147,Canon 2300 Printer,Printer,Canon,CANON INC.,,{},b203820aa10e43ec72a88af1645f1f93
+60,s908923ab50,Apple Mac Mini Server,Server,Apple,"Apple, Inc.",,{},b203820aa10e43ec72a88af1645f1f93
+61,seaf546cf71,iPhone (Krisa),Phone,Apple,"Apple, Inc.",iPhone-2,{},0d05b27917384ede483d5d915322d79e
+62,sab423eff7a,MyCloud,NAS,Western Digital,WESTERN DIGITAL,,"{'ssdp_description': 'http://10.0.1.59:9000/TMSDeviceDescription.xml', 'name': 'WDMyCloud', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'sq', 'model_name': 'WDMyCloud', 'host': '10.0.1.59', 'device_type': 'dlna_dms', 'serial': '7.2.9', 'udn': 'uuid:55076f6e-6b79-4d65-6436-0090a9d5187d', 'port': 9000, 'manufacturer': 'Western Digital Corporation'}",cb9335efc9344f83a5f8e0f15d1da808
+63,sfabe1e9a5d,cam1,ip camera,foscam,"VIA Networking Technologies, Inc.",,{},cb9335efc9344f83a5f8e0f15d1da808
+64,s5e76c7c84a,MacBook (Krisa),Laptop computer,Apple,"Apple, Inc.",neo-C02RF2VXFVH8,{},0d05b27917384ede483d5d915322d79e
+65,sa0ccabf4f0,IPHONE 7+,iPhone,APPLE,"Apple, Inc.",,{},dabccec986c44f345390a5af03f334ad
+66,s41a4509a1b,TP-Link WR940N,Wireless Router,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},53214df05d5e4056b5c93b5741be03e2
+67,se163be46cd,Airport Extreme,Time Machine Router,Apple,"Apple, Inc.",,{},53214df05d5e4056b5c93b5741be03e2
+68,s3b504158a3,Brother-MFCL2700DW,Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},53214df05d5e4056b5c93b5741be03e2
+69,se7813311ef,Mac Mini,Computer,Apple,"Apple, Inc.",,"{'ssdp_description': 'http://192.168.155.10:2170/', 'name': 'EyeConnect (mini2)', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '622', 'port': 2170, 'host': '192.168.155.10', 'device_type': 'dlna_dms', 'serial': 'EAEB-001FF345EE44-02-656C6761746F04', 'udn': 'uuid:EAEB-001FF345EE44-01-656C6761746F04', 'model_name': 'EyeConnect', 'manufacturer': 'Elgato Systems GmbH'}",53214df05d5e4056b5c93b5741be03e2
+70,s71e8e5a468,iPad1,Tablet,Apple,"Apple, Inc.",,{},53214df05d5e4056b5c93b5741be03e2
+71,s906ffc53eb,iPad 4,Tablet,Apple,"Apple, Inc.",,{},53214df05d5e4056b5c93b5741be03e2
+72,s26742305af,iPad2,Tablet,Apple,"Apple, Inc.",iPad2muticolore,{},53214df05d5e4056b5c93b5741be03e2
+73,sdd86fdfea0,Sylvania Light Strip,light,Sylvania,"Silex Technology, Inc.",,{},9e82d0b212c34893b6e32fd86548193d
+74,s51b98eff76,MacBook (Natie),Computer,Apple,"Apple, Inc.",,{},0d05b27917384ede483d5d915322d79e
+75,s160deabaec,Basement Apple TV,Apple TV,Apple,"Apple, Inc.",,{},25b05605b1f84d6ac9ac871447900ae3
+76,s1a1d340414,Brother HL-3170CDW,Laser Printer,Brother,"Brother industries, LTD.",,{},25b05605b1f84d6ac9ac871447900ae3
+77,s834acc73a5,Reolink DVR,Network NVR,Reolink,"Shenzhen Baichuan Digital Technology Co., Ltd.",,{},25b05605b1f84d6ac9ac871447900ae3
+78,s24277600a2,Bedroom Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Bedroom Apple TV', 'hostname': 'Bedroom-Apple-TV-4.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Bedroom Apple TV', 'hG': '00000000-040b-3011-c4b0-be9579dd4c40', 'DFID': '2'}, 'host': '192.168.15.105', 'device_type': 'apple_tv', 'port': 3689}",25b05605b1f84d6ac9ac871447900ae3
+79,s273f107e70,LiftMaster Controller,GARAGE DOOR OPENER,CHAMBERLAIN,"The Chamberlain Group, Inc",,{},25b05605b1f84d6ac9ac871447900ae3
+80,scbd1755b83,Dish Network Joey Mstr Bdrm,Satalite Rcvr,Dish,Dish Technologies Corp,,"{'ssdp_description': 'http://192.168.15.122:49200/device.xml', 'name': 'ZiP Hopper(Master Bedroom)', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': None, 'model_name': 'XiP813 Hopper', 'host': '192.168.15.122', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:482e8dac-7fad-11df-afb7-718e67b2cba2', 'port': 49200, 'manufacturer': 'Echostar Technologies LLC'}",25b05605b1f84d6ac9ac871447900ae3
+81,s9e8a8267e6,Basement AppleTV,Apple TV,Apple,"Apple, Inc.",Basement-TV,{},25b05605b1f84d6ac9ac871447900ae3
+82,s5a198c4df0,Mac Mini,Computer,Apple,"Apple, Inc.",,{},88171d8c02de4514a3166efcd8e38859
+83,s15dc05e316,Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Entertainment Room', 'hostname': 'Entertainment-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0b88-037b-c84a-0ff4f9064194', 'Name': 'Entertainment Room'}, 'host': '192.168.1.81', 'device_type': 'apple_tv', 'port': 3689}",88171d8c02de4514a3166efcd8e38859
+84,s930cb26a9e,Netgear Router,Wireless Router,Netgear,NETGEAR,,"{'ssdp_description': 'http://192.168.1.67:8200/rootDesc.xml', 'host': '192.168.1.67', 'port': 8200, 'device_type': 'dlna_dms'}",88171d8c02de4514a3166efcd8e38859
+85,sdf6978c82a,Canon Printer,Printer,Canon,CANON INC.,,"{'ssdp_description': 'http://192.168.1.82:80/Canon_basic.xml', 'name': 'MX720 series (UPnP)_C23DC7A6FE44', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'MX720 series', 'model_name': 'MX720 series', 'host': '192.168.1.82', 'device_type': 'canon_printer', 'serial': '2C9EFCA6FE44', 'udn': 'uuid:00000000-0000-1000-8000-2C9EFCA6FE44', 'port': 80, 'manufacturer': 'CANON INC.'}",88171d8c02de4514a3166efcd8e38859
+86,s08f1601443,iPhone 8 Plus,iPhone,Apple,"Apple, Inc.",,{},88171d8c02de4514a3166efcd8e38859
+87,s5c6cf65cb8,Galaxy 6 (Erika),Smart Phone,Samsung,"Murata Manufacturing Co., Ltd.",,{},0d05b27917384ede483d5d915322d79e
+88,s048199d43f,Retropanel,Smarthome Controller,Homemade,Espressif Inc.,,"{'host': '192.168.1.11', 'hostname': 'retropanel-1.local.', 'port': 8266, 'device_type': 'arduino', 'properties': {'tcp_check': 'no', 'ssh_upload': 'no', 'board': 'ESP8266_WEMOS_D1MINI', 'auth_upload': 'no'}}",64375ac7d11f49079c8cd1fe9df79fc1
+89,sac0bce486e,Netgear,Switch,Netgear,NETGEAR,,{},0ec9fbf4f232427c5c9debd30a5fd3b4
+90,s4799b31c23,Raspberry Pi,Zero W,RaspberryPi,REALTEK SEMICONDUCTOR CORP.,,{},826f5ada8ded4f3fbf6cdd66617136aa
+91,s8bfa00daef,Laser Printer,Laser Printer,Samsung,"Samsung Electronics Co.,Ltd",,"{'ssdp_description': 'http://192.168.0.145:7678/smp_2_', 'name': 'Samsung CLP-320 Series (192.168.0.145)', 'upnp_device_type': 'urn:schemas-upnp-org:device:Printer:1', 'model_number': '1.0', 'port': 7678, 'host': '192.168.0.145', 'device_type': 'samsung_printer', 'serial': None, 'udn': 'uuid:16a65700-007c-1000-bb49-0015998cf873', 'model_name': 'Samsung CLP-320 Series', 'manufacturer': 'Samsung Electronics'}",42ffc57d898748de3f5287c5ecfba874
+92,s49cf627102,Airport Study,Airport,Apple,"Apple, Inc.",,{},42ffc57d898748de3f5287c5ecfba874
+93,s756ea94e9f,Weather Station,Weather Station,Netatmo,Netatmo,Netatmo-Personal-Weather-Station,{},42ffc57d898748de3f5287c5ecfba874
+94,sd15d25f710,Brother Printer,Laser Printer,Brother,"Taiyo Yuden Co., Ltd.",,{},ad152b8c8fd14050394dd0eca9b059fc
+95,s62cfef0c8e,Apple TV,Smart TV Device,Apple,"Apple, Inc.",,"{'name': 'ATV_LR', 'hostname': 'ATV-LR.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0346-efda-7ef1-c494980744c2', 'Name': 'ATV_LR'}, 'host': '10.0.0.11', 'device_type': 'apple_tv', 'port': 3689}",e127598c7ea441ad583789e5a78d7f06
+96,s5716f51da3,Mac Mini,Computer,APPLE,"Apple, Inc.",,"{'name': 'DoorBird-96BF', 'hostname': 'F1_EF_7A_CB_F9_EE.local.', 'properties': {'md': 'DoorBird', 'ci': '18', 'pv': '1.0', 'c#': '2', 'sf': '0', 'sh': 'c/Fq7A==', 'ff': '0', 's#': '1', 'id': 'F1:EF:7A:CB:F9:EE'}, 'host': '192.168.5.10', 'device_type': 'homekit', 'port': 49373}",a73420278d514dca5ac1c6099970b433
+97,sd51926a787,Canon Printer,Printer and Scanner,Canon,CANON INC.,,{},a5166b83dbcc449def35e2348c8743ad
+98,s64cd537e0d,iPadMini,Tablet,APPLE,"Apple, Inc.",,{},467e5ef0ca0a4f57850c289f3e7fbb7b
+99,s7547b4c514,iPad1,tablet,APPLE,"Apple, Inc.",,{},467e5ef0ca0a4f57850c289f3e7fbb7b
+100,se1350cb667,Margaret's Apple Watch,Apple Watch,Apple,"Apple, Inc.",M-Ls-AppleWatch,{},b203820aa10e43ec72a88af1645f1f93
+101,s8ab61472fb,Brother Wireless Laserjet Printer,Laser Printer and Scanner,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},6b4d022687b3428d2eda9ff6a48509d1
+102,s12d2045c94,Android Phone 1,Smart Phone,Google,HTC Corporation,,{},6b4d022687b3428d2eda9ff6a48509d1
+103,s1ffe658f46,ATV upstairs BR,Apple TV,Apple,"Apple, Inc.",,{},6b4d022687b3428d2eda9ff6a48509d1
+104,s590d10d8e8,Apple TV 3,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Within Reason', 'hostname': 'Within-Reason.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Within Reason', 'hG': '00000000-07dd-390c-7ce7-b1c1d0324132', 'DFID': '2'}, 'host': '10.67.217.129', 'device_type': 'apple_tv', 'port': 3689}",6b4d022687b3428d2eda9ff6a48509d1
+105,s7908a1cac5,ATV Media Room,Apple TV,Apple,"Apple, Inc.",,{},6b4d022687b3428d2eda9ff6a48509d1
+106,s54450b4076,KS_MBP,MacBookPro,Apple,"Apple, Inc.",,{},6b4d022687b3428d2eda9ff6a48509d1
+107,se941245348,ipad,Tablet,APPLE,"Apple, Inc.",,{},6b4d022687b3428d2eda9ff6a48509d1
+108,s1228fb0a8e,iPhone,IPHONE,Apple,"Apple, Inc.",,{},cb9335efc9344f83a5f8e0f15d1da808
+109,s9429f5d47d,MBA,Macbook Air,Apple,"Apple, Inc.",,{},176d0384e7724d160b402be7ee082f6b
+110,s88d5771610,WILCAM04,IP Camera,FOSCAM,Shenzhen Reecam Tech.Ltd.,,{},176d0384e7724d160b402be7ee082f6b
+111,s6d46feb693,Switch,Network Switch,Netgear,NETGEAR,,{},176d0384e7724d160b402be7ee082f6b
+112,s109e07fa12,Office Printer,HP Printer,HP,Hewlett Packard,,{},176d0384e7724d160b402be7ee082f6b
+113,s2d2bb4e8a5,Montoya,iPad Pro,Apple,"Apple, Inc.",Montoya,{},176d0384e7724d160b402be7ee082f6b
+114,s06dffcd01d,UniFi Video Camera G3 Dome,Camera,Ubiquiti,Ubiquiti Networks Inc.,,{},e6f0448bf7524a365042a3bf5730c1d3
+115,sfc6eba23f0,UniFi Video Camera G3 Dome,Camera,Ubiquiti,Ubiquiti Networks Inc.,,{},e6f0448bf7524a365042a3bf5730c1d3
+116,sd48550efe3,Dell r710 DRAC,Server,Dell,Dell Inc.,,{},e6f0448bf7524a365042a3bf5730c1d3
+117,s3345c50a1f,UniFi Video Camera G3 Dome,Camera,Ubiquiti,Ubiquiti Networks Inc.,,{},e6f0448bf7524a365042a3bf5730c1d3
+118,sad076632f0,Brother Printer,Laser Printer,Brother,"Brother Industries, LTD.",,{},59fc9fb6201c4726f0cb684adac1b1c9
+119,sf68b968e00,HP Printer,Laser Printer,HP,Hewlett Packard,,{},e4ca4b913dab4a898217259685c6b57b
+120,s4f28dcdd5b,Nanoleaf,light,Nanoleaf,IEEE Registration Authority,,{},6561e1ed522e4ae0909245445548f1ff
+121,se23efe586d,iPhone 8,Smart Phone,APPLE,"Apple, Inc.",iPhone,{},90282b29dcfa45baa8f31466d9c88906
+122,s711c6dabb0,PX-M5081F,Printer and Scanner,Epson,Seiko Epson Corporation,,{},b8a6d4be4115472a4ece390892a0f228
+123,s57353bf5d8,laptop (cb),MacBookPro,APPLE,"Apple, Inc.",,{},b8a6d4be4115472a4ece390892a0f228
+124,s5d66c0e6e2,LP-M8170,Laser Printer and Scanner,Epson,HTC Corporation,,{},b8a6d4be4115472a4ece390892a0f228
+125,se71f1f1800,iPhone 8,iPhone,APPLE,"Apple, Inc.",CBs-iPhone-8,{},b8a6d4be4115472a4ece390892a0f228
+126,s6345ccd155,WD MyCloudMirror,NAS,Western Digital,WESTERN DIGITAL,,{},7ff0a9b8c6154158f6e6dd0d544067e1
+127,s6564411ae7,Epson 69AF2A,Printer,Epson,Seiko Epson Corporation,,{},7ff0a9b8c6154158f6e6dd0d544067e1
+128,sfdcd9f94cf,Brother-MFCJ480DW,Printer  Fax  Scanner,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},7ff0a9b8c6154158f6e6dd0d544067e1
+129,s64e1678416,Medion NAS,NAS,Medion,GoodMan Corporation,,{},7ff0a9b8c6154158f6e6dd0d544067e1
+130,seb5f28bda4,Fritzbox Repeater,WLAN Repeater,AVM,,,{},7ff0a9b8c6154158f6e6dd0d544067e1
+131,secc2c008b6,Apple Time Capsule,Time Machine Router,Apple,"Apple, Inc.",,{},7ff0a9b8c6154158f6e6dd0d544067e1
+132,s5acc0ef7b9,AVM Fritz!Box,Wireless Router,AVM,AVM Audiovisuelles Marketing und Computersysteme GmbH,,"{'ssdp_description': 'http://192.168.4.1:49000/fboxdesc.xml', 'name': 'gw-sabs', 'upnp_device_type': 'urn:schemas-upnp-org:device:fritzbox:1', 'model_number': 'avme', 'port': 49000, 'host': '192.168.4.1', 'device_type': 'fritzbox', 'serial': None, 'udn': 'uuid:123402409-bccb-40e7-8e6c-E8DF70A314DE', 'model_name': 'FRITZ!Box 7581', 'manufacturer': 'AVM Berlin'}",bc22aa6ce767447f2751dcbe400476aa
+133,s00e3457f76,CCTV,IP Camera,Unknown,"Hangzhou Hikvision Digital Technology Co.,Ltd.",,{},51d3487a6021466d6c4e223a0da1a341
+134,sc0118c0ff7,CellSpot,Cell repeater,Unknown,ASKEY COMPUTER CORP,,{},51d3487a6021466d6c4e223a0da1a341
+135,s5c813a8c83,Security hub,Security hub,Abode,IEEE Registration Authority,,{},51d3487a6021466d6c4e223a0da1a341
+136,s5da1156bfc,NEEO Brain TR2,Smarthome Controller,NEEO,"CC&C Technologies, Inc",NEEO-0975b641,{},39736a2ef48e445326e42b0a072a69e3
+137,sc477b82556,NEEO Remote,Smart TV controller,NEEO,Texas Instruments,,{},39736a2ef48e445326e42b0a072a69e3
+138,sc1306ae29e,J's smoke alarm,Smoke & CO detector,Nest,Nest Labs Inc.,,{},51d3487a6021466d6c4e223a0da1a341
+139,s9cd06e5239,Apple TV 4K,Apple TV,APPLE,"Apple, Inc.",,"{'name': 'Apple TV', 'hostname': 'Apple-TV.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Apple TV', 'hG': '00000000-058c-5ffb-898d-f1e0dcc04ccf', 'EiTS': '1'}, 'host': '192.168.1.10', 'device_type': 'apple_tv', 'port': 3689}",c0ea900d55654ccf40e006356d7a807f
+140,sa0f01ecdac,Apple iPad Air 3,Tablet,APPLE,,,{},72a9a4d2e2a04d2ca80292324a897e67
+141,sa343dc6a41,Synology NAS,NAS,Synology,Synology Incorporated,,"{'ssdp_description': 'http://192.168.1.67:50001/desc/device.xml', 'name': 'NAS-JP', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': None, 'model_name': 'DS218+', 'host': '192.168.1.67', 'device_type': 'dlna_dms', 'serial': '1820PCN532209', 'udn': 'uuid:00113289-676c-0011-6c67-6c6789321100', 'port': 50001, 'manufacturer': 'Synology Inc'}",72a9a4d2e2a04d2ca80292324a897e67
+142,sa44df228ef,Koogeek Plug,Smart Plug Energy Monitor,Koogeek,China Dragon Technology Limited,,{},72a9a4d2e2a04d2ca80292324a897e67
+143,s17a3a42547,Koogeek Plug,Smart Plug Energy Monitor,Koogeek,"Apple, Inc.",,"{'ssdp_description': 'http://192.168.1.93:1400/xml/device_description.xml', 'host': '192.168.1.93', 'port': 1400, 'device_type': 'dlna_dmr'}",72a9a4d2e2a04d2ca80292324a897e67
+144,se0af8bc242,Tado Thermostat,Thermostat,Tado,tado GmbH,,"{'name': 'tado Internet Bridge IB3193964032', 'hostname': 'tadoBridgeIB3193964032.local.', 'properties': {'md': 'tado Internet Bridge', 'ci': '2', 'pv': '1.0', 'c#': '13', 'id': '06:44:ca:07:5f:06', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.66', 'device_type': 'homekit', 'port': 3000}",72a9a4d2e2a04d2ca80292324a897e67
+145,s401b292c87,Sonos One,Smart Speaker,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.168.1.94:1400/xml/device_description.xml', 'name': '192.168.1.94 - Sonos One', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'S13', 'model_name': 'Sonos One', 'host': '192.168.1.94', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:RINCON_7828CAB552EC01400', 'port': 1400, 'manufacturer': 'Sonos, Inc.'}",72a9a4d2e2a04d2ca80292324a897e67
+146,sbb9908d24b,Sonos One,Smart Speaker,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.168.1.90:1400/xml/device_description.xml', 'name': '192.168.1.90 - Sonos One', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'S13', 'port': 1400, 'host': '192.168.1.90', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:RINCON_7828CAB0951401400', 'model_name': 'Sonos One', 'manufacturer': 'Sonos, Inc.'}",72a9a4d2e2a04d2ca80292324a897e67
+147,s4733fdacac,Sonos Playbar,Speaker,Sonos,"Sonos, Inc.",,"{'host': '192.168.1.93', 'hostname': 'sonos5CAAFD1C4CE9.local.', 'port': 1400, 'device_type': 'spotify_connect', 'properties': {'CPath': '/spotifyzc', 'VERSION': '1.0'}}",72a9a4d2e2a04d2ca80292324a897e67
+148,s0f7f575d16,PS4,Game Console,Sony,Sony Interactive Entertainment Inc.,,{},72a9a4d2e2a04d2ca80292324a897e67
+149,sa32529dac8,koogeek plug,Smart Plug Energy Monitor,Koogeek,China Dragon Technology Limited,,"{'name': 'Koogeek-P1-1F076C', 'hostname': 'hap-1F076C.local.', 'properties': {'md': 'P1EU', 'ci': '7', 'pv': '1.0', 'c#': '1', 'id': 'D9:95:99:AD:FF:92', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.140', 'device_type': 'homekit', 'port': 80}",72a9a4d2e2a04d2ca80292324a897e67
+150,sda70be8d95,iPad,Tablet,Apple,"Apple, Inc.",,{},ee691a808bc5452ca88ca815a765ff36
+151,s936dbca4cf,ESP8266,MQTT Gateway,Espressif,Espressif Inc.,,{},cab487ba9e754dda96df086f644be504
+152,s0b0dafcf14,Brother HL-2270DW Printer,Laser Printer,Brother,"Silex Technology, Inc.",,{},4b2fdc0423614616db1f94216ff80405
+153,sa6aaf32520,Fritz,router,AVM,AVM GmbH,,{},a1ac797cfb764a35be25f3b0266eec25
+154,s7de3747246,UPS,Uninterruptible Power Supply,APC,AMERICAN POWER CONVERSION CORP,,{},6cffda3c9f7f4382aa335d1e35b46e45
+155,s7dea9d80d6,AppleTV,SetTopBox,Apple,"Apple, Inc.",,"{'name': 'Bedroom Apple TV', 'hostname': 'Bedroom-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-06e0-2b8e-9567-0e0a79504a86', 'Name': 'Bedroom Apple TV'}, 'host': '192.168.96.39', 'device_type': 'apple_tv', 'port': 3689}",6cffda3c9f7f4382aa335d1e35b46e45
+156,saf98ee5e2b,Thermostat,Wifi Thermostat,Radio Thermostat,"Murata Manufacturing Co., Ltd.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+157,s1d72e80d32,UPS,Uninterruptible Power Supply,APC,AMERICAN POWER CONVERSION CORP,,{},6cffda3c9f7f4382aa335d1e35b46e45
+158,see09544f52,UPS,Uninterruptible Power Supply,APC,AMERICAN POWER CONVERSION CORP,,{},6cffda3c9f7f4382aa335d1e35b46e45
+159,s694178b11f,Netgear R7800,Wifi Access Point,Netgear,NETGEAR,,{},6cffda3c9f7f4382aa335d1e35b46e45
+160,s88c92ffe5b,UPS,Uninterruptible Power Supply,APC,AMERICAN POWER CONVERSION CORP,,{},6cffda3c9f7f4382aa335d1e35b46e45
+161,sebad27b8c1,Netgear R7800,Wifi Access Point,Netgear,NETGEAR,,{},6cffda3c9f7f4382aa335d1e35b46e45
+162,sc0b778fe8a,Apple TV,SetTopBox,Apple,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Living Room', 'hG': '00000000-06e0-2b8e-9567-0e0a79504a86', 'EiTS': '1'}, 'host': '192.168.96.38', 'device_type': 'apple_tv', 'port': 3689}",6cffda3c9f7f4382aa335d1e35b46e45
+163,s2175cba0f7,Thermostat,Wifi Thermostat,Radio Thermostat,"Murata Manufacturing Co., Ltd.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+164,s982b21c7fa,Switch,Ethernet Switch,Netgear,NETGEAR,,{},6cffda3c9f7f4382aa335d1e35b46e45
+165,s5dffd5072e,Computer,Mac Pro,Apple,"Apple, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+166,s457983cdbc,Printer,Laser Printer and Scanner,Dell,FUJI-XEROX CO. LTD.,,{},6cffda3c9f7f4382aa335d1e35b46e45
+167,s2dcbf7b146,Printer,Laser Printer,Dell,FUJI-XEROX CO. LTD.,,{},6cffda3c9f7f4382aa335d1e35b46e45
+168,s659092e591,Laser Printer,Laser Printer and Scanner,Xerox,XEROX CORPORATION,,{},6cffda3c9f7f4382aa335d1e35b46e45
+169,s6be9de9c1a,Phone,iPhone,Apple,NETGEAR,,{},6cffda3c9f7f4382aa335d1e35b46e45
+170,s9856bc6462,Computer,Mac Pro,Apple,"Apple, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+171,scecd4ffd88,Photo Printer,Inkjet Printer,Canon,CANON INC.,,{},6cffda3c9f7f4382aa335d1e35b46e45
+172,s2f59bb19d0,Computer,PC,Lenovo,"Apple, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+173,sce9943c277,Computer,PC,Dell,Dell Inc.,,{},6cffda3c9f7f4382aa335d1e35b46e45
+174,s9dea8cf9df,iPad,iPad,Apple,"Apple, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+175,s95c41d2df6,APC Temperature Monitor,Environmental Monitor,APC,AMERICAN POWER CONVERSION CORP,,{},6cffda3c9f7f4382aa335d1e35b46e45
+176,sbe56fdb506,Computer,PC,Lenovo,"Universal Global Scientific Industrial Co., Ltd.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+177,s32382e3fd9,1U Server with IPMI,Computer,Supermicro,"Super Micro Computer, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+178,sbebe6af210,Phone,iPhone,Apple,"Apple, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+179,s79a543bcca,Computer,Mac Mini,Apple,"Apple, Inc.",,{},6cffda3c9f7f4382aa335d1e35b46e45
+180,s7c84031fa1,HD Home Run,HD Home Run,HD Home Run,Silicondust Engineering Ltd,HDHR-12304490,"{'ssdp_description': 'http://192.168.88.81:80/dms/device.xml', 'name': 'HDHomeRun DMS 12304490', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDHR4-2DT', 'model_name': 'HDHomeRun CONNECT', 'host': '192.168.88.81', 'device_type': 'dlna_dms', 'serial': '12304490', 'udn': 'uuid:70753567-70F1-3073-9964-1B6DAD456168', 'port': 80, 'manufacturer': 'Silicondust'}",e3f4be6b87c54b9c8a926a96bedf67da
+181,s57fe893b0a,Luz Porche,Smart Light Hub,Yeelight,Xiaomi Communications Co Ltd,,{},1c45933ea62645a468e30dd6fcb3cbc0
+182,s9021216c30,Mi A1 Mario,smartphone,Xiaomi,Xiaomi Communications Co Ltd,,{},1c45933ea62645a468e30dd6fcb3cbc0
+183,se091c343cd,Time Capsule,Time Machine Router,Apple,"Apple, Inc.",,{},1c45933ea62645a468e30dd6fcb3cbc0
+184,sfc65172e43,sonos,Smart Speaker,sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.168.40.96:1400/xml/device_description.xml', 'name': '192.168.40.96 - Sonos Play:1', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'S1', 'model_name': 'Sonos Play:1', 'host': '192.168.40.96', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:RINCON_B8E937BCFD4E01400', 'port': 1400, 'manufacturer': 'Sonos, Inc.'}",b13a051f3fa844518616406476fd8481
+185,s7b30d60e1b,Nintendo Mini,Gaming,Nintendo,"Nintendo Co.,Ltd",,{},bd2ea58259914fea408b57ca8e791825
+186,s71f36a94d4,UniFi AP AC Lite,Wireless Access Point,Ubiquiti,Ubiquiti Networks Inc.,,{},d33c81a1804f4a1b061c147da06e3eda
+187,se30008e741,Unifi AP AC Pro,Wireless Access Point,Ubiquiti,Ubiquiti Networks Inc.,,{},d33c81a1804f4a1b061c147da06e3eda
+188,s2a6b6a6844,Sensorist Hub,IoT Bridge,Sensorist,Sensorist ApS,,{},d33c81a1804f4a1b061c147da06e3eda
+189,s853323e32d,Philips Hue Bridge,Lighting Controller,Philips,Philips Lighting BV,,"{'ssdp_description': 'http://192.168.0.10:80/description.xml', 'name': 'Philips hue (192.168.0.10)', 'upnp_device_type': 'urn:schemas-upnp-org:device:Basic:1', 'model_number': 'BSB002', 'port': 80, 'host': '192.168.0.10', 'device_type': 'philips_hue', 'serial': '001788207513', 'udn': 'uuid:2f402f80-da50-11e1-9b23-001788207513', 'model_name': 'Philips hue bridge 2015', 'manufacturer': 'Royal Philips Electronics'}",d33c81a1804f4a1b061c147da06e3eda
+190,se3412dbcbf,Ooma Telio,Phone,Ooma,"Ooma, Inc.",,{},d33c81a1804f4a1b061c147da06e3eda
+191,saf39466ceb,HP Laser printer,Laser Printer,HP,"Hon Hai Precision Ind. Co.,Ltd.",,{},d33c81a1804f4a1b061c147da06e3eda
+192,sdb6640d1c0,Ring Chime,Doorbell Chime,Ring,Texas Instruments,,{},d33c81a1804f4a1b061c147da06e3eda
+193,s119a71dc62,Chumby,Smart Display,Chumby,AboCom,,{},d33c81a1804f4a1b061c147da06e3eda
+194,sf29f903513,Tivo,Smart TV Device,TiVo,"Samsung Electronics Co.,Ltd",,"{'host': '192.168.0.28', 'hostname': 'DVR-0BEA.local.', 'port': 31339, 'device_type': 'tivo_dvr', 'properties': {'TSN': 'E800D5BF0050BEA', 'path': '/', 'swversion': '20.5.5.2.RC4-CHS-2-E80', 'protocol': 'tivo-remote', 'platform': 'tcd/VM8685DVB'}}",d33c81a1804f4a1b061c147da06e3eda
+195,s1ae82c30ce,Raspberry Pi,Home Hub,Raspberry Pi Foundation,Raspberry Pi Foundation,,{},303d5fea909c4f5e6fd62602fa97f6d7
+196,s996e94ba77,Apple TV,Apple TV,APPLE,"Apple, Inc.",,"{'name': 'Bedroom', 'hostname': 'Bedroom.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Bedroom', 'hG': '00000000-0b0a-c2c8-1b6d-338bd0cc4c20', 'EiTS': '1'}, 'host': '192.168.1.225', 'device_type': 'apple_tv', 'port': 3689}",b14f1fc3dcf942dc805e69305e934047
+197,sbabe01065b,iPad Pro 2 FA,iPad,APPLE,"Apple, Inc.",,{},b14f1fc3dcf942dc805e69305e934047
+198,s77133347e5,PS4,PS4,Sony,Liteon Technology Corporation,,"{'host': '192.168.178.23', 'hostname': 'PS4-FC70F6.local.', 'port': 41800, 'device_type': 'spotify_connect', 'properties': {'CPath': '/spConn'}}",2613cd56ed524e0ee89b0771e100d31d
+199,sd782b74af1,TV,Smart TV,Samsung,"Samsung Electronics Co.,Ltd",,{},2613cd56ed524e0ee89b0771e100d31d
+200,s706abb49a8,Home Assistant,Home Assistant,Raspberry Pi,Raspberry Pi Foundation,,"{'host': '172.29.64.20', 'hostname': 'Home._home-assistant._tcp.local.', 'port': 8123, 'device_type': 'home_assistant', 'properties': {'requires_api_password': True, 'version': '0.60.0', 'base_url': 'http://172.29.64.20:8123'}}",7eaad707141d4805c765407cdd6fa92b
+201,s4cc237a640,Sony Bluray Player,Bluray Player,Sony,Liteon Technology Corporation,,{},4f83b83ccf0942b4bd327918086cf51a
+202,s155c440c2e,Apple Watch,Smart Watch,APPLE,"Apple, Inc.",Lils-MBP,{},2b0c3f9908e64f8febdc28cfec4fc378
+203,sb6eb742ad1,District iPad,iPad,APPLE,"Apple, Inc.",Lukes-iPad,{},2b0c3f9908e64f8febdc28cfec4fc378
+204,sbd5835d283,His iPhone,IPHONE,APPLE,"Apple, Inc.",PurdyvileMobile,"{'name': 'Purdyville Mobile', 'hostname': 'Purdyville-Mobile.local.', 'properties': {'name': 'WemoApp', '__id': '86F10B72-76FD-4300-B7F1-22857867AB26'}, 'host': '192.168.1.5', 'device_type': 'homekit', 'port': 53484}",2b0c3f9908e64f8febdc28cfec4fc378
+205,sf9361cbca7,Her iPhone,IPHONE,APPLE,"Apple, Inc.",LilPurdysiPhone,{},2b0c3f9908e64f8febdc28cfec4fc378
+206,see8532b270,Tradfri Gateway,IoT Bridge,Ikea,"Murata Manufacturing Co., Ltd.",,{},1556eabadc1748e0cedb4300a567eb11
+207,s4680174741,Apple TV (MBR),Apple TV,APPLE,"Apple, Inc.",,{},05a1948b758b4fa64071ad43d44519fe
+208,sa7493de8f4,Switch 2,Game Console,Nintendo,"Nintendo Co.,Ltd",,{},05a1948b758b4fa64071ad43d44519fe
+209,s74427f7a83,Apple TV (Basement),Apple TV,Apple,"Apple, Inc.",,"{'name': 'Entertainment Room', 'hostname': 'Entertainment-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-026a-2885-150f-7d7d0187470b', 'Name': 'Entertainment Room'}, 'host': '192.168.86.57', 'device_type': 'apple_tv', 'port': 3689}",05a1948b758b4fa64071ad43d44519fe
+210,se87893e862,Airport,Airport,Apple,"Apple, Inc.",,{},51d48fc19d6e4a84fc53a0237a763fc2
+211,s3736da2ee0,Airport,Airport,Apple,"Apple, Inc.",,{},23c1514897124e66a91f8be44a451046
+212,sbc8dbd1e80,Al's iPhone,iPhone,Apple,"Apple, Inc.",,{},23c1514897124e66a91f8be44a451046
+213,s58607369a5,IPad,iPad,Apple,"Apple, Inc.",,{},23c1514897124e66a91f8be44a451046
+214,sb086ef24dd,TV,Smart TV,Samsung,"Samsung Electronics Co.,Ltd",,{},23c1514897124e66a91f8be44a451046
+215,sd20979cec1,ASUS Router,Wifi mesh router,Asus,"Apple, Inc.",JoelWaxmansiMac,"{'ssdp_description': 'http://192.168.1.1:48893/rootDesc.xml', 'host': '192.168.1.1', 'port': 48893, 'device_type': 'igd'}",ba9dca0b09b24b6532cd6f110f6fd283
+216,saded529098,Amazon Echo Show,Smart Speaker,AMAZON,Amazon Technologies Inc.,amazon-1efcfe43b,{},ba9dca0b09b24b6532cd6f110f6fd283
+217,sdc3d00cbd3,WyzeCam Living Room,IP Camera,WyzeCam,IEEE Registration Authority,,{},ba9dca0b09b24b6532cd6f110f6fd283
+218,s20d607f1e0,Speaker Family Room,Speaker,Samsung,"Samsung Electronics Co.,Ltd",,"{'host': '192.168.1.163', 'hostname': '(none).local.', 'port': 19999, 'device_type': 'spotify_connect', 'properties': {'CPath': '/goform/spotifyConnect', 'VERSION': '1.0'}}",ba9dca0b09b24b6532cd6f110f6fd283
+219,sc6f6c6e5cc,Brother Wireless Laserjet Printer,Color Laser Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},ba9dca0b09b24b6532cd6f110f6fd283
+220,sf1880c74e2,D-Link 934L,Camera,D-Link,D-Link International,,{},ba9dca0b09b24b6532cd6f110f6fd283
+221,s1e84bc238f,Amazon Echo Master,Smart Speaker,AMAZON,Amazon Technologies Inc.,amazon-4fb5637b9,{},ba9dca0b09b24b6532cd6f110f6fd283
+222,s2d0a4d3c75,Fire HD 8,Tablet,Amazon,Amazon Technologies Inc.,amazon-734ed73ef,{},ba9dca0b09b24b6532cd6f110f6fd283
+223,s28eb399b5b,Airport Extreme,Wireless Router,Apple,"Apple, Inc.",,{},566431a6db884b5d9f9d3cc9e2267e06
+224,s2dad454176,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},fb0e7e2c74f54a3deedcb1b9e379bad5
+225,s602e656594,MacBook Pro,notebook,Apple,"Apple, Inc.",,{},fb0e7e2c74f54a3deedcb1b9e379bad5
+226,s7cc099fb44,sunnyboy,solar inverter,sma,SMA REGELSYSTEME GMBH,,{},74d0701ca08d4b2280fd676f889cf406
+227,se2184b2153,Apple TV 4K,Apple TV,APPLE,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Living Room', 'hG': '00000000-09ca-f721-4830-5d317b0f4394', 'EiTS': '1'}, 'host': '192.188.0.84', 'device_type': 'apple_tv', 'port': 3689}",74d0701ca08d4b2280fd676f889cf406
+228,sf0040cedea,sonos,Smart Speaker,Sonos,"Sonos, Inc.",,"{'host': '192.188.0.147', 'hostname': 'sonosB8E9374166C0.local.', 'port': 1400, 'device_type': 'spotify_connect', 'properties': {'VERSION': '1.0', 'CPath': '/spotifyzc'}}",74d0701ca08d4b2280fd676f889cf406
+229,s1a79785a28,Sonos Speaker,Smart Speaker,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.188.0.133:1400/xml/device_description.xml', 'name': '192.188.0.133 - Sonos Connect:Amp', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'ZP120', 'port': 1400, 'host': '192.188.0.133', 'device_type': 'sonos', 'serial': None, 'udn': 'uuid:RINCON_000E58D77F5A01400', 'model_name': 'Sonos Connect:Amp', 'manufacturer': 'Sonos, Inc.'}",74d0701ca08d4b2280fd676f889cf406
+230,sa1477052d1,sonos,Smart Speaker,Sonos,"Sonos, Inc.",,"{'host': '192.188.0.89', 'hostname': 'sonosB8E937ABD06A.local.', 'port': 1400, 'device_type': 'spotify_connect', 'properties': {'CPath': '/spotifyzc', 'VERSION': '1.0'}}",74d0701ca08d4b2280fd676f889cf406
+231,se9908c130a,Sony Bravia,Smart TV,sony,"Hon Hai Precision Ind. Co.,Ltd.",,"{'ssdp_description': 'http://192.188.0.160:52323/MediaRenderer.xml', 'name': 'Living Room', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': '100', 'model_name': 'MediaRenderer', 'host': '192.188.0.160', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:23456789-1234-1010-8000-104fa819ba11', 'port': 52323, 'manufacturer': 'Sony Corporation'}",74d0701ca08d4b2280fd676f889cf406
+232,s7c31585130,Sonos,Smart Speaker,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.188.0.49:1400/xml/device_description.xml', 'name': '192.188.0.49 - Sonos Connect:Amp', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'ZP120', 'model_name': 'Sonos Connect:Amp', 'host': '192.188.0.49', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:RINCON_000E58D77F0601400', 'port': 1400, 'manufacturer': 'Sonos, Inc.'}",74d0701ca08d4b2280fd676f889cf406
+233,se3f84bfb22,Phillips Hue,Automation Hub,Phillips,Philips Lighting BV,,{},74d0701ca08d4b2280fd676f889cf406
+234,s3ea243587f,Sonos,Smart Speaker,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.188.0.31:1400/xml/device_description.xml', 'name': '192.188.0.31 - Sonos Connect:Amp', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'ZP120', 'model_name': 'Sonos Connect:Amp', 'host': '192.188.0.31', 'device_type': 'sonos', 'serial': None, 'udn': 'uuid:RINCON_000E58D703A001400', 'port': 1400, 'manufacturer': 'Sonos, Inc.'}",74d0701ca08d4b2280fd676f889cf406
+235,s63a7cde228,alexa,Alexa,Amazon,Amazon Technologies Inc.,,{},74d0701ca08d4b2280fd676f889cf406
+236,sc54b780bb2,AppleTV,Media Streaming Device,Apple,"Apple, Inc.",,"{'name': 'Living', 'hostname': 'Living.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0100-fe7e-edcf-fec33c784b4a', 'Name': 'Living'}, 'host': '192.168.2.90', 'device_type': 'apple_tv', 'port': 3689}",89fa1a8eac434f2f6949aefceeeca8f6
+237,s6aaf38c6fd,Tradfri Hub,Iot Hub,Ikea,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-a0cc2b6d6aa9.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.1', 'c#': '93', 'sf': '1', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': 'A7:4F:93:9B:34:81'}, 'host': '192.168.86.55', 'device_type': 'homekit', 'port': 80}",3466672f92ff493b76f571af266b806d
+238,s4c4b383d1e,Nintendo Switch,Gaming Console,NINTENDO,"Nintendo Co.,Ltd",,{},bb50d1e6cf554128e495075c61aa9dbe
+239,s943d2e8e6d,Rachio 3,Smart Sprinkler Controller,Rachio,"Murata Manufacturing Co., Ltd.",,{},bb50d1e6cf554128e495075c61aa9dbe
+240,s209584b91d,Macbook 12,macbook,apple,"Apple, Inc.",,{},bb50d1e6cf554128e495075c61aa9dbe
+241,sab8c53f7cc,Tradfri,Smart Home,IKEA,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-b8d7af2b8295.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.0', 'c#': '54', 'id': '31:3C:F4:B4:CA:21', 'ff': '1', 's#': '1', 'sf': '1'}, 'host': '192.168.2.104', 'device_type': 'homekit', 'port': 80}",5ce6e877e4ae4409a055f83dd1fa1bcb
+242,sc1383fdd0c,Master4K,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Master4K', 'hostname': 'Master4K.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Master4K', 'hG': '00000000-00c3-9e9a-ebe0-c19f6c4f45b3', 'EiTS': '1'}, 'host': '10.0.0.110', 'device_type': 'apple_tv', 'port': 3689}",39c1188ece714737bcfb2364538fe85e
+243,sfe934ca0eb,light,Light Swithc,Levitron,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Dimmer-030C72', 'hostname': 'WICED-hap-030C72.local.', 'properties': {'md': 'Leviton Dimmer-030C72', 'ci': '8', 'pv': '1.1', 'c#': '1', 'sf': '0', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': '64:E5:01:F4:97:0D'}, 'host': '10.0.0.104', 'device_type': 'homekit', 'port': 80}",39c1188ece714737bcfb2364538fe85e
+244,sa178230de4,Switch,Game Console,NINTENDO,"Nintendo Co.,Ltd",,{},39c1188ece714737bcfb2364538fe85e
+245,s3709961f62,Google Pixel,Phone,Google,HTC Corporation,,{},9fd4a70212064f4cadf484fee93aa96e
+246,s19b0ce3d2f,Neeo Remote,Smart TV Remote,Neeo,"CC&C Technologies, Inc",,{},e0046ad034c941c6675573e3e135a9c5
+247,s8f9679c76b,Apple HomePod Back Den,Home Automation Hub,Apple,"Apple, Inc.",,{},e0046ad034c941c6675573e3e135a9c5
+248,s312f0816f1,Apple TV Daneen,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Daneen Apple TV', 'hostname': 'Daneen-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-057c-46f3-e6fd-0539fa114735', 'Name': 'Daneen Apple TV'}, 'host': '192.168.1.169', 'device_type': 'apple_tv', 'port': 3689}",e0046ad034c941c6675573e3e135a9c5
+249,s38aaa5deb9,Epson Video Projector Theater,Video Projector,Epson,Seiko Epson Corporation,,{},e0046ad034c941c6675573e3e135a9c5
+250,s5efe068e58,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},38e87664d79140754061969b9b3bc290
+251,sb3c6724023,Philips Hue Lights,Smart Light Hub,Philips,Philips Lighting BV,,"{'name': 'Philips hue - 7484EA', 'hostname': 'Philips-hue.local.', 'properties': {'md': 'BSB002', 'ci': '2', 'pv': '1.1', 'c#': '24', 'id': '2D:CB:FB:88:28:07', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.100', 'device_type': 'homekit', 'port': 8080}",38e87664d79140754061969b9b3bc290
+252,s4d6e2ce6b9,Apple iPhone X Jose,iPhone,Apple,"Apple, Inc.",JT-VZ-iPhone-X,{},e0046ad034c941c6675573e3e135a9c5
+253,sb65d7ce032,Apple iPhone XS Max Jose,iPhone,Apple,"Apple, Inc.",JTiPhoneXSMax,{},e0046ad034c941c6675573e3e135a9c5
+254,s860724ec30,Apple iPhone XS Max Tyler,iPhone,Apple,"Apple, Inc.",TytelleiphoneXS,{},e0046ad034c941c6675573e3e135a9c5
+255,s862a714865,Samsung Smart TV,Smart TV,Samsung,"Samsung Electronics Co.,Ltd",,{},cf03ba67265241eb047865f2975eb218
+256,s13ac430669,R7000,Wifi router,Netgear,NETGEAR,,{},af02093c2b6849ba7c6e117d051cdc5e
+257,se811db50e8,Printer,Inkjet All in One Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},beeb0f918d0b47511335cad93d291b52
+258,se73f502e75,Apple TV - Entertainment Room,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Entertainment Room', 'hostname': 'Entertainment-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0329-73a2-09ae-f23a266c4021', 'Name': 'Entertainment Room'}, 'host': '192.168.1.162', 'device_type': 'apple_tv', 'port': 3689}",c81d77970e21470649a52f8f520405b2
+259,s5d26945643,Apple TV - Bedroom,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Bedroom', 'hostname': 'Bedroom.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Bedroom', 'hG': '00000000-0329-73a2-09ae-f23a266c4021', 'EiTS': '1'}, 'host': '192.168.1.238', 'device_type': 'apple_tv', 'port': 3689}",c81d77970e21470649a52f8f520405b2
+260,sc249cefa45,Apple TV Tyler,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Ty Apple TV', 'hostname': 'Ty-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Ty Apple TV', 'hG': '00000000-057c-46f3-e6fd-0539fa114735', 'DFID': '2'}, 'host': '192.168.1.33', 'device_type': 'apple_tv', 'port': 3689}",e0046ad034c941c6675573e3e135a9c5
+261,sfe8262639f,Apple TV Theater,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Theater Apple TV', 'hostname': 'Theater-Apple-TV.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Theater Apple TV', 'hG': '00000000-057c-46f3-e6fd-0539fa114735', 'EiTS': '1'}, 'host': '192.168.1.43', 'device_type': 'apple_tv', 'port': 3689}",e0046ad034c941c6675573e3e135a9c5
+262,s086b0cddb3,Vantage Home Controls,Smart Home System,Vantage,Vantage Controls,,{},e0046ad034c941c6675573e3e135a9c5
+263,s76460c00eb,Macbook Air,Laptop,Apple,"Apple, Inc.",,{},252f856eeb0741aa9eb247a29837e4a7
+264,sa38699ac7e,Apple TV,Media Streaming Device,Apple,"Apple, Inc.",,{},252f856eeb0741aa9eb247a29837e4a7
+265,s78ca73a5ea,IP connect,KNX IP connect,Siemens,Siemens AG A&D ET,,{},5e41f93075554fbd75b24bd5f2c29a7f
+266,s55071353f8,insteon hub,Home Automation Hub,Insteon,,,{},566d22e1032b42450ba2e4e3dbade287
+267,sd9a8eb92c9,Apple Tv,??,APPLE,"Apple, Inc.",,{},566d22e1032b42450ba2e4e3dbade287
+268,s65fa01b0fd,imac,Desktop PC,apple,"Apple, Inc.",,{},566d22e1032b42450ba2e4e3dbade287
+269,s090a89972b,Home Pod,Speaker,APPLE,"Apple, Inc.",,{},566d22e1032b42450ba2e4e3dbade287
+270,s99a98cb76d,HP Laser printer,Color Laser Printer,Hewlet-Packard,"Hon Hai Precision Ind. Co.,Ltd.",hpcp1525nw,{},611f4fc2eda3479e4836e5289a0af5b9
+271,scf493db745,Outdoor Switch 2,Smart Outlet,iDevices,"iDevices, LLC",,{},bcaff6a5eb5b409165ff7f2b7cfa0be1
+272,sea70a4cbba,Sony Bravia,Television,Sony,Sony Corporation,,{},bcaff6a5eb5b409165ff7f2b7cfa0be1
+273,s2e10af6df5,Smartflap,Smart Pet Door,Surepet,Microchip Technology Inc.,,{},49aedf4b921c41feb7a6a5831b6fdb39
+274,sdd6a9f5bb9,Apple TV,Media Streaming Device,Apple,"Apple, Inc.",Cabin-AppleTV,"{'name': 'Cabin AppleTV', 'hostname': 'Cabin-AppleTV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-416e-fbcb-f701-7591f95a48d4', 'Name': 'Cabin AppleTV'}, 'host': '192.168.86.30', 'device_type': 'apple_tv', 'port': 3689}",49aedf4b921c41feb7a6a5831b6fdb39
+275,se8d99f14e2,Apple TV,Media Streaming Device,Apple,"Apple, Inc.",,{},49aedf4b921c41feb7a6a5831b6fdb39
+276,s38f6b92b0e,HDHomeRun,TV Tuner,Silicondust,Silicondust Engineering Ltd,,"{'ssdp_description': 'http://192.168.200.180:80/dms/device.xml', 'name': 'HDHomeRun DMS 1326BF6C', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDHR3-CC', 'model_name': 'HDHomeRun PRIME', 'host': '192.168.200.180', 'device_type': 'dlna_dms', 'serial': '1326BF6C', 'udn': 'uuid:F24696AB-2B25-3F83-8806-8569EAA7FBFA', 'port': 80, 'manufacturer': 'Silicondust'}",d2491170ddf04124bccbe66a5a2f5ca4
+277,sfd2269b967,Plex Media Server,Media Server,Plex,"VMware, Inc.",,"{'ssdp_description': 'http://192.168.200.187:2869/upnphost/udhisapi.dll?content=uuid:be2cdd36-f9bc-497d-a641-676afc0fc637', 'host': '192.168.200.187', 'port': 2869, 'device_type': 'dlna_dms'}",d2491170ddf04124bccbe66a5a2f5ca4
+278,s5817d96b58,Web Server,Web Server,Apple,"Apple, Inc.",,{},11b3eb1285f84d2c99da2e703c1841ea
+279,sffea60252d,Apple Watch,Apple Watch,Apple,"Apple, Inc.",,{},11b3eb1285f84d2c99da2e703c1841ea
+280,saab4d7b48f,Apple iPhone 8+,IPHONE,Apple,"Apple, Inc.",,{},11b3eb1285f84d2c99da2e703c1841ea
+281,s41aac6ad48,MySQL Server,Database Server,Apple,"Apple, Inc.",,{},11b3eb1285f84d2c99da2e703c1841ea
+282,sa436764d56,iPhone 8,iPhone,Apple,"Apple, Inc.",Velmas-IPhone,{},11b3eb1285f84d2c99da2e703c1841ea
+283,sd411f7e2a7,Velop,Wifi mesh router,Linksys,Belkin International Inc.,,{},6a9fce4d67e04ce33276b68b3445ecf2
+284,s0cf63b4fb4,HP Laserjet Printer,HP Printer,HP,Hewlett Packard,,{},6a9fce4d67e04ce33276b68b3445ecf2
+285,sf564a89fab,Sony Wireless Speaker,Speaker,Sony,Wistron Neweb Corporation,,"{'ssdp_description': 'http://192.168.1.143:64321/MediaServer_SRS-ZR5.xml', 'name': 'Sony ZR5 Left Side TV', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'MINT1.9.1', 'port': 64321, 'host': '192.168.1.143', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:00000001-0000-1010-8000-8c579b6cef57', 'model_name': 'SRS-ZR5', 'manufacturer': 'Sony Corporation'}",6a9fce4d67e04ce33276b68b3445ecf2
+286,s858aabf164,Google Home,Voice Assistant,Google,"Google, Inc.",,"{'host': '192.168.1.33', 'hostname': '1bb27f9b-0514-e20e-c9a1-31b755f3d831.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'Google Home', 've': '05', 'rs': False, 'ca': '198660', 'nf': '1', 'cd': '05544112D30565599938FC144E7961EA', 'bs': 'FA8FCA8C7595', 'rm': 'C2CB18AD8DE1E352', 'ic': '/setup/icon.png', 'st': '0', 'id': '1bb27f9b0514e20ec9a131b755f3d831', 'fn': 'Girls’ Room Speaker'}}",6a9fce4d67e04ce33276b68b3445ecf2
+287,s7629826931,Nest Thermostat,Smart Thermostat,Google,Nest Labs Inc.,,{},6a9fce4d67e04ce33276b68b3445ecf2
+288,se4d14c6a30,Google Home,Voice Assistant,Google,"Google, Inc.",,{},6a9fce4d67e04ce33276b68b3445ecf2
+289,s157b95d71e,Sony Wireless Speaker,Speaker,Sony,Wistron Neweb Corporation,,"{'ssdp_description': 'http://192.168.1.235:64321/MediaServer_SRS-ZR5.xml', 'name': 'SRS-ZR5 Right Side TV', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'MINT1.9.1', 'port': 64321, 'host': '192.168.1.235', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:00000001-0000-1010-8000-8c579b6ced39', 'model_name': 'SRS-ZR5', 'manufacturer': 'Sony Corporation'}",6a9fce4d67e04ce33276b68b3445ecf2
+290,s1c4bab4fec,Velop,Wifi mesh router,Linksys,Belkin International Inc.,,{},6a9fce4d67e04ce33276b68b3445ecf2
+291,sba3720c4b0,Samsung Smart TV,Smart TV Device,Samsung,"Samsung Electronics Co.,Ltd",,{},6a9fce4d67e04ce33276b68b3445ecf2
+292,sb8221cc21d,Chromecast,Chromecast,Google,"Google, Inc.",,"{'host': '192.168.1.120', 'hostname': '897ed8b3-ddea-3bc9-2d76-bd963eec704b.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'Chromecast Ultra', 've': '05', 'rs': False, 'ca': '200709', 'nf': '1', 'cd': '52EBC526384ECA44E0D28B2555850DF8', 'bs': 'FA8FCA71B536', 'rm': 'D56D516429D988C9', 'ic': '/setup/icon.png', 'st': '0', 'id': '897ed8b3ddea3bc92d76bd963eec704b', 'fn': 'ChromecastUltra77B'}}",6a9fce4d67e04ce33276b68b3445ecf2
+293,s28f052ef5a,Macbook Air,Macbook Air,Apple,"Apple, Inc.",,{},11b3eb1285f84d2c99da2e703c1841ea
+294,sbcc40895ba,Router,Router,Arris,"ARRIS Group, Inc.",,{},6a9fce4d67e04ce33276b68b3445ecf2
+295,s2d2384a404,etmars Plug 2,smart plug,etmars,Texas Instruments,,{},1d3b62e749a043a7d72f0ce5167e3843
+296,s5bbe4f887e,Apple iPad,"iPad Pro 11""",Apple,"Apple, Inc.",,{},1d3b62e749a043a7d72f0ce5167e3843
+297,sc2fd028815,Apple iPhone,iPhone 6,Apple,"Apple, Inc.",Sodas-iPhone,{},1d3b62e749a043a7d72f0ce5167e3843
+298,s58d4513038,Drobo NAS,NAS,Drobo,"Data Robotics, Incorporated",,{},ca0d1b34472248cee1d2b09e0589f417
+299,saf0ebd0d62,TCL,Smart TV,TCL,"Hui Zhou Gaoshengda Technology Co.,LTD",,{},ca0d1b34472248cee1d2b09e0589f417
+300,sa3e07e408e,TCL,TV,TCL,"Hui Zhou Gaoshengda Technology Co.,LTD",,{},ca0d1b34472248cee1d2b09e0589f417
+301,saf8f0b869f,Printer,Printer,Epson,Seiko Epson Corporation,,{},e10b64c85a0f448ea057930708ad574c
+302,s8bfe48708e,IP camera,IP Camera,unknown,"Novell, Inc.",,{},3499cdec1c1841c6376ccd459768ed03
+303,scad7b6109b,IP Camera,ip camera,Hikvision,"Hangzhou Hikvision Digital Technology Co.,Ltd.",,{},3499cdec1c1841c6376ccd459768ed03
+304,s833c1d822f,ESXI,Computer,VMware,Intel Corporate,,{},3499cdec1c1841c6376ccd459768ed03
+305,s65d1f583ab,Access point,access point,netgear,NETGEAR,,{},3499cdec1c1841c6376ccd459768ed03
+306,s8473f9accf,IP camera,IP Camera,Dauha,"Zhejiang Dahua Technology Co., Ltd.",,{},3499cdec1c1841c6376ccd459768ed03
+307,sb58659b3a1,TP Link Switch,Network Switch,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},3499cdec1c1841c6376ccd459768ed03
+308,se8c6885de7,Cisco Switch,Network Switch,Cisco,"Cisco Systems, Inc",,{},3499cdec1c1841c6376ccd459768ed03
+309,s372d32c353,Home Server,Computer,Apple,"Apple, Inc.",,"{'host': '192.168.4.16', 'urlbase': 'https://192.168.4.16:32400', 'name': 'HomeServer', 'device_type': 'plex_mediaserver', 'port': '32400'}",3499cdec1c1841c6376ccd459768ed03
+310,s0fe1c54332,IP Camera,ip camera,Hikvision,SHENZHEN BILIAN ELECTRONIC CO.，LTD,,{},3499cdec1c1841c6376ccd459768ed03
+311,sc258405904,IP Camera,IP Camera,Dauha,"Zhejiang Dahua Technology Co., Ltd.",,{},3499cdec1c1841c6376ccd459768ed03
+312,s5ef7886e93,Apple TV,Media Server,Apple,"Apple, Inc.",,"{'name': 'Family Room Apple TV', 'hostname': 'Family-Room-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0749-e37c-6cb6-061345f44a19', 'Name': 'Family Room Apple TV'}, 'host': '192.168.4.147', 'device_type': 'apple_tv', 'port': 3689}",3499cdec1c1841c6376ccd459768ed03
+313,s8157f36b7e,Network Switch,Network Switch,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},3499cdec1c1841c6376ccd459768ed03
+314,sd21752391f,Network switch,Network Switch,TPLink,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},3499cdec1c1841c6376ccd459768ed03
+315,sf76450d1fb,Old Airport Extreme,Wifi router,Apple,"Apple, Inc.",,{},e9b65e67efbf4b0d405e89c2748f6c57
+316,s3b1a4d8b2e,MBR AP,Wireless Access Point,TPLink,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},e9b65e67efbf4b0d405e89c2748f6c57
+317,sb7b6bb039a,iPad mini,iPad,Apple,"Apple, Inc.",Dennis-iPad,{},d7730c62ca764a49059e6a3931d97074
+318,s77589134bc,B & W Speaker,Airplay Speaker,Bowers and Wilkins,B&W Group LTD,,{},d7730c62ca764a49059e6a3931d97074
+319,s7e4a1870d2,Pioneer AVR,AV Receiver,Pioneer,PIONEER CORPORATION,,{},d7730c62ca764a49059e6a3931d97074
+320,sa0f2bf9ea9,Mac Mini,Computer,Apple,"Apple, Inc.",,"{'ssdp_description': 'http://10.0.1.19:32469/DeviceDescription.xml', 'name': ""Plex Media Server: Greg's Mac Mini"", 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '1.14.1.5488', 'port': 32469, 'host': '10.0.1.19', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:31b3b5e4-f2f8-b86f-529d-e4b548897f16', 'model_name': 'Plex Media Server', 'manufacturer': 'Plex, Inc.'}",e9b65e67efbf4b0d405e89c2748f6c57
+321,sb441405777,iPad,Tablet,Apple,"Apple, Inc.",,{},e9b65e67efbf4b0d405e89c2748f6c57
+322,s306ee2590c,B&W Speaker,Speaker,Bowers and Wilkins,B&W Group LTD,,{},e9b65e67efbf4b0d405e89c2748f6c57
+323,sfb0ff1d1ec,AV Receiver,AV Receiver,Denon,D&M Holdings Inc.,,{},e9b65e67efbf4b0d405e89c2748f6c57
+324,scd23aea7c1,Thermostat,Nest Thermostat,Nest,Nest Labs Inc.,,{},5a3467e5d9c345b80e9e71fbf37eeb1c
+325,sa44bfb0de0,Bravia,Smart TV Device,Sony,Sony Corporation,,"{'host': '192.168.123.112', 'hostname': '873e3edf-7808-4ab5-4c99-f9a62f07d37a.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'BRAVIA 4K 2015', 've': '05', 'rs': False, 'ca': '5', 'nf': '1', 'cd': '799053C3D38C7E8BC9DE7367D2F0C900', 'bs': '001A11FF4758', 'rm': '91358471A74779C6', 'ic': '/setup/icon.png', 'st': '0', 'id': '873e3edf78084ab54c99f9a62f07d37a', 'fn': 'XBR-75X940D'}}",cd53c4643cc74ad9c4301957fc85cd8e
+326,sb8bda37704,Ring Alarm,Alarm Interface,Ring,Ring Solutions,,{},6019a526f0e54c945005a0dba01bcbf4
+327,s8569bdb34d,Nintendo Switch,Game Console,Nintendo,"Nintendo Co.,Ltd",,{},305e044e63a54cac8121e451f1a04080
+328,s0a9710f98f,AVM Fritz!Box,Wireless Router,AVM,,,{},65063eca3f0d44e2f82a4774b85fe756
+329,s45f334ac8a,Sky Q,SetTopBox,Sky,BSkyB Ltd,,{},518009f89b92443af7f528a1a7a1d81c
+330,sfdfb4a225b,Samsung TV,Smart TV,Samsung,"Samsung Electronics Co.,Ltd",,"{'ssdp_description': 'http://192.168.0.11:7676/smp_6_', 'name': 'Samsung LED40', 'upnp_device_type': 'urn:samsung.com:device:RemoteControlReceiver:1', 'model_number': '1.0', 'port': 7676, 'host': '192.168.0.11', 'device_type': 'samsung_tv', 'serial': '20090804RCR', 'udn': 'uuid:0f7f4900-0004-1000-b1b5-78abbbd5ab96', 'model_name': 'UE40F6700', 'manufacturer': 'Samsung Electronics'}",518009f89b92443af7f528a1a7a1d81c
+331,se1af9957f2,Wifi Base Station,Wifi mesh router,Google,"Google, Inc.",,"{'ssdp_description': 'http://192.168.86.1:5000/rootDesc.xml', 'host': '192.168.86.1', 'port': 5000, 'device_type': 'igd'}",ecb0fd69f6954d0b3863aad4bfa4bea0
+332,s5fc4d59bbf,TCL ROKU TV,Smart TV with Roku,TCL,"Hui Zhou Gaoshengda Technology Co.,LTD",,{},b3efe0f07ce14d06ffab1626eb1a6511
+333,seb9b02228a,TCL ROKU TV,Smart TV with Roku,TCL,"Hui Zhou Gaoshengda Technology Co.,LTD",,{},b3efe0f07ce14d06ffab1626eb1a6511
+334,sd9137cfd78,FRITZ!WLAN Repeater 1750E,WLAN Repeater,AVM,,,"{'ssdp_description': 'http://192.168.0.156:49000/fboxdesc.xml', 'name': 'FRITZ!WLAN Repeater 1750E', 'upnp_device_type': 'urn:schemas-upnp-org:device:fritzbox:1', 'model_number': 'avm', 'model_name': 'FRITZ!WLAN Repeater 1750E', 'host': '192.168.0.156', 'device_type': 'fritzbox', 'serial': None, 'udn': 'uuid:123402409-bccb-40e7-8e6c-CCCE1E23B9C3', 'port': 49000, 'manufacturer': 'AVM Berlin'}",4adb17786c35472b069437d11bc916f8
+335,s6ecccfa674,HomePod,Apple HomePod,Apple,"Apple, Inc.",,{},5e41f93075554fbd75b24bd5f2c29a7f
+336,sb3d17b0f60,MFC-J480DW,Inkjet All in One Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},df66179aa4e943437d77d43c8842dfe3
+337,s782f2f5594,ipad,Tablet,Apple,"Apple, Inc.",,{},6c0cb8bb898e4ebf080dba8f6876dc74
+338,sca673b463a,meraki switch,Network Switch,Cisco,Cisco Meraki,,{},6c0cb8bb898e4ebf080dba8f6876dc74
+339,s470e1996f4,nodeMCU Dakota,Controller board,Kuman,Espressif Inc.,,"{'host': '192.168.7.11', 'hostname': 'dakota_alerts.local.', 'port': 6053, 'device_type': 'esphome', 'properties': {'version': '1.10.1'}}",765bd0b8174f45c33ef7a8ef13bafb80
+340,s756069b565,ZW15RM-PLUS Dishwasher,Wall outlet,ENERWAVE,Espressif Inc.,,"{'host': '192.168.7.10', 'hostname': 'dishwasher.local.', 'port': 6053, 'device_type': 'esphome', 'properties': {'version': '1.10.1'}}",765bd0b8174f45c33ef7a8ef13bafb80
+341,sbab962cabf,nodeMCU Sump Pit,Controller board,Kuman,,,"{'host': '192.168.7.12', 'hostname': 'sump_pit.local.', 'port': 6053, 'device_type': 'esphome', 'properties': {'version': '1.10.1'}}",765bd0b8174f45c33ef7a8ef13bafb80
+342,sc203051aec,ProSafe,switch,NETGEAR,,,{},765bd0b8174f45c33ef7a8ef13bafb80
+343,s0e53bb1e7e,Apple TV,Apple TV,APPLE,"Apple, Inc.",,{},41343f82bc774719f5dac726d8bc5012
+344,s938f803513,Airport Express,WIFI,Apple,"Apple, Inc.",,{},39d7949b17e8488f12b06accf986a918
+345,s90965630c4,IPAD,TABLET,APPLE,"Apple, Inc.",Curtiss-iPad,{},39d7949b17e8488f12b06accf986a918
+346,sd908f6dc75,Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'ruhlmantv', 'hostname': 'ruhlmantv.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'ruhlmantv', 'hG': '00000000-0332-57c0-b4f7-6b7961264535', 'DFID': '2'}, 'host': '192.168.1.20', 'device_type': 'apple_tv', 'port': 3689}",39d7949b17e8488f12b06accf986a918
+347,sf7947b2406,Schyler's Laptop,MacBook Pro,Apple,"Apple, Inc.",,{},1db5f94887d9432ba9b5522f7d5abacb
+348,s2c9fde6219,MacBook Pro,Laptop,Apple,"Apple, Inc.",,{},1db5f94887d9432ba9b5522f7d5abacb
+349,s466cd12561,Mac Mini (WiFi),Computer,Apple,"Apple, Inc.",Mizs-Mac-mini,{},3a2d5e588b8043d566f575667f8492de
+350,s7ccbba7065,M Macbook Pro,Computer,Apple,"Apple, Inc.",Monicas-MBP-2,{},625b8618981b45ae65627e7f4c8f1c8e
+351,sc3450de6dc,HP Envy 5540,Inkjet All in One Printer,Hewlett Packard,Hewlett Packard,,{},c0050aebe668403e1143d495d6ba1f23
+352,sac9d6fd7ea,PlayStation 4,Game Console,Sony,"Hon Hai Precision Ind. Co.,Ltd.",,{},c0050aebe668403e1143d495d6ba1f23
+353,s14f40e8818,Dreamscreen Led,Ambient Led,Dreamscreen,,,{},c0050aebe668403e1143d495d6ba1f23
+354,s424e02bc5c,Raspberry Pi - Pihole,Raspberry Pi,RaspberryPi,Raspberry Pi Foundation,,{},c0050aebe668403e1143d495d6ba1f23
+355,s7e23963f8b,iPhone X,iPhone,Apple,,,{},c0050aebe668403e1143d495d6ba1f23
+356,s13ed06ab35,Brother Wireless Printer,Multi Function Device Printer,Brother,"Taiyo Yuden Co., Ltd.",,{},004ccfb23e714496262cde5d1cb733c8
+357,sdec93f9467,Nest Thermostat Heat D/R,Nest Thermostat,Nest,"Apple, Inc.",,"{'host': '192.168.1.101', 'hostname': 'c17a974f-9ea4-bbc0-7603-e50bdfcf2bb4.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'SmartCast Sound Bar 3851-D0', 've': '05', 'rs': False, 'ca': '2052', 'st': '0', 'bs': 'FFFFFFFFFFFF', 'rm': '3FE166D30E6054C6', 'ic': '/setup/icon.png', 'id': 'c17a974f9ea4bbc07603e50bdfcf2bb4', 'fn': 'TheSoundBar'}}",c0050aebe668403e1143d495d6ba1f23
+358,sc3008b55c0,Synology NAS,NAS,Synology,Synology Incorporated,,{},c0050aebe668403e1143d495d6ba1f23
+359,sfb4a621963,iPhone XS Max,iPhone,APPLE,,,{},c0050aebe668403e1143d495d6ba1f23
+360,s0c3f4e4dea,Vizio Soundbar,SoundBar,Vizio,"Vizio, Inc",,"{'host': '192.168.1.101', 'hostname': 'c17a974f-9ea4-bbc0-7603-e50bdfcf2bb4.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'SmartCast Sound Bar 3851-D0', 've': '05', 'rs': False, 'ca': '2052', 'st': '0', 'bs': 'FFFFFFFFFFFF', 'rm': '3FE166D30E6054C6', 'ic': '/setup/icon.png', 'id': 'c17a974f9ea4bbc07603e50bdfcf2bb4', 'fn': 'TheSoundBar'}}",c0050aebe668403e1143d495d6ba1f23
+361,sf5ae9f5a5c,Ecobee3,Smart Thermostat,ECOBEE,ecobee inc,,"{'name': 'Timmys Ecobee', 'hostname': 'Timmys-Ecobee.local.', 'properties': {'md': 'ecobee3 lite', 'ci': '9', 'pv': '1.1', 'MFG': 'ecobee Inc.', 'c#': '3', 'sf': '0', 'sh': 'wuA/9g==', 'ff': '1', 's#': '1', 'serial_number': '411941449270', 'id': '12:4D:92:4F:28:D8'}, 'host': '192.168.0.191', 'device_type': 'homekit', 'port': 1200}",d30e53ed02ed48d8d9017710aeef3346
+362,s51ab79bcba,Cisco Switch,Switch,Cisco,"Cisco Systems, Inc",,{},3de5272333264af54e88ca0d54b9eb65
+363,s23aacbb6b4,BarnPad,iPad,APPLE,"Apple, Inc.",,{},3de5272333264af54e88ca0d54b9eb65
+364,s5f8d26d586,KPhone,IPHONE,Apple,"Apple, Inc.",,{},3de5272333264af54e88ca0d54b9eb65
+365,s75b841ca29,IPAD 4,Ipad,Apple,"Apple, Inc.",,{},3de5272333264af54e88ca0d54b9eb65
+366,sbf8f0d21e3,Wyze camera,camera,wyze,,,{},63772e93b3b24d38139134094feccb2b
+367,sa2c629c1d0,Dell Inspiron,Laptop,Dell,Intel Corporate,DESKTOP-TKKFRDC,{},3a2d5e588b8043d566f575667f8492de
+368,s3591c73a98,Roku Stick downstairs,stick,ROKU,,,{},c09161ab2ecc485f5c129ddb8c96e3ad
+369,sf99516fdc1,M-Watch,Apple Watch,Apple,"Apple, Inc.",MarthaspleWatch,{},2c808e347e704e4158cb788990107c50
+370,sf24f21d7d0,iPhone 8,iPhone,Apple,"Apple, Inc.",BillForsiPhone8,{},b4009af1c2234a63fef8096ab77e4b67
+371,sde8fbc3eb8,iPad Pro,Tablet,Apple,"Apple, Inc.",billforbesmecom,{},b4009af1c2234a63fef8096ab77e4b67
+372,s4a8a46f304,iPhone 6S,iPhone,Apple,"Apple, Inc.",ianccfoomiPhone,{},b4009af1c2234a63fef8096ab77e4b67
+373,s7520507745,iPad Pro,Tablet,Apple,"Apple, Inc.",iPad,{},b4009af1c2234a63fef8096ab77e4b67
+374,scac268987d,Son's iPhone,iPhone,Apple,"Apple, Inc.",LukesAppleWatch,{},2b0c3f9908e64f8febdc28cfec4fc378
+375,sb4896b5e71,apple tv livingroom,TV Tuner,APPLE,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0c41-50bc-7f59-878010af481b', 'Name': 'Living Room'}, 'host': '10.0.0.15', 'device_type': 'apple_tv', 'port': 3689}",21111356aba340d1d2d7855b1810096b
+376,sa6c17bf3a4,LIFX Tile,Light Bulb,Lifx,LIFI LABS MANAGEMENT PTY LTD,,"{'name': 'LIFX Tiles', 'hostname': 'LIFX-Tiles.local.', 'properties': {'md': 'LIFX Tile', 'ci': '5', 'c#': '4', 'sf': '0', 'ff': '1', 's#': '1', 'id': 'F8:5F:2E:A0:D6:FD'}, 'host': '192.168.1.8', 'device_type': 'homekit', 'port': 80}",bf160d86a62345117e67556bd56cc943
+377,s9cee894d7f,GS116Ev2,Network Switch,Netgear,NETGEAR,,{},77111d50e647427eea3ed3b330813454
+378,sbd8043e372,Airport Express,WiFi AP,Apple,"Apple, Inc.",sparknet-express--living-room,{},77111d50e647427eea3ed3b330813454
+379,s2d7cacf6b5,GS105Ev2,Network Switch,Netgear,NETGEAR,,{},77111d50e647427eea3ed3b330813454
+380,se6a9df5b52,Airport Express,WIFI AP,Apple,"Apple, Inc.",sparknet-express--family-room,{},77111d50e647427eea3ed3b330813454
+381,s64af2ec379,Airport Express,WIFI AP,Apple,"Apple, Inc.",sparknet-express--kitchen,{},77111d50e647427eea3ed3b330813454
+382,s3d07957e5b,GS108Ev3,Network Switch,Netgear,NETGEAR,,{},77111d50e647427eea3ed3b330813454
+383,s04a2bcc751,Rachio 3 Sprinkler Controller,Irrigation Controller,Rachio,"Murata Manufacturing Co., Ltd.",Rachio-2911A8,"{'name': 'Rachio-2911A8', 'hostname': 'WICED-hap-2911A8.local.', 'properties': {'md': 'Rachio-2911A8', 'ci': '2', 'pv': '1.1', 'c#': '2', 'id': '6A:9A:18:65:DE:A8', 'sh': 'RuAepg==', 'ff': '1', 's#': '1', 'sf': '1'}, 'host': '10.0.1.59', 'device_type': 'homekit', 'port': 80}",77111d50e647427eea3ed3b330813454
+384,sbaab9ee12a,GS116Ev2,Network Switch,Netgear,,,{},77111d50e647427eea3ed3b330813454
+385,s475171fbc6,Apple TV 4K,Digital Media Player,Apple,"Apple, Inc.",Family-room,"{'name': 'Family room', 'hostname': 'Family-room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Family room', 'hG': '00000000-00b7-a438-8b48-8bc86f4b40f2', 'EiTS': '1'}, 'host': '10.0.1.24', 'device_type': 'apple_tv', 'port': 3689}",77111d50e647427eea3ed3b330813454
+386,sa60ad15572,Airport Express,WIFI,APPLE,"Apple, Inc.",sparknet-express--master-bedroom,{},77111d50e647427eea3ed3b330813454
+387,saadd391c33,Airport Express,WiFi AP,Apple,"Apple, Inc.",,{},77111d50e647427eea3ed3b330813454
+388,s9621d9b7b6,Pixel XL,Smartphone,Google,HTC Corporation,,{},77111d50e647427eea3ed3b330813454
+389,s5c4383c923,"iMac 27""",Computer,Apple,"Apple, Inc.",,{},77111d50e647427eea3ed3b330813454
+390,s5c1a07b3b1,Apple iPhone,iPhone 6,apple,"Apple, Inc.",,{},f50d03692d8b4bd4fbfae49e656403bd
+391,s3f8eac0eac,Network Drive,Hard Drive,Seagate,Segate Technology LLC,,{},663326cfc0924f02405ab95332a95b6c
+392,s1126d1c50d,Onkyo AV Reciever,AV Receiver,Onkyo,Onkyo Corporation,,{},0e63b9d92f3e4e6c6c5558d7bff748a8
+393,s38a391eba8,Fios Box,TV Settop Box,Arris,"ARRIS Group, Inc.",UnNamed-Server,"{'ssdp_description': 'http://192.168.1.100:8081/XD/1c67853a-1dd2-11b2-ae52-18b81f361caf', 'name': 'UnNamed Server', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '1', 'model_name': 'Verizon Media Server', 'host': '192.168.1.100', 'device_type': 'dlna_dms', 'serial': 'tz=EST+5EDT,M3.2.0/02:00:00,M11.1.0/02:00:00', 'udn': 'uuid:1c67853a-1dd2-11b2-ae52-18b81f361caf', 'port': 8081, 'manufacturer': 'ARRIS'}",0e63b9d92f3e4e6c6c5558d7bff748a8
+394,s71136db904,Samsung TV,TV,Samsung,"Samsung Electronics Co.,Ltd",,{},0e63b9d92f3e4e6c6c5558d7bff748a8
+395,s316ded5d91,LG TV,TV,LG Electoronics,Arcadyan Corporation,,{},0e63b9d92f3e4e6c6c5558d7bff748a8
+396,s03a5113a7c,Harmony Remote 1,Smart Universal Remote,Logitech,Logitech,,"{'ssdp_description': 'http://192.168.1.222:8088/description', 'name': 'Living Room', 'upnp_device_type': 'urn:myharmony-com:device:harmony:1', 'model_number': None, 'port': 8088, 'host': '192.168.1.222', 'device_type': 'harmony', 'serial': None, 'udn': 'uuid:1459ad46a02389d8322e9e13f879a5685738c9c8', 'model_name': 'Harmony Hub', 'manufacturer': 'Logitech'}",0e63b9d92f3e4e6c6c5558d7bff748a8
+397,sc75defe647,Ecobee 3 Lite,Smart Thermostat,Ecobee,ecobee inc,,"{'name': 'Main', 'hostname': 'Main.local.', 'properties': {'md': 'ecobee3 lite', 'ci': '9', 'pv': '1.1', 'MFG': 'ecobee Inc.', 'c#': '5', 'sf': '1', 'sh': 'Zk3Rcg==', 'ff': '1', 's#': '1', 'serial_number': '411970335634', 'id': '01:E5:B9:41:E5:D3'}, 'host': '192.168.1.204', 'device_type': 'homekit', 'port': 1200}",0e63b9d92f3e4e6c6c5558d7bff748a8
+398,sf17905003a,printer hub,printer hub,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},56f796072aba480ef0eb854c664fa04f
+399,s0b25b153b7,iPhone,IPHONE,Apple,"Apple, Inc.",Rebeccas-iPhone,{},56f796072aba480ef0eb854c664fa04f
+400,sff2c84545a,switch,network switch,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},56f796072aba480ef0eb854c664fa04f
+401,s2b0de11b59,Smart Plug,smart plug,Smart Life,Espressif Inc.,,{},b5ba215695a84b1509dd5d2187166f99
+402,sc74d930fcc,apple watch,apple watch,Apple,"Apple, Inc.",RiccardpleWatch,{},56f796072aba480ef0eb854c664fa04f
+403,s9885cc05a7,Lexmark Printer,Laser Printer and Scanner,Lexmark,Lexmark International Inc.,,{},a9217f61aed3492d21789dd586c108df
+404,s7c2e22a2d3,Denon AVR-X1000,AVR,Denon,D&M Holdings Inc.,,"{'ssdp_description': 'http://192.168.178.23:8080/description.xml', 'name': 'Denon AVR-X1000', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'X1000', 'model_name': '*AVR-X1000', 'host': '192.168.178.23', 'device_type': 'denonavr', 'serial': '0005CD364BF8', 'udn': 'uuid:5f9ec1b3-ff59-19bb-8530-0005cd364bf8', 'port': 8080, 'manufacturer': 'Denon'}",9ba888f8dc4343236f2ff54bcd483f5e
+405,s0db38535c4,Google Home Mini,Google Home Hub,Google,"Google, Inc.",Google-Home-Mini,"{'host': '192.168.0.15', 'hostname': '751c9d56-0abe-60f6-38a4-2f229cc35263.local.', 'port': 42352, 'device_type': 'google_cast', 'properties': {'md': 'Google Cast Group', 've': '05', 'rs': False, 'ca': '198692', 'nf': '1', 'cd': '9D37486E-598E-41BA-B608-20C23A08BE64', 'bs': 'FA8FCA30DB89', 'rm': '97CB8936C7CAF62C', 'ic': '/setup/icon.png', 'st': '0', 'id': '9D37486E-598E-41BA-B608-20C23A08BE64', 'fn': 'Bedroom & Bathroom'}}",8c6a91b353684f0a1dc68c3d0b6d6852
+406,s73d0e60899,MAcbook Air,Macbook Air,Apple,"Apple, Inc.",,{},8119219206244749cb41e71bd218ba91
+407,s0fd584c5be,iPad Pro 2,Tablet,APPLE,"Apple, Inc.",,{},cc87147617164f4c2c5abc273bac7c82
+408,s56fe7a51b3,NVR,NVR,HikVision,"Hangzhou Hikvision Digital Technology Co.,Ltd.",,{},51e0d092f28642b7921ecf3beb88e4e4
+409,sbd1156797d,Microwelle,Plug,sonoff,Espressif Inc.,,{},6c055a66fb584cceba1873ff63349b0e
+410,sd106f7bfad,Ladestation,Plug,Sonoff,Espressif Inc.,,{},6c055a66fb584cceba1873ff63349b0e
+411,sb6f5f6a14b,led stripe,Ambient Led,sonoff,Espressif Inc.,,{},6c055a66fb584cceba1873ff63349b0e
+412,sccdd884e15,wecker,Smart Clock,Espressif,Espressif Inc.,,{},6c055a66fb584cceba1873ff63349b0e
+413,s230d0dc7dc,Sonoff Wohnzimmer,Switch,Sonoff,Espressif Inc.,,{},6c055a66fb584cceba1873ff63349b0e
+414,s292fabf1c2,apple watch,Smart Watch,apple,"Apple, Inc.",,{},6c055a66fb584cceba1873ff63349b0e
+415,s5ad31d05cc,SC20,SC20,Quectel,Quectel Wireless Solutions,,{},fd86451226474de1bd5e0f88d6327761
+416,sfd3be66435,FRITZ!WLAN Repeater 310,repeater,fritz,,,{},0ec48f8d22f8403b89167bb6487137f7
+417,s9fc98ecb0f,Fritz Box Router,Wifi router,Fritz,AVM Audiovisuelles Marketing und Computersysteme GmbH,,"{'ssdp_description': 'http://192.168.10.1:49000/igddesc.xml', 'name': 'FRITZ!Box 7362 SL (UI)', 'upnp_device_type': 'urn:schemas-upnp-org:device:InternetGatewayDevice:1', 'model_number': '1und1', 'port': 49000, 'host': '192.168.10.1', 'device_type': 'igd', 'serial': None, 'udn': 'uuid:75802409-bccb-40e7-8e6c-3810D560F7B8', 'model_name': 'FRITZ!Box 7362 SL (UI)', 'manufacturer': 'AVM Berlin'}",0ec48f8d22f8403b89167bb6487137f7
+418,sb07247a99d,Brother HL-3170CDW Printer,Printer  Fax  Scanner,Brother,"Brother industries, LTD.",,{},207d1c5ec6ee43dc75f9064cc1f7daa9
+419,s964bcc255b,Printer,Multi Function Device Printer,HP,"Hon Hai Precision Ind. Co.,Ltd.",,"{'host': '192.168.1.28', 'hostname': 'NPI6B768A.local.', 'port': 515, 'device_type': 'hp_printer', 'properties': {'Binary': 'T', 'product': '(HP LaserJet 100 colorMFP M175nw)', 'rp': 'RAW', 'qtotal': '1', 'adminurl': 'http://NPI6B768A.local.', 'ty': 'HP LaserJet 100 colorMFP M175nw', 'note': False, 'txtvers': '1', 'TBCP': 'T', 'Transparent': 'T', 'priority': '50'}}",8d8d2cc5081b4ed80cf156f766c9fc82
+420,seb5f6f39a9,Hue,Light Controller,Philips,Philips Lighting BV,,"{'ssdp_description': 'http://192.168.1.17:80/description.xml', 'name': 'Philips hue (192.168.1.17)', 'upnp_device_type': 'urn:schemas-upnp-org:device:Basic:1', 'model_number': 'BSB002', 'model_name': 'Philips hue bridge 2015', 'host': '192.168.1.17', 'device_type': 'philips_hue', 'serial': '0017882429ca', 'udn': 'uuid:2f402f80-da50-11e1-9b23-0017882429ca', 'port': 80, 'manufacturer': 'Royal Philips Electronics'}",8d8d2cc5081b4ed80cf156f766c9fc82
+421,s2a8686a593,iMac Pro,Computer,Apple,"Apple, Inc.",,{},8d8d2cc5081b4ed80cf156f766c9fc82
+422,sb93059e9df,Apple Homepod,Smart Speaker,Apple,"Apple, Inc.",Maxs-iPad-Pro,{},03a4a8e70ed94952118d8f66ae206245
+423,scda2004592,IP Camera,Camera,Panasonic,"Panasonic Communications Co., Ltd.",,{},ed3bc1f25e9d4001029837fb2a4f72d2
+424,sa6516b7e6c,Laser Printer,Color Laser Printer Scanner,Brother,"Brother industries, LTD.",,{},ed3bc1f25e9d4001029837fb2a4f72d2
+425,s5be0b10f70,HD Homerun,Network TV Tuner,Silicondust,Silicondust Engineering Ltd,,"{'ssdp_description': 'http://192.168.0.244:80/dms/device.xml', 'name': 'HDHomeRun DMS 1055C1DA', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDTC-2US', 'model_name': 'HDHomeRun EXTEND', 'host': '192.168.0.244', 'device_type': 'dlna_dms', 'serial': '1055C1DA', 'udn': 'uuid:A119BBD9-F665-38BC-80A9-F9DED15B03B9', 'port': 80, 'manufacturer': 'Silicondust'}",ed3bc1f25e9d4001029837fb2a4f72d2
+426,s63a6b883e1,IP Camera,Camera,VivoTek,"Vivotek, Inc.",,{},ed3bc1f25e9d4001029837fb2a4f72d2
+427,s62dfcd6633,IP camera,Camera,VivoTek,"Vivotek, Inc.",,{},ed3bc1f25e9d4001029837fb2a4f72d2
+428,s19cd553fa0,Synology NAS,NAS,Synology,Synology Incorporated,,"{'ssdp_description': 'http://192.168.124.55:50001/desc/device.xml', 'name': 'Nubolix', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': None, 'port': 50001, 'host': '192.168.124.55', 'device_type': 'dlna_dms', 'serial': 'C5KEN00343', 'udn': 'uuid:00113212-c967-0011-67c9-67c912321100', 'model_name': 'DS112j', 'manufacturer': 'Synology Inc'}",85e9c0ae7e914ad193f53379d0367a84
+429,sc6baa46c93,Broadlink,RF Bridge,Broadlink,"Hon Hai Precision Ind. Co.,Ltd.",,{},85e9c0ae7e914ad193f53379d0367a84
+430,s3ed5fbba98,Access Point,access point,Meraki,Cisco Meraki,,{},85e9c0ae7e914ad193f53379d0367a84
+431,s81c24986fa,HDHomeRun,TV Tuner,SiliconDust,Silicondust Engineering Ltd,,"{'ssdp_description': 'http://192.168.124.2:80/dms/device.xml', 'name': 'HDHomeRun DMS 12308370', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDHR4-2DT', 'model_name': 'HDHomeRun CONNECT', 'host': '192.168.124.2', 'device_type': 'dlna_dms', 'serial': '12308370', 'udn': 'uuid:F73BD534-F28A-3443-AFCB-C487973433EF', 'port': 80, 'manufacturer': 'Silicondust'}",85e9c0ae7e914ad193f53379d0367a84
+432,s986b7e9392,Wifi Extender,WiFi AP,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},7677b61ccc8c4d2b3f5da89afb58f0bf
+433,s661b7612fa,Access Point,WIFI AP,TP Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},7677b61ccc8c4d2b3f5da89afb58f0bf
+434,se2dd5ab363,Web Power switch,power switch,digital,TAIFATECH INC.,,{},7677b61ccc8c4d2b3f5da89afb58f0bf
+435,s9b0ec11f63,esxi server,Server,HP,Hewlett Packard,,{},7677b61ccc8c4d2b3f5da89afb58f0bf
+436,sb1f45845e4,PDU,PDU,APC,AMERICAN POWER CONVERSION CORP,,{},7677b61ccc8c4d2b3f5da89afb58f0bf
+437,sf580f7ba59,Galaxy S9,Android phone,Samsung,"Murata Manufacturing Co., Ltd.",,{},7677b61ccc8c4d2b3f5da89afb58f0bf
+438,s08ea8bb036,Aqara Hub,Home Hub,Xiaomi,Espressif Inc.,,{},4499f6a35c9f4ebed110aff17389a216
+439,sd374857e42,Brother HL-3170CDW,HP Printer,Brother,"Brother Industries, LTD.",,{},1d4bfc8e62554b8d62324a7294dc6ffd
+440,s5f79aa3de1,Sonos Bridge,Audio Reciever,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.168.1.108:1400/xml/device_description.xml', 'name': '192.168.1.108 - Sonos Bridge', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'ZB100', 'port': 1400, 'host': '192.168.1.108', 'device_type': 'sonos', 'serial': None, 'udn': 'uuid:RINCON_000E58E24F6401400', 'model_name': 'Sonos Bridge', 'manufacturer': 'Sonos, Inc.'}",f0f31f61439343d4aa43cc6ace10ec67
+441,seb7b12f8c7,TP-Link,Switch,TP Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},2fec37dd37b54735d68aaecd3cafd709
+442,sf1697f8fea,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},f7438ef5cf5142476265c7e6f49c7b6b
+443,s6900c3812f,Brother Printer,Laser Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",BRWACD1B85FCA6B,{},65824a28df964453fc141e0a03783631
+444,s0537e07254,Atlas,probe,Ripe Atlas,"Apple, Inc.",Pam,{},65824a28df964453fc141e0a03783631
+445,s53cbf915a7,LR Apple TV,TV,APPLE,"Apple, Inc.",,"{'name': 'Living Room Apple TV', 'hostname': 'Living-Room-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-04e2-c163-a4a6-afdb4e6b4d99', 'Name': 'Living Room Apple TV'}, 'host': '192.168.1.11', 'device_type': 'apple_tv', 'port': 3689}",a7c785cf9e4c467a01e37975199bbcb4
+446,sd03efccacc,Brother Printer,Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},dcd58f7070db4987372884473dd6dd39
+447,s04cff4dcfb,Gateway,Firewall?,Comcast,Naray Information & Communication Enterprise,,{},2b32e980fe4d4c77ca45bfa4c203ad5c
+448,s18b636bc01,Apple TV,Media Streaming Device,Apple,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-118b-5873-d7ea-441d30dc4216', 'Name': 'Living Room'}, 'host': '10.0.0.239', 'device_type': 'apple_tv', 'port': 3689}",ac36f0a4b807409caab5fdedff298de3
+449,sb712a13c26,TEW-812DRU,Printserver,TRENDnet,"TRENDnet, Inc.",,{},7c5e89776604439dfbeee487e1f8b64e
+450,sf104ae9be6,Network switch,??,Netgear,NETGEAR,,{},bd82dc44f3e3499ab86015636b6efce4
+451,s59ea4b31c0,UNIFI AP,Access Point,Ubiquiti,Ubiquiti Networks Inc.,,{},28689d357bc74429d80d6b32298bcb4f
+452,sf5ec0dff31,Vizio TV,TV,Vizio,"Vizio, Inc",,{},28689d357bc74429d80d6b32298bcb4f
+453,sc0707a39b1,Amcrest Camera,Camera IP,AMCREST,"Zhejiang Dahua Technology Co., Ltd.",,{},13619809281e4a45203782f19f550c99
+454,s33e7cb48a1,Amcrest IP Camera,Camera IP,AMCREST,Amcrest Technologies,,{},13619809281e4a45203782f19f550c99
+455,sed85ffb8b3,Office Printer,Multifunction Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},13619809281e4a45203782f19f550c99
+456,s1851f5ee05,Office Printer,Multifunction Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},13619809281e4a45203782f19f550c99
+457,scd08425438,Smart Plug,Plug,Ankuoo,Broadlink Pty Ltd,,{},13619809281e4a45203782f19f550c99
+458,s82fbe15017,Smart Plug,Plug,Ankuoo,Broadlink Pty Ltd,,{},13619809281e4a45203782f19f550c99
+459,s6a8045571f,iSymphony Bridge,Lighting Controller,iSymphony,Microchip Technology Inc.,,{},13619809281e4a45203782f19f550c99
+460,saa2cac3f2e,Pool Lighting,Lighting Controller,Pal Lighting,"Hi-flying electronics technology Co.,Ltd",,{},13619809281e4a45203782f19f550c99
+461,s3b6db264a1,Brother HL-2270DW Printer,Printer,Brother,"Brother industries, LTD.",,{},9e7497242b914566509beee630ee3b49
+462,s1d0aaacf34,Apple TV,Media Streamer,APPLE,"Apple, Inc.",,"{'name': 'Media Room Apple TV', 'hostname': 'Media-Room-Apple-TV.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Media Room Apple TV', 'hG': '00000000-017a-4a5b-93c6-0c2e07f94241', 'EiTS': '1'}, 'host': '192.168.1.112', 'device_type': 'apple_tv', 'port': 3689}",71815d016f354bfe00390e396b8fdfd3
+463,se9b1cf2b40,Airstream 100,Amplifier,Mission,Tymphany HK Limited,,"{'ssdp_description': 'http://192.168.1.58:8080/description.xml', 'name': 'Airstream A100', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'A100', 'port': 8080, 'host': '192.168.1.58', 'device_type': 'dlna_dmr', 'serial': '9C0DAC001F0B', 'udn': 'uuid:5f9ec1b3-ed59-1900-4530-9c0dac001f0b', 'model_name': 'Airstream A100', 'manufacturer': 'Monitor Audio'}",71815d016f354bfe00390e396b8fdfd3
+464,s6647e8fb1c,Philips Hue Hub,Smart Home Hub,Philips,Philips Lighting BV,,"{'name': 'Philips hue - 405930', 'hostname': 'Philips-hue.local.', 'properties': {'md': 'BSB002', 'ci': '2', 'pv': '1.1', 'c#': '51', 'sf': '1', 'ff': '1', 's#': '1', 'id': '2D:BA:51:58:54:F8'}, 'host': '10.20.30.32', 'device_type': 'homekit', 'port': 8080}",ea93a0a23f91499d1f125f530d1cdfe4
+465,sa1b085f869,WDTV,TV hub,Western Digital,WESTERN DIGITAL,,{},dd18eb7f38fa4d458f414f8af3996489
+466,s89534e5872,Buffalo NAS,NAS Drive,Buffalo,BUFFALO.INC,,{},dd18eb7f38fa4d458f414f8af3996489
+467,sf36f134a37,Switch,Gaming console,Nintendo,"Nintendo Co.,Ltd",,{},dd18eb7f38fa4d458f414f8af3996489
+468,sbb5ca27b81,Router,Wifi router,NETGEAR,NETGEAR,,{},df73362cedeb4cde3d89a75eb0b66400
+469,sb2c2f19369,Chamberlain MyQ Smart Home,Bridge,Chamberlain,,,"{'host': '192.168.0.109', 'hostname': 'Family-Room-Stereo.local.', 'port': 80, 'device_type': 'spotify_connect', 'properties': {'VERSION': '1.0', 'CPath': '/spotify'}}",5d00c629eae24352392ea0336c621699
+470,s94e000a0f4,Logitech Circle 2,Camera,Logitech,Logitech,,"{'name': 'Logi Circle', 'hostname': 'LogiCircle.local.', 'properties': {'md': 'V-R0008', 'ci': '17', 'c#': '1', 'sf': '0', 'ff': '1', 's#': '1', 'id': 'D0:0C:7A:D5:01:D5'}, 'host': '192.168.0.84', 'device_type': 'homekit', 'port': 8080}",5d00c629eae24352392ea0336c621699
+471,sdc16637671,Amazon Echo,Voice Assistant,AMAZON,Amazon Technologies Inc.,,{},5d00c629eae24352392ea0336c621699
+472,s66de62f465,Homekit P1 Plug,Smart Plug,Koogeek,China Dragon Technology Limited,,"{'name': 'Koogeek-P1-1FCAC9', 'hostname': 'hap-1FCAC9.local.', 'properties': {'md': 'P1', 'ci': '7', 'pv': '1.1', 'c#': '1', 'sf': '0', 'sh': 'nqd6VQ==', 'ff': '1', 's#': '1', 'id': 'B3:87:5C:74:4D:6D'}, 'host': '192.168.0.101', 'device_type': 'homekit', 'port': 80}",5d00c629eae24352392ea0336c621699
+473,saa1409d3cb,Canon Printer,Printer,Canon,,,{},053c7aa830a64ea18bbdcfce982d09c8
+474,sd3a4b79d0e,hp switch,Ethernet Switch,Hewlett Packard,ProCurve Networking by HP,,{},492ecaa8051d413c17dfc256fbf896ea
+475,s5b6b12fefd,HP switch,Switch,Hewlett Packard,Hewlett Packard,,{},492ecaa8051d413c17dfc256fbf896ea
+476,sc4ed53427c,Apple TV (Basement),Cast,apple,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Living Room', 'hG': '00000000-00a3-5096-eac0-939612164afe', 'EiTS': '1'}, 'host': '192.168.1.186', 'device_type': 'apple_tv', 'port': 3689}",3dc27fe67fa0406bfd1174f851323a9d
+477,s3bebd10a9e,LPhone,iPhone,APPLE,"Apple, Inc.",LarryTarsiPhone,{},d5dc85ecff504d019045402403cfc35a
+478,sf089645a00,WF-2760 Series,Inkjet All in One Printer,epson,Seiko Epson Corporation,,{},781c7027d33248a573dd900c54f8d67c
+479,seb0ec394ba,X3200W,AV Receiver,Denon,D&M Holdings Inc.,,"{'ssdp_description': 'http://192.168.0.48:8080/description.xml', 'name': 'Denon AVR-X3200W', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'X3200W', 'model_name': '*AVR-X3200W', 'host': '192.168.0.48', 'device_type': 'dlna_dmr', 'serial': '0005CD612DE2', 'udn': 'uuid:5f9ec1b3-ff59-19bb-8530-0005cd612de2', 'port': 8080, 'manufacturer': 'Denon'}",d96ce6d3bb4f4f29ac4126e44ef5dc9b
+480,s0096be3eec,Magic Home,Led Strip Controller,Magic Home,Espressif Inc.,,{},d96ce6d3bb4f4f29ac4126e44ef5dc9b
+481,se86b28746c,Magic Home,Led Strip Controler,Magic Home,Espressif Inc.,,{},d96ce6d3bb4f4f29ac4126e44ef5dc9b
+482,s167d22375b,Vizio Stero,Speaker,Vizio,"Vizio, Inc",,"{'host': '192.168.0.191', 'hostname': '27925ad6-43ed-dac8-7fe4-fa2c19cc00c8.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'SmartCast Speaker 70-D5', 've': '05', 'rs': 'Now Casting: Radio One', 'ca': '2052', 'st': '1', 'bs': 'FFFFFFFFFFFF', 'rm': '0465C53A0DFB1036', 'ic': '/setup/icon.png', 'id': '27925ad643eddac87fe4fa2c19cc00c8', 'fn': 'FlyntCast'}}",82a1abeae97140d54cc050987a103c64
+483,s6854e3f053,Freebox Revolution Server,Internet Box,Free,,,{},66f3a57f13a44056116b37229d4f8820
+484,sfb6b433295,Pure Cool,Air purifier,Dyson,Dyson Limited,,{},66f3a57f13a44056116b37229d4f8820
+485,s8bf3f05646,philips hue,IoT Bridge,philips hue,Philips Lighting BV,,{},66f3a57f13a44056116b37229d4f8820
+486,s83e0a37934,Triby,Speaker,Invoxia,Invoxia,,"{'name': 'Triby', 'hostname': 'triby-4DBE.local.', 'properties': {'md': 'KTP1', 'ci': '15', 'c#': '1', 'id': '88:E6:88:D8:77:4C', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.0.20', 'device_type': 'homekit', 'port': 7080}",66f3a57f13a44056116b37229d4f8820
+487,sf2710833c8,arlo,Camera,NETGEAR,NETGEAR,,{},dd8dad5b1f1642b6a488a6fd13f1231f
+488,sb4e410db61,SimpliSafe,Alarm Panel,SimpliSafe,Espressif Inc.,,{},dd8dad5b1f1642b6a488a6fd13f1231f
+489,s26c5bf7dbc,Printer,Laser Printer,HP,"Hon Hai Precision Ind. Co.,Ltd.",,{},dd8dad5b1f1642b6a488a6fd13f1231f
+490,sd912ec0d4f,apple watch,Smart Watch,apple,,,{},6b48d9ea32fb41f2c3113b7723ed490c
+491,sd5a5bb8b5c,Apple iphone 5s,iphone 5s,apple,"Apple, Inc.",,{},6b48d9ea32fb41f2c3113b7723ed490c
+492,s7297cb245b,SmarTap,Tap,SmarTap Inc,Texas Instruments,,{},b022d07869a7444922e2f875579f18f3
+493,s31c605271d,Upstairs WAP,WIFI AP,unknown,Ubiquiti Networks Inc.,,{},f9b0456d3da04eb2c3a43ec8e666c1ce
+494,s6f3b0cb045,Cheryl Ipad?,ipad,Apple,"Apple, Inc.",,{},f9b0456d3da04eb2c3a43ec8e666c1ce
+495,sf7a22c4357,Laptop,computer,Apple,"Apple, Inc.",,{},1164ecff636a442195750cb537841e97
+496,s9c9586b779,Stereo,AV Receiver,yamaha,YAMAHA CORPORATION,,{},1164ecff636a442195750cb537841e97
+497,sce4634c41a,EX2700,WiFi Extender,Netgear,,,{},a52e7fbfe0f34166671d16669dc6aca4
+498,s18ea87afd4,NETGEAR,EXTENDER,NETGEAR,NETGEAR,,{},ba48c3e8de764f3eb18925bcf9a1bf53
+499,s37fa053bfc,Chamberlain MYQ,GARAGE,Chamberlain,"The Chamberlain Group, Inc",,{},ba48c3e8de764f3eb18925bcf9a1bf53
+500,s7b8676d5f4,Unknown,Unknown,Unknown,ASKEY COMPUTER CORP,,{},a8d4e96bab394c176f30c2a1aa0d6a41
+501,s3a1d2a4b05,Camera,Camera Office,Wyze,,,{},a8d4e96bab394c176f30c2a1aa0d6a41
+502,sc47bd5332d,HL-3070CW,Color Laser Printer,Brother,"Brother industries, LTD.",,{},976c3f93d7524413aeffaf2faad8cfdd
+503,s3a826727f5,GS116Ev2,Network Switch,Netgear,NETGEAR,,{},976c3f93d7524413aeffaf2faad8cfdd
+504,s2b8c84a7bd,Access Point,Access Point,Hawking,"Hawking Technologies, Inc.",,{},976c3f93d7524413aeffaf2faad8cfdd
+505,sb6c54cd277,Lyra 3,Wifi mesh router,Asus,ASUSTek COMPUTER INC.,,{},413c163eae0e41a746126ebb6992b372
+506,s486ae033dc,Lyra 2,Mesh router,Asus,ASUSTek COMPUTER INC.,,{},413c163eae0e41a746126ebb6992b372
+507,sfaf14db2c6,WD-TV,HD based TV,Western Digital,WESTERN DIGITAL,,"{'ssdp_description': 'http://192.168.2.9:52844/', 'name': 'WDTVLIVE', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'WDBAAN', 'port': 52844, 'host': '192.168.2.9', 'device_type': 'dlna_dmr', 'serial': 'WNV100109762', 'udn': 'uuid:0f1ce61e-0090-a976-9548-27938cc17d5a', 'model_name': 'WD TV HD Live', 'manufacturer': 'Western Digital Corporation'}",13e6a15b59da4037e321ea0abb9875b8
+508,saacf05ccd7,Canon PXMIA,Printer,Canon,CANON INC.,,{},52bd95efa6424d2ff2b34e6c4c8474b3
+509,s898b7b4908,iPad Pro 10.5,iPad Pro,Apple,,,{},8e437ad1c3a6432d1ea5e3216ff62f70
+510,s1f027ac58e,Homer,iMac,APPLE,"Apple, Inc.",,"{'host': '192.168.0.205', 'urlbase': 'https://192.168.0.205:32400', 'name': 'Homer', 'device_type': 'plex_mediaserver', 'port': '32400'}",d6ce47a7105941a2a9c1c1f08370b7b6
+511,sc126246a82,LaserJet,Printer,HP,AzureWave Technology Inc.,,{},d456a27931964bc6623d581ce38ba30e
+512,s2b915a023a,Apple TV,Streaming,Apple,"Apple, Inc.",,"{'name': 'Family Room', 'hostname': 'Family-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Family Room', 'hG': '00000000-012a-bb52-bc17-e40ccdc04fcb', 'EiTS': '1'}, 'host': '10.0.1.13', 'device_type': 'apple_tv', 'port': 3689}",d456a27931964bc6623d581ce38ba30e
+513,s881901c6be,Plex Server,Media Server,drobo,"Apple, Inc.",,{},fad6436c7cbf4e94a74844eaebafa8d4
+514,sf52ea381b5,hp officejet 8600 pro,Multifunction Printer,HP,Hewlett Packard,,{},fad6436c7cbf4e94a74844eaebafa8d4
+515,s15c019cae9,Tivo,DVR Streamer,Tivo,TiVo,,{},fad6436c7cbf4e94a74844eaebafa8d4
+516,s4cfc988d72,Drobo 5n,NAS,drobo,"Data Robotics, Incorporated",,{},fad6436c7cbf4e94a74844eaebafa8d4
+517,s931c7ffee6,thinkcenter,Desktop PC,Lennox,"Elitegroup Computer Systems Co.,Ltd.",BethsWin7,{},fad6436c7cbf4e94a74844eaebafa8d4
+518,s6a58af715c,Thermostat,Thermostat,Honeywell,ADEMCO,,{},fad6436c7cbf4e94a74844eaebafa8d4
+519,s76cf359cd5,Samsung Tv,Tele,Samsung,"Samsung Electronics Co.,Ltd",,"{'ssdp_description': 'http://192.168.86.250:7676/smp_19_', 'name': '[TV]Samsung LED40', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'AllShare1.0', 'port': 7676, 'host': '192.168.86.250', 'device_type': 'dlna_dmr', 'serial': '20110517DMR', 'udn': 'uuid:0a21fe80-00aa-1000-8bb9-508569c9b053', 'model_name': 'UN40F6300', 'manufacturer': 'Samsung Electronics'}",fad6436c7cbf4e94a74844eaebafa8d4
+520,se80aa7402c,Apple TV (MBR),not sure,Apple,"Apple, Inc.",georgeterwriter,{},b2ff1dfc7b794f6990fc4b4f4054de71
+521,s19dd5e6b2e,U-verse Node Eth 68,Router,AT&T,"ARRIS Group, Inc.",,{},3546b9f275a947681cfdd064cffe614f
+522,sfb56b6b803,Apple TV,Smart TV Box,APPLE,"Apple, Inc.",,"{'name': 'Bedroom Apple TV', 'hostname': 'Bedroom-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0747-3167-3e39-3eab91a746f7', 'Name': 'Bedroom Apple TV'}, 'host': '192.168.0.12', 'device_type': 'apple_tv', 'port': 3689}",d8388d2cdac64bb0fd1a9d3f2aaf5c31
+523,scd71eef319,Transporter Sync,NAS,Connected Data  Inc,"Connected Data, Inc.",,{},a6df81e528f24ba399740dc180976d2d
+524,se31cb6f369,Test Access Point,Router,Edimax,Edimax Technology Co. Ltd.,,{},be43b96d0f5e4dceca59828b555bd74a
+525,sc3ca8658ff,Synology DS218+,NAS,Synology,Synology Incorporated,,{},2394e30f113247bc6510c33b25addf39
+526,sb358c1c64b,iPad,Tablet,Apple,"Apple, Inc.",touchstone,{},af0576cf8b3d4140f4ef00196a66acfe
+527,s4781dfb273,iPhone X S,iPhone,Apple,,iPhone-10,{},ae1acbb25afe449843cdb900f1a5e084
+528,s824feff2f6,Netgear Orbi AP,Wireless Access Point,NETGEAR,NETGEAR,,{},0fc1b8eb7bb04dbca89a252c4238eed5
+529,s55d19fa375,Netgear Orbi AP,Wireless Access Point,netgear,NETGEAR,,{},0fc1b8eb7bb04dbca89a252c4238eed5
+530,s83a87cf341,Smart Body Analyzer,Bathroom scales,Withings,Withings,,{},a6df81e528f24ba399740dc180976d2d
+531,s440befc143,Amazon Echo Dot,Voice Assistant Speaker,Amazon,Amazon Technologies Inc.,,{},25c4f0ef615546e2ea4be9ce0038d282
+532,s1cac9edc03,Amazon Echo,Voice Assistant,Amazon,Amazon Technologies Inc.,,{},25c4f0ef615546e2ea4be9ce0038d282
+533,sbb9e9248e5,Wemo SmartPlug,Smart Outlet,Wemo,Belkin International Inc.,,{},25c4f0ef615546e2ea4be9ce0038d282
+534,sc169d3947f,Amazon Echo,Voice Assistant Speaker,Amazon Echo,Amazon Technologies Inc.,,{},25c4f0ef615546e2ea4be9ce0038d282
+535,s604c4af842,Amazon Echo,Voice Assistant Speaker,Amazon Echo,Amazon Technologies Inc.,,{},25c4f0ef615546e2ea4be9ce0038d282
+536,s455c1494ce,TV,Smart TV,JVC,LG Innotek,,"{'ssdp_description': 'http://192.168.1.193:2870/dmr.xml', 'name': 'DIXONS-JVC TV', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': '1.0', 'port': 2870, 'host': '192.168.1.193', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:13bdae14-14fe-1839-a086-486dbb04131f', 'model_name': '-', 'manufacturer': 'ACCESS CO., LTD.'}",be43b96d0f5e4dceca59828b555bd74a
+537,s475c82563f,2860,Wifi router,Draytek,DrayTek Corp.,,{},7b570109e53d4c911ad83b2c91074c2a
+538,sa3bfc69573,Nvidia Shield TV,SetTopBox,nvidia,NVIDIA,,"{'host': '192.168.0.108', 'hostname': 'Android.local.', 'port': 8080, 'device_type': 'kodi', 'properties': {'txtvers': '1', 'uuid': '519b264e-f618-45c1-984f-e1dc4105d845'}}",da6bcad38cd14f6e1f360fe40126120b
+539,sa7cba1e87b,Apple Extreme,Router,Apple,"Apple, Inc.",mike-or-5-garage,{},da45ac82b1d34272d69c4e7cb2700cfa
+540,s062b83c7e8,Drobo 5N2 (MyNas),NAS,drobo,"Data Robotics, Incorporated",,{},017e3f95c9484bc7baf0fa8223c9e7a9
+541,saa7a3b401f,Phil's Bed,Bed,Tempurpedic,AzureWave Technology Inc.,,{},017e3f95c9484bc7baf0fa8223c9e7a9
+542,s0cdec9c97d,HP MFP,Multifunction Printer,HP,Hewlett Packard,,"{'host': '192.168.1.51', 'hostname': 'NPI9E67C9.local.', 'port': 515, 'device_type': 'hp_printer', 'properties': {'Binary': 'T', 'product': '(HP LaserJet MFP M426fdn)', 'rp': 'RAW', 'UUID': '50484238-4b32-5330-5439-40b0349e67c9', 'ty': 'HP LaserJet MFP M426fdn', 'adminurl': 'http://NPI9E67C9.local.', 'qtotal': '1', 'note': 'Study', 'txtvers': '1', 'TBCP': 'T', 'Transparent': 'T', 'priority': '50'}}",017e3f95c9484bc7baf0fa8223c9e7a9
+543,s112cb5217f,Hikvision Webcam,Camera,Hikvision,"LSD Science and Technology Co.,Ltd.",,{},30a10b4de4b744d7ac6a270d98c334b8
+544,s3e54cc9dc1,Hikvision Webcam,Camera,Hikvision,"LSD Science and Technology Co.,Ltd.",,{},30a10b4de4b744d7ac6a270d98c334b8
+545,s768d4f8267,DCS-5010L,Camera,D-Link,D-Link International,,{},c3587c9c43ae49b2da15b2d7945a5921
+546,sb76d5d87fd,DCS-5010L,Camera,D-Link,D-Link International,,{},c3587c9c43ae49b2da15b2d7945a5921
+547,sd7bf23a1d4,DCS-5010L,Camera,D-Link,D-Link International,,{},c3587c9c43ae49b2da15b2d7945a5921
+548,s19beba63a3,DCS-5010L,Camera,D-Link,D-Link International,,{},c3587c9c43ae49b2da15b2d7945a5921
+549,saaa663981e,DCS-5010L,Camera,D-Link,D-Link International,,{},c3587c9c43ae49b2da15b2d7945a5921
+550,s851e79f8e4,DCS-5010L,Camera,D-Link,D-Link International,,{},c3587c9c43ae49b2da15b2d7945a5921
+551,se08c9e5376,Play: 3,Wireless Speaker,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://192.168.1.179:1400/xml/device_description.xml', 'name': '192.168.1.179 - Sonos Play:3', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'S3', 'port': 1400, 'host': '192.168.1.179', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:RINCON_949F3EE361CA01400', 'model_name': 'Sonos Play:3', 'manufacturer': 'Sonos, Inc.'}",742d2df805f346fc886f25c8a7291485
+552,sebe0462f00,Living room Chromecast,Chromecast,Google,AzureWave Technology Inc.,Chromecast,"{'host': '10.0.1.21', 'hostname': 'ecaff3b7-e294-1411-1838-b061491711af.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'Chromecast', 've': '05', 'rs': False, 'ca': '4101', 'nf': '1', 'cd': 'DE31FC6F7CBDDA43F5DE3E4CD7B6770D', 'bs': 'FA8FCA6D9BBC', 'rm': 'C112546A22C2A7A5', 'ic': '/setup/icon.png', 'st': '0', 'id': 'ecaff3b7e29414111838b061491711af', 'fn': 'Living Room Chrome Cast'}}",da45ac82b1d34272d69c4e7cb2700cfa
+553,sb196cc4845,HP Laserjet Printer,Printer,HP,Hewlett Packard,,{},02dae0ba534442a7f7db366f662e51c6
+554,s55d6cf4120,MCR-610,DAB Radio/Streaming Music Player,Marantz,D&M Holdings Inc.,,"{'ssdp_description': 'http://192.168.1.189:8080/description.xml', 'name': None, 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': '03', 'model_name': 'DigitalMediaAdapterUPnP', 'host': '192.168.1.189', 'device_type': 'dlna_dmr', 'serial': '0006782170A8', 'udn': 'uuid:5f9ec1b3-ff59-19bb-8530-0006782170a8', 'port': 8080, 'manufacturer': 'BridgeCo AG, Switzerland'}",96f62a65c5ea43ba35c42db38b78e4f4
+555,s8ac31f19e1,JetDirect Server,Print Server,HP,Hewlett Packard,,{},96f62a65c5ea43ba35c42db38b78e4f4
+556,s5f7914bff1,HomePod,Smart Speaker,Apple,"Apple, Inc.",,{},5da431a81d9743bb70430caac524c713
+557,s3f935fb4c8,Canon Printer,Photo Printer,Canon,CANON INC.,,{},5da431a81d9743bb70430caac524c713
+558,s64c58a33ad,HomePod,Smart Speaker,Apple,"Apple, Inc.",,{},5da431a81d9743bb70430caac524c713
+559,s49dc1cc6ce,HomePod,smart speaker,APPLE,"Apple, Inc.",,{},5da431a81d9743bb70430caac524c713
+560,sa4ac568074,Ecobee,Thermostat,Ecobee,ecobee inc,,{},46391238dd39428582bfb7eba929df18
+561,s0512a0cbbc,Arlo,IP Camera,Netgear,NETGEAR,,{},46391238dd39428582bfb7eba929df18
+562,s22a667fb21,Epson XP-640,Printer,Epson,Seiko Epson Corporation,,{},cb336c1200a540231b5576ea846654de
+563,s3334693278,Vanessa's iPad,iPad,Apple,"Apple, Inc.",,{},cb336c1200a540231b5576ea846654de
+564,s7db24378e3,Vanessa's Apple Watch,Apple Watch,Apple,"Apple, Inc.",,{},cb336c1200a540231b5576ea846654de
+565,s89857af5f3,Apple TV Guest Room,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Guest Room Apple TV', 'hostname': 'Guest-Room-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Guest Room Apple TV', 'hG': '00000000-05bb-3c32-5373-468d70e54def', 'DFID': '2'}, 'host': '10.0.1.17', 'device_type': 'apple_tv', 'port': 3689}",cb336c1200a540231b5576ea846654de
+566,sed60b6e366,Vanessa's Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Guest Room Apple TV', 'hostname': 'Guest-Room-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Guest Room Apple TV', 'hG': '00000000-05bb-3c32-5373-468d70e54def', 'DFID': '2'}, 'host': '10.0.1.17', 'device_type': 'apple_tv', 'port': 3689}",cb336c1200a540231b5576ea846654de
+567,s7dc79e277c,Diana's MacBook,Laptop Computer,Apple,"Apple, Inc.",Dianas-MBP,{},cb336c1200a540231b5576ea846654de
+568,s63e809a4cc,Eli's Apple Watch,Apple Watch,Apple,"Apple, Inc.",,{},cb336c1200a540231b5576ea846654de
+569,se674e867b4,DS-7608NI-E2 / 8P,Network Video Recorder,Hikvision,"Hangzhou Hikvision Digital Technology Co.,Ltd.",,{},9362f560065b40e262220d05d4d0b266
+570,s13403665de,Vizio TV,TV,Vizio,"Vizio, Inc",,{},2e546ae6005b4287c544ead021640b4d
+571,s03cdc40bb6,Fritzbox 7490,DSL Router,AVM,AVM Audiovisuelles Marketing und Computersysteme GmbH,,"{'ssdp_description': 'http://192.168.178.1:49000/MediaServerDevDesc.xml', 'name': 'AVM FRITZ!Mediaserver', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'avm', 'port': 49000, 'host': '192.168.178.1', 'device_type': 'dlna_dms', 'serial': None, 'udn': 'uuid:fa095ecc-e13e-40e7-8e6c-5c4979911914', 'model_name': 'FRITZ!Box 7490', 'manufacturer': 'AVM Berlin'}",7c7ba3a4573a493b67383bb2e473cce0
+572,sff679fdb6d,Apple iPhone 8,Smartphone,APPLE,"Apple, Inc.",,{},de26f6a744614a8f9cafc072e305680b
+573,s3160136752,Brother printer,MFU,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},9f7d385769d440e64d69df2189337d87
+574,sd302fb18b1,plug2,Smart plug,idevices,"iDevices, LLC",,"{'name': 'iDevices Switch (2)', 'hostname': 'idevices-switch-2.local.', 'properties': {'md': 'IDEV0001', 'ci': '8', 'pv': '1.0', 'c#': '6', 'id': '96:B0:DD:CE:C9:9C', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.207', 'device_type': 'homekit', 'port': 80}",9f7d385769d440e64d69df2189337d87
+575,s0a96345741,Leviton switch,smart light switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-06F589', 'hostname': 'WICED-hap-06F589.local.', 'properties': {'md': 'Leviton Switch-06F589', 'ci': '8', 'pv': '1.1', 'c#': '12', 'sf': '0', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': '80:A5:6B:30:98:87'}, 'host': '192.168.1.230', 'device_type': 'homekit', 'port': 80}",9f7d385769d440e64d69df2189337d87
+576,s1fe5f34697,Radio Thermostat,Thermostat,Radio Thermostat Company of America,"Murata Manufacturing Co., Ltd.",,{},f2913e0d56d7446c1cf409f462f6e73c
+577,s3f8782d80f,Radio Thermostat,Smart Thermostat,Radio Thermostat Company of America,"Murata Manufacturing Co., Ltd.",,{},f2913e0d56d7446c1cf409f462f6e73c
+578,s61f4fe8f94,MyQ,Garage Door Opener,Chamberlain,"The Chamberlain Group, Inc",,{},cc25f9d34c264744141eb82a367cb7d6
+579,sb9bb18662f,Light Switch (Front Porch),Light Switch,Belkin Wemo,Belkin International Inc.,,{},cc25f9d34c264744141eb82a367cb7d6
+580,seb3b799fe3,Apple TV (MBR),Media Streamer,Apple,"Apple, Inc.",,"{'name': 'Master Bedroom', 'hostname': 'Master-Bedroom.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0005-9062-1805-f9f2b2ca45fd', 'Name': 'Master Bedroom'}, 'host': '192.168.1.151', 'device_type': 'apple_tv', 'port': 3689}",cc25f9d34c264744141eb82a367cb7d6
+581,sbcabf67732,Ziggo mediabox,Mediabox,Samsung,,UPCGW_1242,"{'ssdp_description': 'http://192.168.178.53:29153/description0.xml', 'name': '2181691601', 'upnp_device_type': 'urn:schemas-upnp-org:device:RemoteUIServer:2', 'model_number': '1-InLife-184.2.2', 'port': 29153, 'host': '192.168.178.53', 'device_type': 'ziggo_mediabox_xl', 'serial': None, 'udn': 'uuid:52554976-3247-5265-6D6F-1c3adeba6815', 'model_name': 'SMT-G7401:P01C', 'manufacturer': 'Samsung electronics'}",84ac71b3aeb24949198400a23ce35e72
+582,sc60278bab5,iPad,tablet,Apple,"Apple, Inc.",vdeveau-iMac,{},372235f917244d61eb13b5cdcb06bdfa
+583,s4d1b0bfeb7,Accesspoint,Access Point,Devolo,devolo AG,,{},84ac71b3aeb24949198400a23ce35e72
+584,sd6e372841b,iPhone (Ken's),Phone,Apple,"Apple, Inc.",Kenneths-iPhone,{},cc25f9d34c264744141eb82a367cb7d6
+585,sd49a36acce,Brother Printer,printer,Brother,"Silex Technology, Inc.",BrotherPrinter,{},a105a7d2ac664a65824493a576b5401f
+586,s2dac2aa62c,iPhone 7-Anni,iPhone 7,Apple,"Apple, Inc.",Annis-iPhone-7,{},f43b53c1340d4831d8b382521621156d
+587,s74ce53ba14,Vizio Soundbar,Soundbar,Vizio,"Vizio, Inc",,{},85d5867972384b32fad96089ad89e1a7
+588,s20094fdca2,iPad,Tablet,Apple,"Apple, Inc.",,{},81f6776fe7c0447025bf4d0ccb3b1eb4
+589,s59baa46098,Ghost,iMac,APPLE,"Apple, Inc.",,{},81f6776fe7c0447025bf4d0ccb3b1eb4
+590,s19048f559a,HomePod,Smart Speaker,Apple,"Apple, Inc.",,{},81f6776fe7c0447025bf4d0ccb3b1eb4
+591,s10fe2421b8,iPhone,Smartphone,APPLE,"Apple, Inc.",,{},81f6776fe7c0447025bf4d0ccb3b1eb4
+592,sc322b43447,HomePod,smart speaker,Apple,"Apple, Inc.",,{},81f6776fe7c0447025bf4d0ccb3b1eb4
+593,sce565f3a55,Apple Watch,smartwatch,Apple,"Apple, Inc.",,{},81f6776fe7c0447025bf4d0ccb3b1eb4
+594,s3366e8f530,Apple Watch,Apple Watch,apple,"Apple, Inc.",AppleWanMartijn,{},718f51c6bb4e46f0886721b6cf77b6a2
+595,s3756183197,Scott's Apple Watch 4,Watch,Apple,"Apple, Inc.",ScottsApleWatch,{},463ec8f57a684759b61689311fe4bf77
+596,s2272426b5d,Router,Wifi router,Fritz,AVM Audiovisuelles Marketing und Computersysteme GmbH,,"{'ssdp_description': 'http://192.168.178.1:49000/fboxdesc.xml', 'name': 'FRITZ!Box 7560', 'upnp_device_type': 'urn:schemas-upnp-org:device:fritzbox:1', 'model_number': 'avme', 'port': 49000, 'host': '192.168.178.1', 'device_type': 'fritzbox', 'serial': None, 'udn': 'uuid:123402409-bccb-40e7-8e6c-E8DF703668DA', 'model_name': 'FRITZ!Box 7560', 'manufacturer': 'AVM Berlin'}",718f51c6bb4e46f0886721b6cf77b6a2
+597,s5c60fe92e7,Fritzbox Router,IP Router,AVM,"Apple, Inc.",thinkum-dinkum,"{'ssdp_description': 'http://10.0.1.1:49000/igd2desc.xml', 'name': 'InternetGatewayDeviceV2 - Zentrale', 'upnp_device_type': 'urn:schemas-upnp-org:device:InternetGatewayDevice:2', 'model_number': 'avm', 'model_name': 'FRITZ!Box 7490', 'host': '10.0.1.1', 'device_type': 'igd', 'serial': None, 'udn': 'uuid:75802409-bccb-40e7-9f6c-3431C48F6A61', 'port': 49000, 'manufacturer': 'AVM Berlin'}",0c130575f02842aa9477c9c3f77c5688
+598,s3e6dc36d42,Fritzbox Repeater,IP Repeater,AVM,,Repeater,{},0c130575f02842aa9477c9c3f77c5688
+599,s84a088f0d5,Hue Hub,Lighting Hub,Philips,Philips Lighting BV,,{},0c130575f02842aa9477c9c3f77c5688
+600,sdfcf3166f5,Office Switch,Network Switch,NETGEAR,NETGEAR,,{},0c130575f02842aa9477c9c3f77c5688
+601,sbbd4b86a26,Wink,Wink Hub,Wink,"Murata Manufacturing Co., Ltd.",,"{'ssdp_description': 'https://10.1.14.2:8888', 'host': '10.1.14.2', 'port': 8888, 'device_type': 'wink'}",6ee4f01a3f77421463ee9bf2391f95c6
+602,s7a42f2dba4,Macbook Pro,Laptop,Apple,,,{},0c130575f02842aa9477c9c3f77c5688
+603,s49bcc4942b,Apple TV Living Room,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Monkey Apple TV 32', 'hostname': 'Monkey-Apple-TV-32.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-00bc-66ad-5e7b-7414c856419c', 'Name': 'Monkey Apple TV 32'}, 'host': '192.168.7.30', 'device_type': 'apple_tv', 'port': 3689}",f43b53c1340d4831d8b382521621156d
+604,s13f5033fe5,Beolit 12,Beolit 12,Bang & Olufsen,Bang & Olufsen A/S,,{},f43b53c1340d4831d8b382521621156d
+605,s2e582c5f42,LG TV,Smart TV,LG,"Apple, Inc.",,{},19035c447ff9455fdf49ab71dcd09a45
+606,seb95dbf262,UniFi USW-24-250,Network Switch,UniFi,Ubiquiti Networks Inc.,,{},19035c447ff9455fdf49ab71dcd09a45
+607,s578d8617af,Mac Mini Server,Homebridge Server,Apple,"Apple, Inc.",,"{'name': 'Homebridge-CAD8', 'hostname': 'CC_22_3D_E3_CE_30.local.', 'properties': {'md': 'Homebridge', 'ci': '2', 'pv': '1.0', 'c#': '22', 'id': 'CC:22:3D:E3:CE:30', 'sh': 'YcIewg==', 'ff': '0', 's#': '1', 'sf': '0'}, 'host': '10.0.0.8', 'device_type': 'homekit', 'port': 51827}",19035c447ff9455fdf49ab71dcd09a45
+608,se299ca9488,UniFi AP AC Pro,WiFi AP,UniFi,Ubiquiti Networks Inc.,,{},19035c447ff9455fdf49ab71dcd09a45
+609,s8e606da95d,Apple Watch Series 3 Monkey,Watch,Apple,"Apple, Inc.",MonkeySes3Watch,{},f43b53c1340d4831d8b382521621156d
+610,sd22a2e7aeb,AV Receiver,AV Receiver,Denon,D&M Holdings Inc.,,"{'ssdp_description': 'http://10.0.0.99:8080/description.xml', 'name': 'Denon', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'X2300W', 'model_name': '*AVR-X2300W', 'host': '10.0.0.99', 'device_type': 'dlna_dmr', 'serial': '0005CDA0B556', 'udn': 'uuid:5f9ec1b3-ff59-19bb-8530-0005cda0b556', 'port': 8080, 'manufacturer': 'Denon'}",19035c447ff9455fdf49ab71dcd09a45
+611,se6576cda02,iPhone Maja,iPhone,Apple,"Apple, Inc.",Majas-iPhone,{},f43b53c1340d4831d8b382521621156d
+612,s6923936dec,Brother HJ-L2360D,Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},bf69f45f424949e0d9d3196404753e09
+613,sf40cb3df0a,Apple Air Port,Air Port,APPLE,"Apple, Inc.",the-boy,{},b9d9f70966334ca060d65a156defdec8
+614,s75107d033e,Netgear Hub,Wired Hub,NETGEAR,NETGEAR,,{},b9d9f70966334ca060d65a156defdec8
+615,s0253aafe73,Kitchen Cocoon,Airplay Speaker,Denon,D&M Holdings Inc.,,{},b9d9f70966334ca060d65a156defdec8
+616,s7b699e8be4,Apple TV (Bedroom),Apple TV,APPLE,"Apple, Inc.",,"{'name': 'Bedroom', 'hostname': 'Bedroom.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Bedroom', 'hG': '00000000-0409-268e-efc8-951e2ce5499c', 'EiTS': '1'}, 'host': '192.168.7.41', 'device_type': 'apple_tv', 'port': 3689}",b9d9f70966334ca060d65a156defdec8
+617,s1e2e509a6a,Apple TV (Living Room),Apple TV,APPLE,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0409-268e-efc8-951e2ce5499c', 'Name': 'Living Room'}, 'host': '192.168.7.21', 'device_type': 'apple_tv', 'port': 3689}",b9d9f70966334ca060d65a156defdec8
+618,s51d35fe8e5,Apple iPad (Beth),Apple iPad,APPLE,"Apple, Inc.",,{},b9d9f70966334ca060d65a156defdec8
+619,s8b9fcaec74,Apple iPhone (Alan),iPhone,APPLE,"Apple, Inc.",Alans-iPhone,{},b9d9f70966334ca060d65a156defdec8
+620,s146aa14e36,P65-E1,Smart TV,Vizio,"Vizio, Inc",,"{'name': 'Vizio TV', 'hostname': 'viziocasttv.local.', 'properties': {'md': 'CastTV', 'ci': '31', 'pv': '1.1', 'c#': '1', 'id': '8B:A0:F0:2C:72:90', 'sh': 'HZxylQ==', 'ff': '8', 's#': '1', 'sf': '0'}, 'host': '192.168.7.196', 'device_type': 'homekit', 'port': 54123}",17d8b52618634a65b202949e26402db0
+621,sc2016a4455,OLED65B7P,TV,LG Electoronics,LG Innotek,,{},d62a85b5a5db4b743ed64e9275af6b00
+622,s18a5e49bc7,Apple Watch (Alan),Apple Watch,APPLE,"Apple, Inc.",AlansAppleWatch,{},b9d9f70966334ca060d65a156defdec8
+623,sbcf5aa4cd6,Ubiquiti Wireless Endpoint,Wireless Access Point,Ubiquiti Networks,,,"{'host': '192.168.0.77', 'hostname': 'a1359385-4429-958f-7cd6-458eaa843039.local.', 'port': 8009, 'device_type': 'google_cast', 'properties': {'md': 'Chromecast', 've': '05', 'rs': 'Plex', 'ca': '200709', 'nf': '1', 'cd': '79FCD2C3188122398CEE5FF7E2C8E81B', 'bs': 'FA8FCA8B729F', 'rm': False, 'ic': '/setup/icon.png', 'st': '1', 'id': 'a13593854429958f7cd6458eaa843039', 'fn': 'Dining room TV'}}",bc43c9c71190487b8e21b99dcd2ceaa4
+624,s71e53da7e8,iPad Pro,Tablet,Apple,,,{},e99078d86e504d2e5572330cc35c5874
+625,sac14e20c90,Ikea Tradfri Gateway,Smart Home Hub,ikea,"Murata Manufacturing Co., Ltd.",,{},73d68e21097e47362e195adf5d94b00a
+626,sb3dd4280da,Brother HL-3170CDW,Multifunction Printer,Brother,"Brother industries, LTD.",,{},2cbecb2f99494e9995fa65b233cd20a6
+627,s5807e1c632,Apple TV (MBR),Media Streaming Device,Apple,"Apple, Inc.",,"{'name': 'Bedroom', 'hostname': 'Bedroom.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0175-2d27-e04e-d03597db4cfc', 'Name': 'Bedroom'}, 'host': '192.168.2.159', 'device_type': 'apple_tv', 'port': 3689}",2cbecb2f99494e9995fa65b233cd20a6
+628,s2c55428af4,Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'The Idiot Maker', 'hostname': 'The-Idiot-Maker.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'The Idiot Maker', 'hG': '00000000-032f-79ba-613d-4d7eb22a4995', 'EiTS': '1'}, 'host': '192.168.1.17', 'device_type': 'apple_tv', 'port': 3689}",e23a945b536146da69d622e05ea6a831
+629,s16a7cd53bf,8 port switch,network switch,ubiquiti,Ubiquiti Networks Inc.,,{},2cbecb2f99494e9995fa65b233cd20a6
+630,sb469f230f7,HP Laserjet P 1102w,Laser Printer,Hewlett Packard,Hewlett Packard,NPI0349D5,"{'host': '192.168.2.109', 'hostname': 'NPI0349D5.local.', 'port': 515, 'device_type': 'hp_printer', 'properties': {'Binary': 'T', 'product': '(Hewlett-Packard HP LaserJet Professional P1102w)', 'rp': 'auto', 'usb_MDL': 'HP LaserJet Professional P1102w', 'ty': 'HP LaserJet Professional P1102w', 'adminurl': 'http://192.168.2.109', 'qtotal': '1', 'priority': '50', 'usb_MFG': 'Hewlett-Packard', 'pdl': 'application/vnd.zeno-zjs,application/vnd.cups-raster', 'txtvers': '1', 'Transparent': 'T'}}",de26f6a744614a8f9cafc072e305680b
+631,s265b68f3c6,Apple TV,Settopbox,Apple,"Apple, Inc.",Entertainmentkamer,"{'name': 'Entertainmentkamer', 'hostname': 'Entertainmentkamer.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-082f-1625-3dcf-7014bb254e84', 'Name': 'Entertainmentkamer'}, 'host': '192.168.0.226', 'device_type': 'apple_tv', 'port': 3689}",6e1e329e65fd4293fd3a10a61adcc0c5
+632,sb705ffef93,iMac,Desktop Computer,Apple,"Apple, Inc.",iPhone-Floris,{},6e1e329e65fd4293fd3a10a61adcc0c5
+633,se8146b0674,iPad,Tablet,Apple,"Apple, Inc.",iPad-van-Ellen,{},6e1e329e65fd4293fd3a10a61adcc0c5
+634,saf38911f8a,Apple TV 3rd Generation,Digital Media Streamer,Apple,"Apple, Inc.",,"{'name': 'Basement', 'hostname': 'Basement.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0aab-4ce5-9d02-85cee1b74045', 'Name': 'Basement'}, 'host': '192.168.1.107', 'device_type': 'apple_tv', 'port': 3689}",b5d45e12b6b24401bfec30b920ca8946
+635,s26d8218f88,Apple TV 3rd Generation,Digital Media Streamer,Apple,"Apple, Inc.",,"{'name': 'Bed Room', 'hostname': 'Bed-Room.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0aab-4ce5-9d02-85cee1b74045', 'Name': 'Bed Room'}, 'host': '192.168.1.106', 'device_type': 'apple_tv', 'port': 3689}",b5d45e12b6b24401bfec30b920ca8946
+636,s8093775d6c,PhotoSmart D110,Network Printer / Scanner,Hewlet-Packard,Hewlett Packard,,{},b5d45e12b6b24401bfec30b920ca8946
+637,s1b6f22ab08,iPhone Emils,Mobile Phone,Apple,"Apple, Inc.",,{},b85eab9d137f42c324bb8b88b1ea895a
+638,s4257a95cb1,Office Printer,Multi Function Device Printer,Brother,"Brother industries, LTD.",,{},365de91070634c585d4a46ab877b7ae1
+639,s72f46dc0e6,Internet Gateway,Gateway,ARRIS,"ARRIS Group, Inc.",,{},365de91070634c585d4a46ab877b7ae1
+640,s387bc47340,Android Table(Stephenie),TABLET,Amazon,"Hon Hai Precision Ind. Co.,Ltd.",,{},fbcd0198dbc34a95369dbf9d5bc0b1be
+641,s49d9fec436,Brother Printer,Laser Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},99e70887d0104ecab95c50d8f62e74a3
+642,s1be59b356a,Network Switch,Network Switch,NETGEAR,NETGEAR,,{},99e70887d0104ecab95c50d8f62e74a3
+643,s9027f650ea,Television,Television,Samsung,"Samsung Electronics Co.,Ltd",,{},53313a44b8de4f0323ea83032a79074d
+644,s0adbea594c,MacBook Pro,Computer,Apple,"Apple, Inc.",,{},53313a44b8de4f0323ea83032a79074d
+645,sa2aca5d058,AC1200,Wifi Access Point,Netgear,NETGEAR,,{},2f74d85fc7414451cd04800ca7b4a032
+646,sdbb0c3e338,Tradfri Gateway,IoT Bridge,IKEA,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-dcefcabd80db.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.1', 'c#': '19', 'id': '16:66:9A:25:68:F4', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.139', 'device_type': 'homekit', 'port': 80}",4326dc7daba4407e45af4e7712def858
+647,s1444c05abc,Nintendo Switch,Game System,Nintendo,"Nintendo Co.,Ltd",,{},9ee9d728b4c94cbee63e9a8094b8f076
+648,s270fcb4c31,Apple TV,Smart TV Device,Apple,"Apple, Inc.",,{},9ee9d728b4c94cbee63e9a8094b8f076
+649,s6a787a7874,HD Home Run,HD Home Run,SiliconDust,Silicondust Engineering Ltd,HDHR-103C3A35,{},421d6ec8ca4c49743e380cac32243f8b
+650,s16af88a2fc,Protect,Smoke alarm,Nest,Nest Labs Inc.,,{},2f74d85fc7414451cd04800ca7b4a032
+651,s5561a3b9ee,Protect,Smoke alarm,Nest,Nest Labs Inc.,,{},2f74d85fc7414451cd04800ca7b4a032
+652,s0d6994b50b,Protect,Smoke alarm,Nest,Nest Labs Inc.,,{},2f74d85fc7414451cd04800ca7b4a032
+653,s1056987cd9,Time Machine,Network storage,Apple,"Apple, Inc.",,{},870eeef85b674e631e23e70b7ec0b45b
+654,s651726387b,iMac 27,Desktop PC,Apple,"Apple, Inc.",,{},870eeef85b674e631e23e70b7ec0b45b
+655,s07f921bceb,HP Color Laser Jet,Multi Function Device Printer,Hewlett-Packard,"Hon Hai Precision Ind. Co.,Ltd.",,"{'host': '192.168.1.49', 'hostname': 'NPIC2BF61.local.', 'port': 515, 'device_type': 'hp_printer', 'properties': {'Binary': 'T', 'product': '(HP ColorLaserJet MFP M278-M281)', 'rp': 'RAW', 'UUID': '564e424e-4c35-4335-4b48-b4b686c2bf61', 'ty': 'HP ColorLaserJet MFP M278-M281', 'adminurl': 'http://NPIC2BF61.local.', 'qtotal': '1', 'note': False, 'txtvers': '1', 'TBCP': 'T', 'Transparent': 'T', 'priority': '50'}}",870eeef85b674e631e23e70b7ec0b45b
+656,s5cdfa27923,iPhone 7,Smartphone,Apple,"Apple, Inc.",Phoenix,{},870eeef85b674e631e23e70b7ec0b45b
+657,s7284fdcc12,Apple TV (Office),Media Player,Apple,"Apple, Inc.",,"{'name': 'Ariadne', 'hostname': 'Ariadne.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Ariadne', 'hG': '00000000-0161-6655-9e38-042673194d31', 'DFID': '2'}, 'host': '192.168.1.104', 'device_type': 'apple_tv', 'port': 3689}",877ea68ff2bf44a1d877554be79a9706
+658,sb48ffe6335,Tradfri Gateway,Bridge,IKEA,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-dcefcabd3c75.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.1', 'c#': '143', 'id': '25:19:5D:7D:9D:2E', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.39', 'device_type': 'homekit', 'port': 80}",877ea68ff2bf44a1d877554be79a9706
+659,s839edbec60,MFC-J6920DW,Network Printer / Scanner,Brother,"Brother industries, LTD.",,{},877ea68ff2bf44a1d877554be79a9706
+660,sd098b478fd,Switch 2,Network Switch,Dell,Dell Inc.,,{},877ea68ff2bf44a1d877554be79a9706
+661,s9294c0b632,Switch 1,Network Switch,Dell,Dell Inc.,,{},877ea68ff2bf44a1d877554be79a9706
+662,s52f5795d8c,Apple TV 1A,Apple TV,Apple,"Apple, Inc.",,{},450d1cb4e6c34df079d804c6f906e0c1
+663,s5a5e9ed12c,DVD Player,DVD Player,Sony,"Hon Hai Precision Ind. Co.,Ltd.",,"{'ssdp_description': 'http://10.0.1.6:52323/dmr.xml', 'name': 'Blu-ray Disc Player', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'BDP-2014', 'model_name': 'Blu-ray Disc Player', 'host': '10.0.1.6', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:00000000-0000-1010-8000-d8d43ced0c36', 'port': 52323, 'manufacturer': 'Sony Corporation'}",450d1cb4e6c34df079d804c6f906e0c1
+664,sc1c994ecac,SG200-08,Smart Switch,Cisco,"Cisco Systems, Inc",,{},d3ca24db80f042ac3f9b08dccb1ec473
+665,se477840321,iPad Air,Tablet,Apple,,,{},d3ca24db80f042ac3f9b08dccb1ec473
+666,s41cbb18de4,LASER PRINTER,PRINTER,Brother,"Hon Hai Precision Ind. Co.,Ltd.",BRW7440BBBDDC5C,{},d3ca24db80f042ac3f9b08dccb1ec473
+667,sfe56cf8b47,GS108Tv2,Ethernet Switch,Netgear,NETGEAR,,{},37d1624fc4f448308adb16d6f6c7038d
+668,sa2356e2607,Airport Express,WiFi Access Point,Apple,"Apple, Inc.",,{},37d1624fc4f448308adb16d6f6c7038d
+669,s854db1377d,GS108T,Ethernet Switch,Netgear,NETGEAR,,{},37d1624fc4f448308adb16d6f6c7038d
+670,s8923c79e76,GW Camera,Security Camera,GW Security,"MULTITECH SYSTEMS, INC.",,{},37d1624fc4f448308adb16d6f6c7038d
+671,sb32daa063d,Atlas,Weather Station,Accurite,Chaney Instrument Co.,,{},37d1624fc4f448308adb16d6f6c7038d
+672,s775d40655c,iPad,Tablet,Apple,"Apple, Inc.",,{},37d1624fc4f448308adb16d6f6c7038d
+673,sa180fcfd9d,iPad,Tablet,Apple,"Apple, Inc.",,{},37d1624fc4f448308adb16d6f6c7038d
+674,s17e37434f5,Apple TV 2,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Apple TV 2', 'hostname': 'Apple-TV-2.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Apple TV 2', 'hG': '00000000-008f-333f-d5d7-2c28a5ac4ee0', 'EiTS': '1'}, 'host': '10.0.1.28', 'device_type': 'apple_tv', 'port': 3689}",450d1cb4e6c34df079d804c6f906e0c1
+675,sb076679b89,WD NAS,NAS,Western Digital,WESTERN DIGITAL,,{},c83154a442c9412b6447c299cd14541b
+676,s11e9b50442,iPad Air,Tablet,Apple,,iPadAir2019E,{},d3ca24db80f042ac3f9b08dccb1ec473
+677,s89037abd66,Energy bridge,Electricity Monitor,?,"Murata Manufacturing Co., Ltd.",energybridge2,{},9b42c994f37c405ff5eac9ed77db2953
+678,sfbdbf898fe,Rainbird controller?,Water Sprinkler,?,"Electronic Solutions, Inc.",,{},9b42c994f37c405ff5eac9ed77db2953
+679,s0eec791ed0,Amazon Echo Dot 1,Echo Connect,AMAZON,Amazon Technologies Inc.,amazon-325ea2cf5,{},9b42c994f37c405ff5eac9ed77db2953
+680,sbeb56fd55d,Windows Home Server,computer,Hewlet-Packard,Hewlett Packard,WHS,"{'ssdp_description': 'http://192.168.1.73:2869/upnphost/udhisapi.dll?content=uuid:4b4a4632-2cd1-48ee-8127-dbc5b8c91883', 'name': 'WHS: Home Server:', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '12.0', 'model_name': 'Windows Media Player Sharing', 'host': '192.168.1.73', 'device_type': 'dlna_dms', 'serial': '{38BB0682-8C40-4E58-B9DF-DBE3AB20D8DB}', 'udn': 'uuid:4b4a4632-2cd1-48ee-8127-dbc5b8c91883', 'port': 2869, 'manufacturer': 'Microsoft Corporation'}",9b42c994f37c405ff5eac9ed77db2953
+681,s104d414ff7,Honeywell Smart Thermostat,Thermostat,Honeywell,ADEMCO,Gateway6FA125,{},9b42c994f37c405ff5eac9ed77db2953
+682,s81d62d03be,AEP It's Your Power,Electricity Monitor,Insight Energy Ventures,Insight Energy Ventures LLC,,{},9b42c994f37c405ff5eac9ed77db2953
+683,s7518294329,Epson printer,Inkjet All in One Printer,Seiko,Seiko Epson Corporation,,{},9b42c994f37c405ff5eac9ed77db2953
+684,sea39aec10f,Garage Range Extender,Wireless Access Point,TP-Link,,,{},9b42c994f37c405ff5eac9ed77db2953
+685,s7b0528fe3d,DVR,TV Box,Motorola,"ARRIS Group, Inc.",,{},9b42c994f37c405ff5eac9ed77db2953
+686,s643928a9fa,iPad Pro,TABLET,Apple,"Apple, Inc.",Rons-iPad-Pro,{},9b42c994f37c405ff5eac9ed77db2953
+687,s6290cba245,AEP Energy Bridge,Enegy Monitor,Amazon Fire TV,Amazon Technologies Inc.,amazon-15f86e71d,{},9b42c994f37c405ff5eac9ed77db2953
+688,s0e3e9aed53,MBR TP-Link Smart plug,Smart Plug Energy Monitor,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},9b42c994f37c405ff5eac9ed77db2953
+689,s7f7f002557,iPhone XS max,Apple iPhone,Apple,"Apple, Inc.",Rons-iPhone-XS,{},9b42c994f37c405ff5eac9ed77db2953
+690,s038462bbd9,Mannboro router,Wifi access point,Cisco,"Cisco-Linksys, LLC",,{},9b42c994f37c405ff5eac9ed77db2953
+691,s045ff0525c,Mac Mini,Mini Computer,Apple,"Apple, Inc.",,{},9b42c994f37c405ff5eac9ed77db2953
+692,s2e05efeed3,iPad,TABLET,Apple,"Apple, Inc.",Rons-iPad-Air,{},9b42c994f37c405ff5eac9ed77db2953
+693,s5549513679,iPad Mini,TABLET,Apple,"Apple, Inc.",Rons-iPad-Mini,{},9b42c994f37c405ff5eac9ed77db2953
+694,s5a94342f93,Sony Bravia,Android TV,Sony,"Hon Hai Precision Ind. Co.,Ltd.",,"{'host': '192.168.86.61', 'hostname': '7d820ff198fd72c2-0.local.', 'port': 50256, 'device_type': 'spotify_connect', 'properties': {'VERSION': '1.0', 'CPath': '/zc/0', 'Stack': 'SP'}}",04135b521b484bfbec42a3b1dd45e5f9
+695,s00e5700c74,Apple TV 4K,Smart TV,Apple,"Apple, Inc.",,{},89cf4b9246634ad1e4fbfc749537d559
+696,s1a9519f3ae,VOCOlinc PM2E Smart Power Strip,Power Strip,VOCOlinc,"SHENZHEN FUZHI SOFTWARE TECHNOLOGY CO.,LTD",VOCOlinc-PM2-0bb3e4,{},89cf4b9246634ad1e4fbfc749537d559
+697,s98446d64aa,Squeezebox 3,Streaming Music Player,Slim Devices,"Slim Devices, Inc.",,{},89cf4b9246634ad1e4fbfc749537d559
+698,s9fab57d091,iPhone 5C,Apple iPhone,Apple,"Apple, Inc.",iPhone-2,{},37d1624fc4f448308adb16d6f6c7038d
+699,sdb28eabd2e,HL-L2395DW,Multifunction Printer,Brother,"Brother Industries, LTD.",,{},7a6a200fba1d46d752646c541a6cb95c
+700,sae0d468619,Nest Protect,Smoke Detector,Nest,Nest Labs Inc.,,{},46b0659f08614bb5ac09ef9867713b2e
+701,s49df44be7c,Phillips Hue Bridge,Smart Hub,Philips,Philips Lighting BV,,"{'name': 'Philips hue - 23799C', 'hostname': 'Philips-hue.local.', 'properties': {'md': 'BSB002', 'ci': '2', 'pv': '1.1', 'c#': '30', 'id': '40:9E:47:21:A4:AF', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.3', 'device_type': 'homekit', 'port': 8080}",46b0659f08614bb5ac09ef9867713b2e
+702,s2be62f99bc,LOGITECH CIRCLE,Camera,Logitec,Logitech,,{},9c262b193be146ae99ea3896ced00596
+703,se195388cd8,Asustor NAS,nas,ASUSTOR,ASUSTek COMPUTER INC.,,{},9c262b193be146ae99ea3896ced00596
+704,s164822596c,My Q,Garage Door Controller,Chambrlin,"The Chamberlain Group, Inc",,{},46b0659f08614bb5ac09ef9867713b2e
+705,s6f034eb013,TiVo Premiere XL,Tivo,TiVo,TiVo,,"{'host': '192.168.1.50', 'hostname': 'DVR-04C3.local.', 'port': 31339, 'device_type': 'tivo_dvr', 'properties': {'TSN': '8460001902404C3', 'path': '/', 'swversion': '20.7.4.RC42-846-6-846', 'protocol': 'tivo-remote', 'platform': 'tcd/Series5'}}",e0a66010d5c046a42753163fa64a2481
+706,s48b0ee198c,iPhone Xs,Apple iPhone,Apple,"Apple, Inc.",,{},e0a66010d5c046a42753163fa64a2481
+707,sa6e9e950c1,PixmaMX885,Multifunction Printer,Canon,CANON INC.,,{},b61d7cf66750486d577a4fa332172a27
+708,s0b2b21a0bc,Unknown,AV Receiver,Apple,"Apple, Inc.",,{},7e574e4f75a64c2bbe31609a8903c489
+709,s939b870d9c,TV,TV,Samsung,"Samsung Electronics Co.,Ltd",,"{'ssdp_description': 'http://192.168.1.120:7676/smp_7_', 'name': 'Samsung LED60', 'upnp_device_type': 'urn:samsung.com:device:RemoteControlReceiver:1', 'model_number': '1.0', 'model_name': 'UN60F7100', 'host': '192.168.1.120', 'device_type': 'samsung_tv', 'serial': '20090804RCR', 'udn': 'uuid:0aba9500-00b4-1000-b150-5cf6dce2e141', 'port': 7676, 'manufacturer': 'Samsung Electronics'}",9b42c994f37c405ff5eac9ed77db2953
+710,s360fd75676,iPhone-6-Plus,iPhone 6 Plus,apple,"Apple, Inc.",,{},621cd896e82b42c0fb9b8492018d1cef
+711,s9f3e3e5f9b,Printer,Multifunction Printer,Hewlett Packard,Hewlett Packard,,{},9060383527d94c7de8566f70ea0db55e
+712,sfb0fee8a39,Google Home,Wifi mesh router,Google,"Google, Inc.",,{},f086bd25319940ad01e4523ad91e04a4
+713,sbef77e6956,Living room TV,Smart TV,LG,Arcadyan Corporation,,"{'ssdp_description': 'http://192.168.1.186:1130/', 'name': '[LG] webOS TV OLED65B7A', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': '1.0', 'model_name': 'LG TV', 'host': '192.168.1.186', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:aeb26a25-a0f1-b48c-89d6-705b3ffd8d32', 'port': 1130, 'manufacturer': 'LG Electronics.'}",9f7d385769d440e64d69df2189337d87
+714,sd781594f75,Camera,IP Camera,Ubiquity,Ubiquiti Networks Inc.,,{},98a96261022c4fbd6ae165703fc4b564
+715,sa3721be118,LaserJet 1100,Laser Printer,HP,Hewlett Packard,,{},1e16fdb4e1fd4ff0423d8173933392b6
+716,s237f8fd2b5,Airport Express,Airplay Endpoint,Apple,"Apple, Inc.",,{},1e16fdb4e1fd4ff0423d8173933392b6
+717,s9cd8a447a7,Airport Express,Airplay Endpoint,Apple,"Apple, Inc.",,{},1e16fdb4e1fd4ff0423d8173933392b6
+718,sadda22fe88,Leviton HiFi2,Whole House Audio,Leviton,NuVo Technologies LLC,,{},1e16fdb4e1fd4ff0423d8173933392b6
+719,sa6cde3c17b,Leviton OmniPro II,Security System Hub,Leviton,"Leviton Manufacturing Co., Inc.",,{},1e16fdb4e1fd4ff0423d8173933392b6
+720,sa654f7e108,Wyze Cam V1,Camera,WYZE,"Shenzhen Ogemray Technology Co., Ltd.",,{},f68d82b33502492998012cd33e02e140
+721,s3d4e39022f,Switch,POE Switch,Geovision,GeoVision Inc.,,{},581c99ab39ac4745aede73458085275f
+722,sa732d2ffbd,Mac mini,Desktop computer,Apple,"Apple, Inc.",,{},9896f28539074bc088d3fb86ce861748
+723,s5ae59cd576,HL-3070CW,Printer,Brother,"Brother industries, LTD.",,{},9896f28539074bc088d3fb86ce861748
+724,sfc37aa4bec,iPad Pro,Tablet,Apple,"Apple, Inc.",,{},9896f28539074bc088d3fb86ce861748
+725,sf83bddac00,iPhone 6S,Smartphone,Apple,"Apple, Inc.",,{},9896f28539074bc088d3fb86ce861748
+726,sb6a519b9ce,iPhone 7,Smartphone,Apple,"Apple, Inc.",,{},9896f28539074bc088d3fb86ce861748
+727,s4cecefad44,Camera,IP camera,Hikvision,"Hangzhou Hikvision Digital Technology Co.,Ltd.",,{},581c99ab39ac4745aede73458085275f
+728,s56e84f9eb7,Helen iPad,iPad 5th gen,Apple,"Apple, Inc.",Helens-iPad,{},c62f70a58e29482862a355f820a0aa1b
+729,s4775046f26,Canon Printer,Network Printer / Scanner,Canon,CANON INC.,,"{'ssdp_description': 'http://10.0.0.253:80/Canon_basic.xml', 'name': 'MX920 series (UPnP)_E10E354C4160', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'MX920 series', 'model_name': 'MX920 series', 'host': '10.0.0.253', 'device_type': 'canon_printer', 'serial': '60128B4C4160', 'udn': 'uuid:00000000-0000-1000-8000-60128B4C4160', 'port': 80, 'manufacturer': 'CANON INC.'}",d5cdcac84b78452b9e0a9fb8c80d5395
+730,s36d9b2305d,Panasonic KX-HCM10 side,Video Camera,Panasonic,"Panasonic Communications Co., Ltd.",,{},377a4c6fed7f45b77917f4469eead34d
+731,s2ccc66f62a,Panasonic KX-HCM10 porch,Video Camera,Panasonic,"Panasonic Communications Co., Ltd.",,{},377a4c6fed7f45b77917f4469eead34d
+732,s9365c9c115,Panasonic KX-HCM10 front,Video Camera,Panasonic,"Panasonic Communications Co., Ltd.",,{},377a4c6fed7f45b77917f4469eead34d
+733,s5646ebd6d5,Apple TV,Digital Media Player,Apple,"Apple, Inc.",,{},340dcef6ce6346f5593c51ea5daa79e5
+734,s17e53253ab,HomePod,Speaker,Apple,"Apple, Inc.",,{},340dcef6ce6346f5593c51ea5daa79e5
+735,s4386ae0de1,iPhone X,Phone,Apple,"Apple, Inc.",,{},340dcef6ce6346f5593c51ea5daa79e5
+736,s9e46e9d744,Apple Watch,Watch,Apple,"Apple, Inc.",,{},340dcef6ce6346f5593c51ea5daa79e5
+737,se8c6799f2e,Smart TV,Television,Samsung,XEROX CORPORATION,,{},b4009af1c2234a63fef8096ab77e4b67
+738,sf2f27fe1bf,Anthem Amplifier,Amplifier,Paradigm Electronics,Paradigm Electronics Inc,,{},0606d8bde1824c00013f6fe9ca197205
+739,s6704b5d679,Mac Mini,Computer,APPLE,"Apple, Inc.",,{},0606d8bde1824c00013f6fe9ca197205
+740,sff9a8b7be2,Leviton Dining room dimmer,Smart Light Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Dimmer-030E52', 'hostname': 'WICED-hap-030E52.local.', 'properties': {'md': 'Leviton Dimmer-030E52', 'ci': '8', 'pv': '1.1', 'c#': '18', 'sf': '0', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': 'FA:FA:82:D4:3A:E9'}, 'host': '10.0.1.30', 'device_type': 'homekit', 'port': 80}",0606d8bde1824c00013f6fe9ca197205
+741,s4b552ad4a3,John's Apple Watch,Watch,Apple,"Apple, Inc.",JohnsAppleWatch,{},0606d8bde1824c00013f6fe9ca197205
+742,s9340a05862,Rainbow Pi 0,Raspberry Pi 0,Rasspberry,Raspberry Pi Foundation,,{},c62f70a58e29482862a355f820a0aa1b
+743,sef16c3382e,dell switch,Network Switch,Dell,Dell Inc.,,{},45b626dd45f844841e28f03fe3bb4c85
+744,s69da799d49,Brother MFC-L2705DW,Printer and Scanner,Brother,"Hon Hai Precision Ind. Co.,Ltd.",BRWACD1B841F519,{},d9dd6e9c110041c3efe4c511cac2a08d
+745,s56f808589d,Q-See QC448,Camera Recorder,Q-See,"Zhejiang Dahua Technology Co., Ltd.",DVR,{},d9dd6e9c110041c3efe4c511cac2a08d
+746,sbd65233ab4,Camera 20,Camera 20,D-link,D-Link Corporation,,{},a7cb23c962534bb69262f217cd3588fb
+747,sc5f6c7282d,D-Link Camera 23,Camera 23,D-Link 23,D-Link International,,{},a7cb23c962534bb69262f217cd3588fb
+748,s4d19875831,Apple TV,Digital Media Player,Apple,"Apple, Inc.",,{},ecf74967aef546409bfe6b1fbe7344d9
+749,s3162ea3772,Watch 3,Watch,Apple,"Apple, Inc.",PaulsAppleWatch,{},ecf74967aef546409bfe6b1fbe7344d9
+750,se1ee368692,AirPort Time Capsule,NAS,Apple,"Apple, Inc.",,{},ecf74967aef546409bfe6b1fbe7344d9
+751,sc3c4a545c9,iPad Pro 12.9,Tablet,Apple,"Apple, Inc.",,{},ecf74967aef546409bfe6b1fbe7344d9
+752,scb5c01caa4,iPad Pro 9.7,Tablet,Apple,"Apple, Inc.",Sues-iPad-Pro,{},ecf74967aef546409bfe6b1fbe7344d9
+753,sd742095caf,iPhone 7,Smartphone,Apple,"Apple, Inc.",,{},ecf74967aef546409bfe6b1fbe7344d9
+754,s6121959122,iPhone X,Smartphone,Apple,"Apple, Inc.",CaitlinsiPhoneX,{},ecf74967aef546409bfe6b1fbe7344d9
+755,s1990b41937,Watch 4,Watch,Apple,"Apple, Inc.",CaitlinpleWatch,{},ecf74967aef546409bfe6b1fbe7344d9
+756,s96fc509a1d,Sonos play:1,Sonos Play:1,Sonos,"Sonos, Inc.",,"{'host': '10.120.2.164', 'hostname': 'sonos7828CAB4473C.local.', 'port': 1400, 'device_type': 'spotify_connect', 'properties': {'VERSION': '1.0', 'CPath': '/spotifyzc'}}",41d82ee80a3644c78e7726f87469bbd3
+757,s37e4ccc57f,Sonos Beam,Smart Speaker Soundbar,Sonos,"Sonos, Inc.",,"{'ssdp_description': 'http://10.120.2.162:1400/xml/device_description.xml', 'name': '10.120.2.162 - Sonos One', 'upnp_device_type': 'urn:schemas-upnp-org:device:ZonePlayer:1', 'model_number': 'S13', 'model_name': 'Sonos One', 'host': '10.120.2.162', 'device_type': 'sonos', 'serial': None, 'udn': 'uuid:RINCON_7828CAB4477001400', 'port': 1400, 'manufacturer': 'Sonos, Inc.'}",41d82ee80a3644c78e7726f87469bbd3
+758,s9f04c70b23,Mom,NAS,SuperMicro,"Super Micro Computer, Inc.",,{},41d82ee80a3644c78e7726f87469bbd3
+759,s6db72650a0,Rancher,Docker Host,Rancher,NetApp,,{},41d82ee80a3644c78e7726f87469bbd3
+760,s7966ae982f,AT&T Fiber Modem,Modem,Arris,"ARRIS Group, Inc.",,{},9e437cf51961417405d96a6a98b8b347
+761,s4a33107b6c,Panasonic TV,TV,Pnasonic,Panasonic Corporation AVC Networks Company,,{},c62f70a58e29482862a355f820a0aa1b
+762,saf8640244f,Sonos Play:1,Streaming Device,Sonos,"Sonos, Inc.",,"{'host': '192.168.86.29', 'hostname': 'sonos949F3E72651C.local.', 'port': 1400, 'device_type': 'spotify_connect', 'properties': {'VERSION': '1.0', 'CPath': '/spotifyzc'}}",ecf74967aef546409bfe6b1fbe7344d9
+763,sed3047e330,Switch,Ethernet switch,Netgear,,,{},fdcb8df0721b4dfe6854ea8e957c1c31
+764,sc225d478e2,Nest Protect,Smoke & CO detector,Google Nest,Nest Labs Inc.,,{},a105a7d2ac664a65824493a576b5401f
+765,s3a4ae83dbc,Ecobee3,Thermostat,ecobee,ecobee inc,,{},1e031bfe310b4e852927e9d6a3c69231
+766,s586583d742,Tradfri Gateway,Gateway,IKEA,"Murata Manufacturing Co., Ltd.",,{},88894b0e2f9948a773c10e41da8d3c85
+767,s5af191577b,Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Living Room', 'hG': '00000000-7574-6624-cd1e-8035b65247d3', 'EiTS': '1'}, 'host': '192.168.86.46', 'device_type': 'apple_tv', 'port': 3689}",6b7b45ec82ef4b4ed618a268d0f97910
+768,sa1f0908ced,Aruba  J9774A,Network Switch,Hewlett-Packard,Hewlett Packard Enterprise,,{},6b7b45ec82ef4b4ed618a268d0f97910
+769,sba0ba7c199,Squeezebox Radio,Media player,Logitech,"Slim Devices, Inc.",,{},7b2c0c920ee34178ee43b8f7c82c1e2d
+770,s90d994783d,Netgear Router,Router,Netgear,NETGEAR,,"{'ssdp_description': 'http://192.168.0.11:8200/rootDesc.xml', 'name': 'ReadyDLNA:C3700-100NAS', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '1', 'port': 8200, 'host': '192.168.0.11', 'device_type': 'dlna_dms', 'serial': '12345678', 'udn': 'uuid:4d696e69-444c-164e-9d41-00184dffff07', 'model_name': 'Windows Media Connect compatible (ReadyDLNA)', 'manufacturer': 'NETGEAR'}",267c0f39015d4ff713e6cbab2d311a0a
+771,s0175eac076,202-iPhone,iPhone X,Apple,"Apple, Inc.",202-iPhone,{},267c0f39015d4ff713e6cbab2d311a0a
+772,sc00a2165ee,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},77de1a51b1ae44dcb2c3e4f2786cb9c7
+773,s2d2c5e5505,Macbook Air,Laptop,Apple,"Apple, Inc.",Kathys-Air,{},b56677bf8df346e965bbc39dcf13eb89
+774,scc857bdee2,OfficeJet Pro 8600,Color Printer,HP,Hewlett Packard,,{},e9a5683282fd46023fe17f5f6c59b63d
+775,s5af2dd6e6e,Label Printer,HP Printer,Brother,"Silex Technology, Inc.",,{},44a78dce00644948d986f16f6355d098
+776,s363bd228db,Apple TV Basement,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Apple TV Computer Room', 'hostname': 'Apple-TV-Computer-Room.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Apple TV Computer Room', 'hG': '00000000-077e-0430-57cc-b76f42b249ea', 'DFID': '2'}, 'host': '192.168.1.222', 'device_type': 'apple_tv', 'port': 3689}",722471f8d395445f0d02df30e2bddea7
+777,s8d621ad268,Apple TV Family Room,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Family Room Apple TV', 'hostname': 'Family-Room-Apple-TV-2.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'txtvers': '1', 'Name': 'Family Room Apple TV', 'hG': '00000000-077e-0430-57cc-b76f42b249ea', 'DFID': '2'}, 'host': '192.168.1.223', 'device_type': 'apple_tv', 'port': 3689}",722471f8d395445f0d02df30e2bddea7
+778,sf655818fcc,Brother HL-2170W,Brother Laser Printer,Brother,"Brother industries, LTD.",,{},722471f8d395445f0d02df30e2bddea7
+779,sb2ac95e761,WEMO Bridge,Wemo Homekit Bridge,wemo,Belkin International Inc.,,"{'name': 'Wemo Bridge', 'hostname': 'F7C074-BA9D3F.local.', 'properties': {'md': 'Wemo Bridge', 'ci': '2', 'pv': '1.0', 'c#': '3', 'id': 'B0:BA:66:80:C1:3D', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.109', 'device_type': 'homekit', 'port': 46801}",722471f8d395445f0d02df30e2bddea7
+780,sa077cf1617,Panasonic BlueRay,Blueray Player,Panasonic,Panasonic Corporation AVC Networks Company,,"{'ssdp_description': 'http://192.168.1.204:60606/04209AB68489/Server0/ddd', 'name': 'DMP-BDT110', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'DMP-BDT110', 'port': 60606, 'host': '192.168.1.204', 'device_type': 'dlna_dmr', 'serial': None, 'udn': 'uuid:4D454930-0100-1000-8000-04209AB68489', 'model_name': 'Blu-ray Disc Player', 'manufacturer': 'Panasonic'}",722471f8d395445f0d02df30e2bddea7
+781,s9924172d70,Joshua iPad Air,Apple iPad Air,Apple,"Apple, Inc.",Joshua-iPad-Air,{},722471f8d395445f0d02df30e2bddea7
+782,se685b98852,Michael iPad Air 2,iPad Air 2,Apple,"Apple, Inc.",MichaeliPadAir2,{},722471f8d395445f0d02df30e2bddea7
+783,s1ccb18b5b7,Echo Dot 2,Voice Assistant,Amazon,Amazon Technologies Inc.,amazon-eb2d24dbb,{},81914b4824a848f8b0d07fd0bca8aa3f
+784,s0d0829fb24,Aurora,Smart light,Nanoleaf,IEEE Registration Authority,,{},81914b4824a848f8b0d07fd0bca8aa3f
+785,s2c78c729a9,View 2,Android Phone,Wiko,Shenzhen TINNO Mobile Technology Corp.,,{},81914b4824a848f8b0d07fd0bca8aa3f
+786,sf198cbf69f,TRADFRI gateway,Gateway,Ikea,"Murata Manufacturing Co., Ltd.",,{},3d55295560bc4934f95e06f860255f27
+787,sb9cb5f5b30,Hue Bridge,Smart Device Hub,Philips,"Apple, Inc.",,{},76575c6ed6994028658e6c99d538ba28
+788,s9e5dbea7d6,Philips Hue,Smart Bulb,philips hue,Philips Lighting BV,,{},76575c6ed6994028658e6c99d538ba28
+789,s11283f24cb,TiVo Premiere XL,TV Settop Box,Tivo,TiVo,,{},76575c6ed6994028658e6c99d538ba28
+790,s228a2bb61c,Printer,Printer,Brother,"Brother industries, LTD.",,{},76575c6ed6994028658e6c99d538ba28
+791,s8cf2b114b9,homepod,Smart Speaker,APPLE,"Apple, Inc.",SHX,{},76575c6ed6994028658e6c99d538ba28
+792,sfcabf23fd0,OnePlus 5T,Android SmartPhone,OnePlus,"OnePlus Technology (Shenzhen) Co., Ltd",,{},e480ca4b0374458725e0cc63cf7bc56b
+793,sbbe080fd00,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},e480ca4b0374458725e0cc63cf7bc56b
+794,s20b88b38ee,Apple TV 4K,Apple TV,apple,"Apple, Inc.",,"{'name': 'Apple TV', 'hostname': 'Apple-TV.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Apple TV', 'hG': '00000000-0329-6f27-38e7-f4046d9f4d3a', 'EiTS': '1'}, 'host': '10.0.0.62', 'device_type': 'apple_tv', 'port': 3689}",76575c6ed6994028658e6c99d538ba28
+795,s69e17ffbe6,Brother-MFCL2700DW,Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},3e9d1e44cfee44e665eef3f3b1ff8415
+796,s6d40c658cc,Apple iPhone 7 Mon,iphone 7,apple,"Apple, Inc.",,{},b653c282ca41433128c9a3ac49afd351
+797,s82eba5f13b,Samsung Printer,Laser Printer and Scanner,Samsung,"Samsung Electronics Co.,Ltd",SEC30CDA7A95894,{},3bcd4125de0e464604891d8786eb6682
+798,s3e7d93f30b,Camera,Camera,D-link,D-Link International,,{},3bcd4125de0e464604891d8786eb6682
+799,s2ed85221b9,Tr?dfri,Light Bulb,IKEA,"Murata Manufacturing Co., Ltd.",,"{'host': '192.168.1.135', 'hostname': 'TRADFRI-Gateway-8c450069f947.local.', 'port': 5684, 'device_type': 'ikea_tradfri', 'properties': {'version': '1.8.25'}}",3bcd4125de0e464604891d8786eb6682
+800,s58961d817d,Risco Agility,Home security,Risco,RISCO LTD,,{},ece1c4c930bb49edd18c982f70805d5b
+801,see236cf0d0,Dell Printer,Colour laser printer,Dell,Liteon Technology Corporation,,{},d42437c937a94de052ded4af73538790
+802,s0c2087e5b5,Leviton Switch 4,Smart Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-06101D', 'hostname': 'WICED-hap-06101D.local.', 'properties': {'md': 'Leviton Switch-06101D', 'ci': '8', 'pv': '1.1', 'c#': '1', 'id': 'B2:F7:91:14:46:DF', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '10.0.18.57', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+803,s3148e22e01,Wemo Mini,Smart Outlet,Wemo,Belkin International Inc.,,"{'ssdp_description': 'http://10.0.18.50:49153/setup.xml', 'name': 'Basement Door Light', 'upnp_device_type': 'urn:Belkin:device:controllee:1', 'model_number': '1.0', 'model_name': 'Socket', 'host': '10.0.18.50', 'device_type': 'belkin_wemo', 'mac_address': '24F5A2489560', 'serial': '221802K0101A55', 'udn': 'uuid:Socket-1_0-221802K0101A55', 'port': 49153, 'manufacturer': 'Belkin International Inc.'}",c18df67a811f4eb45aa95df6005888f2
+804,s99599911a4,I Spy ?,Security Camera Hub,Blink,Edimax Technology Co. Ltd.,,{},c18df67a811f4eb45aa95df6005888f2
+805,s0cabe09b95,Leviton Switch 5,Smart Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-05B936', 'hostname': 'WICED-hap-05B936.local.', 'properties': {'md': 'Leviton Switch-05B936', 'ci': '8', 'pv': '1.1', 'c#': '11', 'sf': '0', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': '17:4A:64:1A:1B:A3'}, 'host': '10.0.18.61', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+806,s6534b8afda,BasePrint,Laser Printer,Brothers,"Brother industries, LTD.",,{},c18df67a811f4eb45aa95df6005888f2
+807,s0fd03c9274,Oittm Smart Plug,Smart Plug,Oittm,Espressif Inc.,,{},96c72493d3a54b053e962a81f3956f2c
+808,s49fa71416c,Tradfri Gateway,Gateway,Ikea,"Murata Manufacturing Co., Ltd.",,"{'host': '192.168.192.146', 'hostname': 'TRADFRI-Gateway-b8d7af2bbcf9.local.', 'port': 5684, 'device_type': 'ikea_tradfri', 'properties': {'version': '1.8.25'}}",96c72493d3a54b053e962a81f3956f2c
+809,s4164942432,Amazon Echo,Amazon Echo,Amazon,Amazon Technologies Inc.,,{},96c72493d3a54b053e962a81f3956f2c
+810,s0fd46ab397,Wansview 1080P Q3S,WIFI Camera,Wanswiev,SHENZHEN BILIAN ELECTRONIC CO.，LTD,,{},96c72493d3a54b053e962a81f3956f2c
+811,sd49e2fb21d,Amazon Echo,Amazon Echo,Amazon,,,{},96c72493d3a54b053e962a81f3956f2c
+812,sdf01bed9b7,Amazon Fire TV Stick,Smart TV Stick,Amazon,Amazon Technologies Inc.,,{},96c72493d3a54b053e962a81f3956f2c
+813,s03c48f0508,Oittm Smart Plug,Smart Plug,Oittm,Espressif Inc.,,{},96c72493d3a54b053e962a81f3956f2c
+814,s5ff5547b49,HP OfficeJet 5200,Multi Function Device Printer,HP,Hewlett Packard,,{},96c72493d3a54b053e962a81f3956f2c
+815,s2988710e89,Amazon Echo,Amazon Echo,Amazon,Amazon Technologies Inc.,,{},96c72493d3a54b053e962a81f3956f2c
+816,s5092ba0574,Amazon Echo,Echo,Amazon,Amazon Technologies Inc.,,{},96c72493d3a54b053e962a81f3956f2c
+817,s4ed3264927,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},96c72493d3a54b053e962a81f3956f2c
+818,s642883c1e4,MyAcuRite,Weather Station,Accu-Rite,Chaney Instrument Co.,,{},c18df67a811f4eb45aa95df6005888f2
+819,s5448223d29,Kodak Printer,Printer,Kodak,AboCom,,{},c18df67a811f4eb45aa95df6005888f2
+820,s98e3c7fc09,iHome Outlet,Smart Outlet,iHome,AzureWave Technology Inc.,,"{'name': 'iHome SmartPlug-4B8E00', 'hostname': 'hap-4B8E00.local.', 'properties': {'md': 'iSP6X', 'ci': '7', 'pv': '1.0', 'c#': '3', 'id': '75:C8:97:F9:38:57', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '10.0.18.24', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+821,sba90f3530f,Orbit Sprinkler Controller,Irrigation Controller,Orbit,Orbit Irrigation,,{},c18df67a811f4eb45aa95df6005888f2
+822,s4fa0cc5247,iHome outlet,Smart Outlet,iHome,AzureWave Technology Inc.,,{},c18df67a811f4eb45aa95df6005888f2
+823,s3bba48dfd9,Denon AVR-X2400H,Home Theater Reciever,Denon,D&M Holdings Inc.,,{},c18df67a811f4eb45aa95df6005888f2
+824,sf62cbdfd96,Leviton Switch 1,Light Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-06119D', 'hostname': 'WICED-hap-06119D.local.', 'properties': {'md': 'Leviton Switch-06119D', 'ci': '8', 'pv': '1.1', 'c#': '11', 'id': '03:B3:B0:93:5B:01', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '10.0.18.27', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+825,s0a60d431cb,Leviton Switch 2,Light Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-0611DB', 'hostname': 'WICED-hap-0611DB.local.', 'properties': {'md': 'Leviton Switch-0611DB', 'ci': '8', 'pv': '1.1', 'c#': '11', 'id': '38:B1:59:20:6F:5C', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '10.0.18.29', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+826,se3b0ae1943,CoffeeCanon,Printer,Canon,CANON INC.,,"{'ssdp_description': 'http://10.0.18.20:80/Canon_basic.xml', 'name': 'TS9100 series (UPnP)_5935790AA711', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'TS9100 series', 'model_name': 'TS9100 series', 'host': '10.0.18.20', 'device_type': 'canon_printer', 'serial': '9C32CE0AA711', 'udn': 'uuid:00000000-0000-1000-8000-001820109a49', 'port': 80, 'manufacturer': 'CANON INC.'}",c18df67a811f4eb45aa95df6005888f2
+827,s2f48cf93d8,Orbit Sprinkler Controller,Irrigation Controller,Orbit,Orbit Irrigation,,{},c18df67a811f4eb45aa95df6005888f2
+828,sa7288f29f1,Chamberlain MyQ,Garage Door Opener,Chamberlin,"The Chamberlain Group, Inc",,"{'name': 'MyQ-Bridge', 'hostname': 'MyQ-Bridge.local.', 'properties': {'md': 'MYQ-G0303', 'ci': '2', 'pv': '1.0', 'c#': '7', 'sf': '0', 'ff': '1', 's#': '1', 'id': '64:65:CF:C8:B3:A2'}, 'host': '10.0.18.34', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+829,s4ff1ce71aa,iDevices Outlet,Smart Outlet,iDevices,"iDevices, LLC",,"{'name': 'Switcked Outlet', 'hostname': 'Switch-00069231.local.', 'properties': {'md': 'IDEV0001', 'ci': '8', 'pv': '1.0', 'c#': '5', 'id': 'D9:35:38:86:CF:51', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '10.0.18.32', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+830,s565b040a9f,Wemo Mini,Smart Outlet,Belikin,Belkin International Inc.,,"{'ssdp_description': 'http://10.0.18.41:49153/setup.xml', 'name': 'DiningLamp', 'upnp_device_type': 'urn:Belkin:device:controllee:1', 'model_number': '1.0', 'model_name': 'Socket', 'host': '10.0.18.41', 'device_type': 'belkin_wemo', 'mac_address': '24F5A248315A', 'serial': '221751K010AFBE', 'udn': 'uuid:Socket-1_0-221751K010AFBE', 'port': 49153, 'manufacturer': 'Belkin International Inc.'}",c18df67a811f4eb45aa95df6005888f2
+831,s747754fc20,Leviton Switch 3,Smart Light Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-0612D8', 'hostname': 'WICED-hap-0612D8.local.', 'properties': {'md': 'Leviton Switch-0612D8', 'ci': '8', 'pv': '1.1', 'c#': '1', 'id': '43:BD:00:BF:EE:1A', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '10.0.18.45', 'device_type': 'homekit', 'port': 80}",c18df67a811f4eb45aa95df6005888f2
+832,s680727a1fd,MagicJack Plus,IP Telephone,MagicJack,Magicjack LP,,{},c18df67a811f4eb45aa95df6005888f2
+833,s265ca6c4d4,Mac Mini,Desktop Computer,Apple,"Apple, Inc.",,{},f0f5a9fc24f841ba1ac593bc13011bb9
+834,sa4fa6f9cb8,daaz,Media player,Android,"Shenzhen Shiningworth Technology Co., Ltd.",,{},05b672419ef542f56cfccf16c9541cff
+835,s59f49108e2,uraz,Router,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},05b672419ef542f56cfccf16c9541cff
+836,sb469da0cd7,BT YouView,Set-top Box,Humax,"HUMAX Co., Ltd.",,{},2b0aae04bb03435235c86e487348b65b
+837,sa3d0773831,Guido Brunetti,Macbook Air,Apple,"Apple, Inc.",,{},644bda6d43fb43bf19b48d2d93415a78
+838,sf1e5b707d6,iPad Pro,Tablet,Apple,"Apple, Inc.",,{},644bda6d43fb43bf19b48d2d93415a78
+839,sf2cb45460e,Galaxy-J7-Perx,Smart phone,Samsung,"Samsung Electronics Co.,Ltd",,{},644bda6d43fb43bf19b48d2d93415a78
+840,s7544b5fac7,iPhone 6,iPhone 6,Apple,"Apple, Inc.",,{},644bda6d43fb43bf19b48d2d93415a78
+841,se59c5cdcc5,TBD,iPhone,Apple,"Apple, Inc.",,{},644bda6d43fb43bf19b48d2d93415a78
+842,s13ea4e9116,Apple TV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Disney Room (1053)', 'hostname': 'Disney-Room-918.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Disney Room (1053)', 'hG': '00000000-00be-e405-c88a-658644ce4b34', 'EiTS': '1'}, 'host': '10.0.1.21', 'device_type': 'apple_tv', 'port': 3689}",3beed9aff0ef430beb90417f82bffefa
+843,s5aa797ec97,Brother HL-2270DW Printer,Printer,Brother,"Taiyo Yuden Co., Ltd.",,{},3beed9aff0ef430beb90417f82bffefa
+844,s49c42cb133,OpenEVSE,Electric Car Smart Charger,OpenEVSE,Espressif Inc.,,{},3beed9aff0ef430beb90417f82bffefa
+845,s58dcbe6db5,TRADFRI gateway,IoT Bridge,IKEA,"Murata Manufacturing Co., Ltd.",,"{'host': '192.168.178.111', 'hostname': 'TRADFRI-Gateway-dcefcaba3ed3.local.', 'port': 5684, 'device_type': 'ikea_tradfri', 'properties': {'version': '1.8.25'}}",326de071a45d46b1d8e53a1803adde37
+846,s442b0f0c62,Apple TV,Digital media device,Apple,"Apple, Inc.",,{},3e1fa7a9e78646eca080d30b95cab7f4
+847,s49b401ebb8,CamA,Camera,D-link,Amazon Technologies Inc.,,{},1dc3445b0f654e02cfcac1289d7c10d6
+848,s5b803b1c12,Firestick,Streaming Device,Amazon,Amazon Technologies Inc.,,{},1dc3445b0f654e02cfcac1289d7c10d6
+849,sd6ff68579a,Apple iPhone,iPhone,Apple,"Apple, Inc.",Mable,{},175a9775d9f341e8a2816c6d28d0873c
+850,s902c667156,CDD Solar,solar converter,ABB,Microchip Technology Inc.,,{},48f1d90e2b484f5abded330d155d8d6d
+851,sbcb5a57593,Sensi,Thermostat,Emerson,White Rodgers Division,,{},48f1d90e2b484f5abded330d155d8d6d
+852,s2643402afd,Pi Hole,DNS Proxy,Raspberry Pi,Raspberry Pi Foundation,,{},48f1d90e2b484f5abded330d155d8d6d
+853,sb8f2e15e40,???,raspberry Pi,Taiyo Yuden,"Taiyo Yuden Co., Ltd.",,{},9ac496e8c36c4cd4d41f8dead47b7df3
+854,s9e5fd09692,Foscam IP Camera,ip camera,foscam,Shenzhen Reecam Tech.Ltd.,,{},28ae7180408d48a076db3f1845762405
+855,s28089dbc26,iPhone,Smart Phone,Apple,"Apple, Inc.",lsforbessiPhone,{},b4009af1c2234a63fef8096ab77e4b67
+856,saf16a85444,Netgear Nighthawk,Net Modem,Netgear,NETGEAR,,"{'ssdp_description': 'http://192.168.0.10:8200/rootDesc.xml', 'name': 'ReadyDLNA:C7000v2', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '1', 'port': 8200, 'host': '192.168.0.10', 'device_type': 'dlna_dms', 'serial': '12345678', 'udn': 'uuid:4d696e69-444c-164e-9d41-00184dffff07', 'model_name': 'Windows Media Connect compatible (ReadyDLNA)', 'manufacturer': 'NETGEAR'}",92aec8cd310c4ce7579fc6ce8a8f1741
+857,s3c416eacac,Apple TV 3rd Generation,Apple TV,Apple,"Apple, Inc.",,{},92aec8cd310c4ce7579fc6ce8a8f1741
+858,s811daa152b,HP4000N,HP Printer,HP,Hewlett Packard,,{},685178efa4f5434c52186e3d6d2362d7
+859,sa6ab8fd351,switch,Ethernet switch,Cisco,"Cisco Systems, Inc",,{},31b2962619124faadca3c623f2c45dac
+860,sc765b2c6b4,Mac mini,Desktop Computer,Apple,"Apple, Inc.",,{},ef1fbaab0ace46812eec1615afe9bba3
+861,sc8118e39aa,Raspberry Pi 3B+,Single Board Computer,Raspberry Pi Foundation,Raspberry Pi Foundation,p3bp,{},ef1fbaab0ace46812eec1615afe9bba3
+862,s8af1a4eeb9,iPad,Tablet,Apple,"Apple, Inc.",BumpeiPad,{},ef1fbaab0ace46812eec1615afe9bba3
+863,s6ed2b1e632,iPhone,Smartphone,Apple,"Apple, Inc.",EriPhone7,{},ef1fbaab0ace46812eec1615afe9bba3
+864,sb7bcafb64c,TX-RZ800,Receiver,Onkyo,Onkyo Corporation,,"{'ssdp_description': 'http://192.168.1.153:8888/upnp_descriptor_0', 'host': '192.168.1.153', 'port': 8888, 'device_type': 'dlna_dmr'}",96ed58bc34d041f7dc9e1e97e382a3fd
+865,s93b0e83e30,Amazon Echo,Echo Dot,Amazon,Amazon Technologies Inc.,,{},6e7dd8f4b80d4359dab1d3224af06f8b
+866,s85018e627e,C6300,Modem/Router,Netgear,NETGEAR,,"{'ssdp_description': 'http://192.168.0.254:8200/rootDesc.xml', 'name': 'ReadyDLNA:C6300', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': '1', 'model_name': 'Windows Media Connect compatible (ReadyDLNA)', 'host': '192.168.0.254', 'device_type': 'dlna_dms', 'serial': '12345678', 'udn': 'uuid:4d696e69-444c-164e-9d41-28c68e000001', 'port': 8200, 'manufacturer': 'NETGEAR'}",c31878cd73d44504b1477b81543b7ea2
+867,s8eab0eb93b,MacBook - Chloe,Laptop,Apple,"Apple, Inc.",Chloes-MacBook,{},7fea16f6860b4900ae2f1cee22bafb8f
+868,s97f7af016f,Apple iPhone SE,iPhone SE,Apple,"Apple, Inc.",,{},36698cbd842440daad4a6ecc68fbfafc
+869,sa591e30988,D6400,Wireless Router,Netgear,NETGEAR,,{},36698cbd842440daad4a6ecc68fbfafc
+870,s645581f397,Epson XP-400,Network Printer / Scanner,Epson,Seiko Epson Corporation,,{},36698cbd842440daad4a6ecc68fbfafc
+871,sd7ad8471b4,N's iPhone 7,iPhone 7,Apple,"Apple, Inc.",,{},36698cbd842440daad4a6ecc68fbfafc
+872,se6fbf618aa,Ubiquiti WAP,Router/AP,Ubiquiti,Ubiquiti Networks Inc.,,{},e7d58904da4e4a105f9ea8c31a6ed845
+873,sf864209c7f,Dome camera,Motion Camera,Hikvision,"Hangzhou Hikvision Digital Technology Co.,Ltd.",,{},e7d58904da4e4a105f9ea8c31a6ed845
+874,sc4ec7699ef,Switch,POE Switch,Ubiquiti,Ubiquiti Networks Inc.,,{},e7d58904da4e4a105f9ea8c31a6ed845
+875,sdb5c167ff4,DS918+,NAS,Synology,Synology Incorporated,,{},e7d58904da4e4a105f9ea8c31a6ed845
+876,s8ee39446f1,CP1525nw,Network Printer / Scanner,HP,"Hon Hai Precision Ind. Co.,Ltd.",,{},e7d58904da4e4a105f9ea8c31a6ed845
+877,s1c537688e8,Apple TV 4th Gen,Smart Player,Apple,"Apple, Inc.",,"{'name': 'Vardagsrum', 'hostname': 'Vardagsrum.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Vardagsrum', 'hG': '00000000-00b0-0d52-56fb-f29410b843f3', 'EiTS': '1'}, 'host': '192.168.1.208', 'device_type': 'apple_tv', 'port': 3689}",e7d58904da4e4a105f9ea8c31a6ed845
+878,s80edd2ade4,Office Printer,Inkjet All in One Printer,HP,Hewlett Packard,,{},0727c1dfbb594f671c3e468ee19f226a
+879,s9729db7d1f,Samsung TV,TV,Samsung,"Samsung Electronics Co.,Ltd",,{},0727c1dfbb594f671c3e468ee19f226a
+880,sc65308611f,iPhone-Alex,Apple iPhone,Apple,"Apple, Inc.",,{},0727c1dfbb594f671c3e468ee19f226a
+881,s9647c3c27c,Rachael Apple Watch,smart watch,Apple,"Apple, Inc.",RachaelpleWatch,{},c31878cd73d44504b1477b81543b7ea2
+882,sf4b968e7cc,Printer,HP Printer,HP,Hewlett Packard,,{},79b5b17a5640470e56ce7982f19d5740
+883,sf1a3a720ed,Tradfri Gateway,Automation Hub,IKEA,"Murata Manufacturing Co., Ltd.",,{},79b5b17a5640470e56ce7982f19d5740
+884,s0fe5d0e68a,Roborock s50,Robot Vacuum,Roborock,"XIAOMI Electronics,CO.,LTD",,{},79b5b17a5640470e56ce7982f19d5740
+885,se7a74ffffe,Samsung UE40MU6470U,Smart TV,Samsung,"Samsung Electronics Co.,Ltd",,{},2de5777d6a254a8faac863fb4b1725bc
+886,s53db14f12a,Apple iPad Air,tablet,APPLE,"Apple, Inc.",,{},f240f5b8a1684c67524ff850c45d25ec
+887,sdab349662e,iPhone,Smart Phone,Apple,"Apple, Inc.",Zoes-iPhone,{},b4009af1c2234a63fef8096ab77e4b67
+888,s1585030d63,Velop node (L),Wifi mesh router,Linksys,Belkin International Inc.,,{},fc75065f11e04fbbf6bc16a8e03cdd82
+889,s5008587086,Time Capsule,Backup Drive,Apple,"Apple, Inc.",,{},fc75065f11e04fbbf6bc16a8e03cdd82
+890,s9d58092b7f,Velop node (U),Wifi mesh router,Linksys,Belkin International Inc.,,{},fc75065f11e04fbbf6bc16a8e03cdd82
+891,sc4dd7c274d,Apple,Laptop,SH,"Apple, Inc.",,{},a83f8dac25fb4a380f5a7eb4faa59e3a
+892,sb332a311e8,Leviton Light Switch,Smart Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Dimmer-0822BD', 'hostname': 'WICED-hap-0822BD.local.', 'properties': {'md': 'Leviton Dimmer-0822BD', 'ci': '8', 'pv': '1.1', 'c#': '18', 'id': '6F:49:E5:9F:64:E8', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.7.210', 'device_type': 'homekit', 'port': 80}",fe2a845ffa1745e624df14146cd48f6c
+893,saa6c3c34fc,Apple TV Family Room,Digital media device,Apple,"Apple, Inc.",,"{'name': 'Family Room', 'hostname': 'Family-Room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Family Room', 'hG': '00000000-008f-3cf5-7792-d090e67845e7', 'EiTS': '1'}, 'host': '192.168.7.70', 'device_type': 'apple_tv', 'port': 3689}",fe2a845ffa1745e624df14146cd48f6c
+894,s816dabd4a8,Samsung TV Hub?,Smart TV,SAMSUNG,"SAMSUNG ELECTRO MECHANICS CO., LTD.",,{},fe2a845ffa1745e624df14146cd48f6c
+895,s8382b86eed,Ikea Gateway,smart home gateway,Ikea,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-b8d7af2bb837.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.1', 'c#': '14', 'id': 'AA:AD:A1:47:66:84', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.7.198', 'device_type': 'homekit', 'port': 80}",fe2a845ffa1745e624df14146cd48f6c
+896,sdd99fd1db9,Apple TV Bedroom,Media Streamer,Apple,"Apple, Inc.",,"{'name': 'Bedroom Apple TV', 'hostname': 'Bedroom-Apple-TV.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-008f-3cf5-7792-d090e67845e7', 'Name': 'Bedroom Apple TV'}, 'host': '192.168.7.51', 'device_type': 'apple_tv', 'port': 3689}",fe2a845ffa1745e624df14146cd48f6c
+897,sec9964d3a5,Leviton Switch,Smart Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Dimmer-05EA56', 'hostname': 'WICED-hap-05EA56.local.', 'properties': {'md': 'Leviton Dimmer-05EA56', 'ci': '8', 'pv': '1.1', 'c#': '1', 'id': '35:55:5F:04:19:23', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.7.229', 'device_type': 'homekit', 'port': 80}",fe2a845ffa1745e624df14146cd48f6c
+898,sd773d98a2e,Leviton Switch,Smart Switch,LEVITON,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-080B9E', 'hostname': 'WICED-hap-080B9E.local.', 'properties': {'md': 'Leviton Switch-080B9E', 'ci': '8', 'pv': '1.1', 'c#': '1', 'id': '1F:3C:78:3F:29:3E', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.7.230', 'device_type': 'homekit', 'port': 80}",fe2a845ffa1745e624df14146cd48f6c
+899,s040ce37c28,Leviton Sitch 2,Wifi Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-0820D8', 'hostname': 'WICED-hap-0820D8.local.', 'properties': {'md': 'Leviton Switch-0820D8', 'ci': '8', 'pv': '1.1', 'c#': '1', 'sf': '0', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': '0F:71:FD:B3:4B:69'}, 'host': '192.168.7.231', 'device_type': 'homekit', 'port': 80}",fe2a845ffa1745e624df14146cd48f6c
+900,s5200fb30d3,Brother Printer,Color Laser Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",BRW7440BB3ECC7A,{},797edef1a9084e3161ac0f07ebffe516
+901,s79ed72cf5e,HP Laserjet Printer,Color Printer,HP,"Hon Hai Precision Ind. Co.,Ltd.",,{},868314fd28894960bf5c9fa2c0d25f4d
+902,s53822e8464,HP Laser Printer,HP Laser B/W Printer,HP,"Hon Hai Precision Ind. Co.,Ltd.",,"{'host': '192.168.1.21', 'hostname': 'HPLaserJet_M225dw.local.', 'port': 515, 'device_type': 'hp_printer', 'properties': {'Binary': 'T', 'product': '(HP LaserJet Pro MFP M225dw)', 'rp': 'RAW', 'qtotal': '1', 'adminurl': 'http://HPLaserJet_M225dw.local.', 'ty': 'HP LaserJet Pro MFP M225dw', 'note': False, 'txtvers': '1', 'TBCP': 'T', 'Transparent': 'T', 'priority': '50'}}",868314fd28894960bf5c9fa2c0d25f4d
+903,s9481b0b4c6,WAP,WiFi Access Point,Ubiquiti,Ubiquiti Networks Inc.,,{},868314fd28894960bf5c9fa2c0d25f4d
+904,sbc0b475cbe,smart switch,Ethernet switch,NETGEAR,NETGEAR,,{},dda84a3ee3ac47872c4895ce15f11f21
+905,sfe6a921624,Canon MX535,Color Inkjet Printer,Canon,CANON INC.,,{},dda84a3ee3ac47872c4895ce15f11f21
+906,s0b4c0029de,Foscam,IP camera,foscam,B-Link Electronic Limited,,{},5d084c62084a4486d9219d6741f93426
+907,sb4ef80370c,Brother Printer,Printer,Brother,"Hon Hai Precision Ind. Co.,Ltd.",BRW707781B5F787,{},5d084c62084a4486d9219d6741f93426
+908,se6942be355,Nook,E Reader,Barnes & Noble,Barnes&Noble,,{},1aaa4f8cac9442dce8f583b1b5ab8399
+909,s779ef38b3c,16 port switch,Switch,Netgear,NETGEAR,,{},c96ec29ceefa47ccab96a82af25fe5a5
+910,s8dc5719edc,Raspberry Pi 2,computer,RaspberryPi,Raspberry Pi Foundation,raspberrypi,{},c96ec29ceefa47ccab96a82af25fe5a5
+911,s3b4fba84e1,Canon Pixma,Color Inkjet Printer,Canon,CANON INC.,,"{'ssdp_description': 'http://192.168.86.40:80/Canon_basic.xml', 'name': 'MX920 series (UPnP)_4901DDC3E8D9', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'MX920 series', 'model_name': 'MX920 series', 'host': '192.168.86.40', 'device_type': 'canon_printer', 'serial': 'F4A997C3E8D9', 'udn': 'uuid:00000000-0000-1000-8000-F4A997C3E8D9', 'port': 80, 'manufacturer': 'CANON INC.'}",c96ec29ceefa47ccab96a82af25fe5a5
+912,se59ba1036e,Sonos One-LR,Voice Assistant Speaker,Sonos,"Sonos, Inc.",,"{'host': '10.0.1.42', 'hostname': 'sonos7828CA0B6842.local.', 'port': 1400, 'device_type': 'spotify_connect', 'properties': {'CPath': '/spotifyzc', 'VERSION': '1.0'}}",7309de9fe7c841f4499b13a9f1141287
+913,s00c06c34b4,Ruth's iPhone,Mobile phone,Apple,"Apple, Inc.",Ruths-iPhone,{},d425c18834ca4876d675d1831b15dced
+914,s2ea4b62da1,iPhone 8,iphone 8,APPLE,"Apple, Inc.",,{},39fc827a013f4edb2ccc16e514466cb6
+915,s60bf523e97,Apple TV 4K,Set Top Box,APPLE,"Apple, Inc.",,{},4ff967d1fb514f74e9a9b8baa91de8fb
+916,s86bb796f27,Apple TV V4,Set Top Box,APPLE,"Apple, Inc.",,{},4ff967d1fb514f74e9a9b8baa91de8fb
+917,sab836378ff,Apple Time Capsule,Wifi Router,APPLE,"Apple, Inc.",,{},4ff967d1fb514f74e9a9b8baa91de8fb
+918,sd238ccc269,Google Wifi,WiFi Access Point,Google,"Google, Inc.",,{},c96ec29ceefa47ccab96a82af25fe5a5
+919,s6c1cb8d7dd,Netgear Managed Switch,Ethernet Switch,Netgear,NETGEAR,,{},784ee579204e4f31da7acf5c4bfa73f3
+920,s1444928036,Netatmo Welcome 2,Camera,Netatmo,Netatmo,,"{'name': 'Netatmo Welcome', 'hostname': 'localhost-2.local.', 'properties': {'md': 'Welcome', 'ci': '17', 'pv': '1.1', 'C#': '3', 'na_tkn': 'c51f8359a918', 'sf': '0', 'ff': '1', 'S#': '1', 'id': '79:6F:8D:58:8B:91'}, 'host': '192.168.1.194', 'device_type': 'homekit', 'port': 5001}",4ff967d1fb514f74e9a9b8baa91de8fb
+921,s6e7865c9d8,Orbi Satelite,Mesh network,Netgear,NETGEAR,,{},5f087be16654410a8bdf0007ffe91c70
+922,s8147873e63,HDHR Connect 1,network tv tuner,SiliconDust,Silicondust Engineering Ltd,HDHR-104390ED,"{'ssdp_description': 'http://192.168.2.12:80/dms/device.xml', 'name': 'HDHomeRun DMS 104390ED', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaServer:1', 'model_number': 'HDHR4-2US', 'model_name': 'HDHomeRun CONNECT', 'host': '192.168.2.12', 'device_type': 'dlna_dms', 'serial': '104390ED', 'udn': 'uuid:17C73BB3-AEAB-3E4A-8253-0DD3939A02C1', 'port': 80, 'manufacturer': 'Silicondust'}",8dce1ab97d1d426279d730d96f97075e
+923,s014ececd88,HDHR Connect 2,network tv tuner,silicondust,Silicondust Engineering Ltd,HDHR-104751DB,"{'ssdp_description': 'http://192.168.2.13:80/dms/device.xml', 'host': '192.168.2.13', 'port': 80, 'device_type': 'dlna_dms'}",8dce1ab97d1d426279d730d96f97075e
+924,s7550ae4259,HDHR Quatro,network tv tuner,SiliconDust,Silicondust Engineering Ltd,HDHR-10707E70,{},8dce1ab97d1d426279d730d96f97075e
+925,s95473b27e1,HDHR Extend,Network TV Tuner,silicondust,Silicondust Engineering Ltd,HDHR-1050AAFB,"{'ssdp_description': 'http://192.168.2.11:80/dms/device.xml', 'host': '192.168.2.11', 'port': 80, 'device_type': 'dlna_dms'}",8dce1ab97d1d426279d730d96f97075e
+926,s419d8dc9bc,Fitbit Ionic,Smart Watch,Fitbit,Fitbit Inc.,Ionic,{},784ee579204e4f31da7acf5c4bfa73f3
+927,sabf19f5900,Lytworx Smart Neonflex,Light Strip,Lytworx,Espressif Inc.,,{},c200abf7cbfc489a25896fe40a1df9db
+928,s83b2d05d7a,DLink Omna 180,Camera,DLink,,,"{'name': 'Omna 180Cam HD - 513C', 'hostname': 'DSH-C310-513C.local.', 'properties': {'md': 'DSH-C310', 'ci': '17', 'pv': '1.1', 'c#': '2', 'sf': '0', 'sh': 'lKeATA==', 'ff': '1', 's#': '1', 'id': '55:24:A9:CB:7C:00'}, 'host': '192.168.1.17', 'device_type': 'homekit', 'port': 5011}",c200abf7cbfc489a25896fe40a1df9db
+929,s8e8c96750c,iPad,Smart Phone,Apple,"Apple, Inc.",lauriesetssiPad,{},b4009af1c2234a63fef8096ab77e4b67
+930,s293929ae08,VW e-Golf,Car,VW,Wistron Neweb Corporation,,{},4ff967d1fb514f74e9a9b8baa91de8fb
+931,sc276b1c980,MacBook Air,Laptop,Apple,"Apple, Inc.",ZoeFForbess-Air,{},b4009af1c2234a63fef8096ab77e4b67
+932,s805853cf09,Blu-ray player,Blu-ray player,Oppo,Alpha Networks Inc.,,{},35669dcc0ed342c0551c9a88c73ef6df
+933,sb3c72d6273,Octoprint,Printer,Octoprint,Raspberry Pi Foundation,,"{'ssdp_description': 'http://192.168.1.165:80/plugin/discovery/discovery.xml', 'name': 'OctoPrint instance on octopi', 'upnp_device_type': 'urn:schemas-upnp-org:device:Basic:1', 'model_number': None, 'model_name': '1.3.10', 'host': '192.168.1.165', 'device_type': 'octoprint', 'serial': None, 'udn': 'uuid:6d07c637-3161-46f0-aef2-3bac7c14d330', 'port': 80, 'manufacturer': 'The OctoPrint Project'}",a0357ee5bca14f2a85f505a3804e75c5
+934,sfa5c2e6a26,Apple TV,apple Tv,apple,"Apple, Inc.",,"{'name': 'Living room', 'hostname': 'Living-room.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '4', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'Name': 'Living room', 'hG': '00000000-1140-c4b7-949a-3a4e32e54107', 'EiTS': '1'}, 'host': '192.168.1.133', 'device_type': 'apple_tv', 'port': 3689}",a0357ee5bca14f2a85f505a3804e75c5
+935,se72901e573,Brother Printer,Network Printer / Scanner,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},45dc9fd2e0be42d45da2dc195304881c
+936,s1cb10e9ddd,tradfri,Smart Bridge,Ikea,"Murata Manufacturing Co., Ltd.",,"{'name': 'TRADFRI gateway', 'hostname': 'TRADFRI-Gateway-449160290a99.local.', 'properties': {'md': 'TRADFRI gateway', 'ci': '2', 'pv': '1.1', 'c#': '14', 'id': '92:63:3B:BD:A6:73', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'sf': '0'}, 'host': '192.168.1.39', 'device_type': 'homekit', 'port': 80}",cd39721e58ad4ecac4237a6a1f9092fa
+937,s593f9d9f01,APC UPS,Smart UPS,American Power Conversion,AMERICAN POWER CONVERSION CORP,,{},4b338c9146544d5a7489b7054ee3e740
+938,s88cffd3256,Cisco Switch,Smart Switch,Cisco,"Cisco Systems, Inc",switchF00D88,{},4b338c9146544d5a7489b7054ee3e740
+939,s59a8211aba,DMP-BD81EB-K,Blu-ray player,Panasonic,Panasonic Corporation AVC Networks Company,,{},2f74d85fc7414451cd04800ca7b4a032
+940,s7509db1360,Printer (Canon MX920),Printer and Scanner,Canon,CANON INC.,,"{'ssdp_description': 'http://192.168.1.122:80/Canon_basic.xml', 'name': 'MX920 series (UPnP)_51A7AFC60FB8', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'MX920 series', 'port': 80, 'host': '192.168.1.122', 'device_type': 'canon_printer', 'serial': 'F80D60C60FB8', 'udn': 'uuid:00000000-0000-1000-8000-F80D60C60FB8', 'model_name': 'MX920 series', 'manufacturer': 'CANON INC.'}",76915de213aa45aec24473559bc504b1
+941,s4e392c5349,Casa Nora Church Apple TV,Apple TV,Apple,"Apple, Inc.",,{},9e18e526451b4f73f40e2e003c417037
+942,saea86ce130,Airport Express,WiFi Extender,Apple,"Apple, Inc.",,{},9e18e526451b4f73f40e2e003c417037
+943,s7c6f73d3fe,Benita,PC,Apple,,,{},9e18e526451b4f73f40e2e003c417037
+944,s3badaa014f,Plex Benita,DLNA server,Plex,"Apple, Inc.",,{},9e18e526451b4f73f40e2e003c417037
+945,se7ebbd1d93,Esperanza,Laptop,Apple,"Apple, Inc.",,{},9e18e526451b4f73f40e2e003c417037
+946,s9b09218a43,iPhone,Smartphone,Apple,"Apple, Inc.",,{},b57883db0e7e41ead734d0087a629e17
+947,sca5fbd5cf0,Apple TV,Apple TV,Apple,"Apple, Inc.",,{},d704c4f6806a45db4942ca81d473ce7d
+948,s9fbefcf068,Apple iPad,Tablet,Apple,"Apple, Inc.",,{},fc036441dbcb4932a70665d5618426cd
+949,sbc17a98277,Treadmill,Treadmill,Nordic Track,"Universal Global Scientific Industrial Co., Ltd.",,{},fc036441dbcb4932a70665d5618426cd
+950,s0877027e7f,iPhone,Smartphone,Apple,"Apple, Inc.",,{},fc036441dbcb4932a70665d5618426cd
+951,sdcdeb1188c,wd filer,NAS drive,wd,WESTERN DIGITAL,,{},dff69a5fef054a37b1fb29f7ca0f3c65
+952,s7980febae2,sans wire,WiFi AP,APPLE,"Apple, Inc.",,{},dff69a5fef054a37b1fb29f7ca0f3c65
+953,s24cc076fd5,Canon Printer,Multifunction Printer,Canon,CANON INC.,,"{'ssdp_description': 'http://192.168.7.127:80/Canon_basic.xml', 'name': 'MX920 series (UPnP)_33BD415FDD37', 'upnp_device_type': 'urn:schemas-cipa-jp:device:DPSPrinter:1', 'model_number': 'MX920 series', 'model_name': 'MX920 series', 'host': '192.168.7.127', 'device_type': 'canon_printer', 'serial': '9C32CE5FDD37', 'udn': 'uuid:00000000-0000-1000-8000-9C32CE5FDD37', 'port': 80, 'manufacturer': 'CANON INC.'}",a933b07fce494696f55fa6fcea08a381
+954,s39b93754a4,LG TV,TV,LG,LG ELECTRONICS INC,,"{'ssdp_description': 'http://192.168.1.157:37904/MediaRenderer1.xml', 'name': '47LW5700-UE', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': '1.0', 'port': 37904, 'host': '192.168.1.157', 'device_type': 'dlna_dmr', 'serial': '123456789001', 'udn': 'uuid:1b0ec838-1dd2-11b2-9d7b-fc638be7aca2', 'model_name': 'MediaRenderer', 'manufacturer': 'LG Electronics'}",2ec3645fb8f2401f4752de99b45bee9b
+955,sd586f2b869,Barncam Router,Router,TP-Link,"TP-LINK TECHNOLOGIES CO.,LTD.",,{},73eee45a45fb4ca1092e25273ae503fd
+956,s71c052a93b,Hen Cam,IOT Cam,FOSCAM,"VIA Networking Technologies, Inc.",,{},73eee45a45fb4ca1092e25273ae503fd
+957,scdba423962,Airport camera,Airport,Apple,"Apple, Inc.",,{},db171c97455d407efbbc41d7b69c50a3
+958,sc3820dd386,Lenovo impermeabile Telegram Romana,Mobile Phone,Lenovo,Lenovo Mobile Communication Technology Ltd.,android-e92bd4520be109d6,{},db171c97455d407efbbc41d7b69c50a3
+959,s02f41a4f0b,ADSL router,Modem/Router,TP-link,"TP-LINK TECHNOLOGIES CO.,LTD.",,"{'ssdp_description': 'http://192.168.10.247:5431/dyndev/uuid:c4715401-0380-8003-0154-71c471018000ac', 'name': '300Mbps Wireless N ADSL2+ Modem Router', 'upnp_device_type': 'urn:schemas-upnp-org:device:InternetGatewayDevice:1', 'model_number': '8.0', 'model_name': 'TD-W8960N', 'host': '192.168.10.247', 'device_type': 'igd', 'serial': '1', 'udn': 'uuid:c4715401-0380-8003-0154-71c471018000ac', 'port': 5431, 'manufacturer': 'TP-LINK'}",db171c97455d407efbbc41d7b69c50a3
+960,sb25fc01554,Stampante laser Edile P.M.,Laser Printer and Scanner,Xerox,Xerox Corporation,,{},db171c97455d407efbbc41d7b69c50a3
+961,sa9a8356806,Smartphone Oneplus 5 Lorenzo,mobile phone,OnePlus,"OnePlus Technology (Shenzhen) Co., Ltd",OnePlus5,{},db171c97455d407efbbc41d7b69c50a3
+962,sc698fabd7e,Heatpump 2,Heatpump,Mitsubishi,"Murata Manufacturing Co., Ltd.",,{},832ddb7e147649a3d4282a772942120f
+963,sc412fc5723,Heatpump 3,Heatpump,Mitsubishi,"Murata Manufacturing Co., Ltd.",WICED IP,{},832ddb7e147649a3d4282a772942120f
+964,sab5ccb9b74,Epson Printer,Inkjet All in One Printer,Epson,Seiko Epson Corporation,,{},832ddb7e147649a3d4282a772942120f
+965,sf18a57de1a,Heatpump 1,Heatpump,Mitsubishi,"Murata Manufacturing Co., Ltd.",,{},832ddb7e147649a3d4282a772942120f
+966,s10ffc4990b,Silverbook,Laptop,Apple,"Apple, Inc.",,"{'host': '192.168.86.101', 'hostname': 'Silverbook.local.', 'port': 8080, 'device_type': 'sabnzbd', 'properties': {'path': '/sabnzbd', 'https': '0'}}",90c40d41db304e803d16bde6a38ad11b
+967,s14f5fed25e,printer,HP Printer,Hewlett-Packard,"Hon Hai Precision Ind. Co.,Ltd.",,{},a12bc9021a354bf093286c57fd176119
+968,s79451627a7,Fan Switch,Smart Switch,Leviton,"Leviton Manufacturing Co., Inc.",,"{'name': 'Leviton Switch-06C688', 'hostname': 'WICED-hap-06C688.local.', 'properties': {'md': 'Leviton Switch-06C688', 'ci': '8', 'pv': '1.1', 'c#': '11', 'sf': '0', 'sh': 'AAAAAA==', 'ff': '1', 's#': '1', 'id': '5E:CA:46:BD:D7:F7'}, 'host': '10.0.1.192', 'device_type': 'homekit', 'port': 80}",207316caf0a945757de3b655539aba5d
+969,s50169e24a0,N's iMac,MacOS Computer,Apple,"Apple, Inc.",Ninas-iMac,{},207316caf0a945757de3b655539aba5d
+970,s8469c7677a,Cam1,Camera,D-Link,D-Link International,,{},5307556e679b4af18ab84dd6a88149c7
+971,s9f1e50b9bb,AppleTV,Streaming Device,Apple,"Apple, Inc.",,"{'name': 'Row Apple TV', 'hostname': 'Row-Apple-TV-3.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0325-d835-6db2-ce8b43c74e92', 'Name': 'Row Apple TV'}, 'host': '192.168.232.51', 'device_type': 'apple_tv', 'port': 3689}",ebac102ad78d47934e61dcadb7680f12
+972,sb1d2ba2cb8,Xerox Printer,Color Laser Printer,Xerox,Xerox Corporation,,{},ebac102ad78d47934e61dcadb7680f12
+973,s89c2f35eef,AppleTV,AppleTV,Apple,"Apple, Inc.",,{},ebac102ad78d47934e61dcadb7680f12
+974,scf0375dc50,Cisco Switch,PoE Switch,Cisco-Linksys,"Cisco Systems, Inc",,{},ebac102ad78d47934e61dcadb7680f12
+975,s26dfa732a2,AppleTV,Apple TV,Apple,"Apple, Inc.",,"{'name': 'Living Room', 'hostname': 'Living-Room-2.local.', 'properties': {'fs': '2', 'Ver': '131075', 'DFID': '3', 'EiTS': '1', 'atSV': '65539', 'mV': '131082', 'aV': '196620', 'hG': '00000000-0325-d835-6db2-ce8b43c74e92', 'Name': 'Living Room'}, 'host': '192.168.232.60', 'device_type': 'apple_tv', 'port': 3689}",ebac102ad78d47934e61dcadb7680f12
+976,s0de0960609,Airport Express,Wifi Range Extender,Apple,"Apple, Inc.",,"{'name': 'Row Apple TV', 'hostname': 'Row-Apple-TV-3.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0325-d835-6db2-ce8b43c74e92', 'Name': 'Row Apple TV'}, 'host': '192.168.232.51', 'device_type': 'apple_tv', 'port': 3689}",ebac102ad78d47934e61dcadb7680f12
+977,s50d422f52e,ESX,Virtual Machines,vMware,"Apple, Inc.",,{},ebac102ad78d47934e61dcadb7680f12
+978,sc2f2e49a38,AppleTV,apple tv,Apple,"Apple, Inc.",Row-Apple-TV-3,"{'name': 'Row Apple TV', 'hostname': 'Row-Apple-TV-3.local.', 'properties': {'fs': '2', 'EiTS': '1', 'MniT': '167845888', 'PrVs': '65538', 'MiTPV': '196611', 'atSV': '65541', 'DFID': '2', 'txtvers': '1', 'hG': '00000000-0325-d835-6db2-ce8b43c74e92', 'Name': 'Row Apple TV'}, 'host': '192.168.232.51', 'device_type': 'apple_tv', 'port': 3689}",ebac102ad78d47934e61dcadb7680f12
+979,sd57189903b,audrey wifi,Mac Mini,apple,"Apple, Inc.",,{},9e6b468cc3814ce6a5198f679bc52635
+980,s72005a1807,iClawdey,MacBook Pro,Apple,"Apple, Inc.",iClawdey,{},58672c9fd8e44ab61a0cda94018f1754
+981,s5edfd489a3,Apple Watch,Watch,Apple,"Apple, Inc.",,{},58672c9fd8e44ab61a0cda94018f1754
+982,s7d5024114a,R710,Server,Dell,Dell Inc.,,{},f29609ee3bc14151703da39b781e2f5b
+983,s651ee7a6f7,iLO 3,Out of Band Management,Hewlett Packard,Hewlett Packard,,{},f29609ee3bc14151703da39b781e2f5b
+984,sd9965f76c1,Smart Switch GS724T,Network Switch,netgear,NETGEAR,,{},f29609ee3bc14151703da39b781e2f5b
+985,s2d145f8156,LaserJet 2100,Laser Printer,Hewlett-Packard,Hewlett Packard,,{},f29609ee3bc14151703da39b781e2f5b
+986,s88b6c1aa94,AirPort Express,AirPlay,Apple,"Apple, Inc.",,{},f29609ee3bc14151703da39b781e2f5b
+987,s2bec2f73de,Apple Airport,Wifi Router,Apple,"Apple, Inc.",,{},ab73728cd9554a23151ab6b1a5a86951
+988,se40a469a99,LR Airport Extreme,Wireless Router,Apple,"Apple, Inc.",,{},ab73728cd9554a23151ab6b1a5a86951
+989,sc2594c77b1,Airport,WiFi mesh router,APPLE,"Apple, Inc.",,{},ab73728cd9554a23151ab6b1a5a86951
+990,s8263e7ae56,Brother HL3180-CDW,Printer/Scanner,Brother,"Hon Hai Precision Ind. Co.,Ltd.",,{},57440f275e66423da2d0b91f49baa8ab
+991,s69be31bf8c,iPhone 6,Smartphone,Apple,"Apple, Inc.",,{},57440f275e66423da2d0b91f49baa8ab
+992,sf03eeed707,Plex,MacMini,apple,"Apple, Inc.",,"{'host': '192.168.0.235', 'urlbase': 'https://192.168.0.235:32400', 'name': 'Mac mini', 'device_type': 'plex_mediaserver', 'port': '32400'}",2d1b0506069a440f7eb2b2dc31016809
+993,s5d749dfa97,Brother Color Printer,Printer/Scanner,Brother,"Brother industries, LTD.",,{},2d1b0506069a440f7eb2b2dc31016809
+994,s7c7165cc1e,Brother 2270CDW,Printer,Brother,"Brother industries, LTD.",,{},2d1b0506069a440f7eb2b2dc31016809
+995,s438ea3a93c,Apple TV 3rd Gen,Apple TV,Apple,"Apple, Inc.",,{},6a779754474d4b0ed4dd88ebc055d3c6
+996,sd716968614,AirPort Express,WiFi Extender,Apple,"Apple, Inc.",,{},68bb760e9cc54dba2b844830bf7f9eda
+997,sd520524781,Yamaha RX-V673,Receiver,Yamaha,YAMAHA CORPORATION,,"{'ssdp_description': 'http://192.168.10.108:8080/MediaRenderer/desc.xml', 'name': 'Yamaha receiver', 'upnp_device_type': 'urn:schemas-upnp-org:device:MediaRenderer:1', 'model_number': 'V673', 'port': 8080, 'host': '192.168.10.108', 'device_type': 'dlna_dmr', 'serial': '05B925F3', 'udn': 'uuid:5f9ec1b3-ed59-1900-4530-00a0de8ffef4', 'model_name': 'RX-V673', 'manufacturer': 'YAMAHA CORPORATION'}",68bb760e9cc54dba2b844830bf7f9eda
+998,sa66b94fbb3,Apple Mac Mini Server,Mac Server,Apple,"Apple, Inc.",,{},109dd191458445852dbf64db4a01559e
+999,s5f168deeaa,UniFi G3 Flex,Camera,ubiquiti,Ubiquiti Networks Inc.,,{},109dd191458445852dbf64db4a01559e

@@ -175,6 +175,7 @@ class Dataset:
             for e in XX:
                 if e in dict_X: X_t[dict_X[e]] = 1
             X.append(X_t); y.append(dict_y[yy])
+
         X = np.array(X); y = np.array(y)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = percent)
         print("Data for training: ", len(X))
@@ -255,4 +256,38 @@ class Dataset:
         with open(load_path, 'rb') as fp:
             return pickle.load(fp)
 
+from cluster import *
+def test():
+    import os
+    graphObj = Graph(save_path = os.path.join(os.getcwd(), 'testing', 'testSmallCluster')) # build the graph
+    print(os.path.join(os.getcwd(), 'testing', 'testSmallCluster'))
+    dataObj = Dataset(graphObj.graph) # build dataset for training based on cluster
+    ret = []
 
+    model, acc = dataObj.bow_softmax('dns' , 0.2)
+    # dataObj.draw_graph(stat)
+    dataObj.save_model(model, os.path.join(os.getcwd(), 'testing', 'testLRModel'))
+
+
+    # since bayes model is very fast, we train it for 10 times and see the average performance
+    for _ in range(10):
+        model, acc, stat = dataObj.train_test('dns', 'bayes'  , 0.2)
+        ret += [acc]
+    mean , std = np.mean(ret), np.std(ret)
+    print("Avg Acc: {}, Std: {}".format(mean, std))
+    dataObj.draw_graph(stat) # you can draw class stats here
+    #print(tp)
+    dataObj.save_model(model,  os.path.join(os.getcwd(), 'testing', 'testBayesModel'))
+
+    for _ in range(10):
+        model, acc, stat = dataObj.train_test('device_oui', 'bayes'  , 0.2)
+        ret += [acc]
+    mean , std = np.mean(ret), np.std(ret)
+    print("Avg Acc: {}, Std: {}".format(mean, std))
+    dataObj.draw_graph(stat) # you can draw class stats here
+    #print(tp)
+    dataObj.save_model(model,  os.path.join(os.getcwd(), 'testing', 'testBayesModel'))
+
+
+if __name__ == '__main__':
+    test()

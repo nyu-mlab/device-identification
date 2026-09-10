@@ -1,3 +1,18 @@
+> **This repository is archived.**
+>
+> It holds the earlier (2021) NLP/ML device-identification models. The pretrained
+> weights it linked to on Google Drive are gone, and the `iotinspector.org`
+> prediction API it documents is no longer running. Neither will be restored.
+>
+> The current system is the instruction-tuned LLaMA model from *Large Language
+> Models for Real-World IoT Device Identification* (CoNEXT 2026). We do not
+> distribute weights or training data for it, but hosted inference is available:
+> IoT Inspector installs are authorized automatically, and anyone else can
+> request access through the gated model repo on Hugging Face:
+> <HF_MODEL_URL>.
+>
+> The code below is left as-is for reference and is unmaintained.
+
 # Device Identification in IOT Inspector
 
 **This project is part of the IOT inspector, and it is to retrieve device information from the user's device activity. We use several NLP and ML techniques to solve this problem. We provide the training methods and results below. If you want to reproduce these models, please request the data from the authors. Thanks for your visiting!**
@@ -27,11 +42,9 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-Download pretrained model from 
-
-https://drive.google.com/file/d/1dQ87uDf0IWaigYXanUZ9NmOhk6T8gL2R/view?usp=sharing
-
-And put it at ./data/model directory.
+The pretrained model this step used is no longer available -- the Drive file was
+lost. There is no replacement for these older models; see the note at the top of
+this README for the current system.
 
 ### Test
 
@@ -71,7 +84,7 @@ location /device_identification {
 }
 ```
 
-Here's a test in production: https://iotinspector.org/device_identification/get_vendor/780cb8/80.443
+The production endpoint below is no longer running.
 
 Usage for production:
 - Format: https://iotinspector.org/device_identification/get_vendor/`oui`/`port_list`

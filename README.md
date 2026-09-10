@@ -4,12 +4,13 @@
 > weights it linked to on Google Drive are gone, and the `iotinspector.org`
 > prediction API it documents is no longer running. Neither will be restored.
 >
-> The current system is the instruction-tuned LLaMA model from *Large Language
-> Models for Real-World IoT Device Identification* (CoNEXT 2026). We do not
+> The current system is the instruction-tuned LLaMA model from *What's on My
+> Network? Using Large Language Models to Identify Real-World IoT Devices at
+> Scale* (Proc. ACM Netw. 4, CoNEXT2, doi:10.1145/3808674). We do not
 > distribute weights or training data for it, but hosted inference is available:
 > IoT Inspector installs are authorized automatically, and anyone else can
 > request access through the gated model repo on Hugging Face:
-> <HF_MODEL_URL>.
+> https://huggingface.co/Rameen-Mahmood/iot-device-identification.
 >
 > The code below is left as-is for reference and is unmaintained.
 
